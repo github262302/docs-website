@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+---
+
 欢迎来到Shorin的LinuxWiki。
 
 如果有错误欢迎指出，如果有更好的方案欢迎分享。
