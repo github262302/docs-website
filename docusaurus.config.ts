@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -31,8 +31,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -42,32 +42,26 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           path: 'docs',
-          routeBasePath: '/guide',
-          tagsBasePath:"ff"
-
+          routeBasePath: '/docs'
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
+  plugins: [
 
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-my',
+        path: 'docs-my',
+        routeBasePath: '/docs-my'
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -83,15 +77,23 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
-          label: '教程',
-          
+          label: 'ArchLinux教程',
+
+        },
+        {
+          type: 'docsVersion',
+          position: 'left',
+          to: '/docs-my/mirror',
+          sidebarId:"docs",
+          label:"Mirror"
         },
         {
           href: 'https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki',
-          label: '原WIKI地址',
+          label: 'Archlinux原WIKI地址',
           position: 'right',
+
         },
       ],
     },
@@ -107,7 +109,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-  markdown:{
+  markdown: {
     format: 'md',
   },
 
