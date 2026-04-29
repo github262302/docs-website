@@ -1,0 +1,594 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-KVM虚拟机" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>KVM虚拟机 | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs/KVM虚拟机 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="KVM虚拟机 | Geek-guide"/><meta data-rh=true name=description content=目录 /><meta data-rh=true property=og:description content=目录 /><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs/KVM虚拟机 /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/KVM虚拟机 hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/KVM虚拟机 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs/KVM虚拟机","name":"KVM虚拟机","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.ede952b1.js defer></script><script src=/assets/js/main.bee7d22c.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Home><span title=Home class=linkLabel_IDvZ>Home</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Arch部署Astrbot><span title=Arch部署Astrbot class=linkLabel_IDvZ>Arch部署Astrbot</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/CachyOS><span title=CachyOS class=linkLabel_IDvZ>CachyOS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/KVM虚拟机><span title=KVM虚拟机 class=linkLabel_IDvZ>KVM虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Linuxmint入门><span title=Linuxmint入门 class=linkLabel_IDvZ>Linuxmint入门</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/ShorinNiri功能介绍><span title=ShorinNiri功能介绍 class=linkLabel_IDvZ>ShorinNiri功能介绍</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/grub美化><span title=grub美化 class=linkLabel_IDvZ>grub美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/issues><span title=issues class=linkLabel_IDvZ>issues</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/nixos/><span title=nixos class=linkLabel_IDvZ>nixos</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/一键配置桌面环境><span title=一键配置桌面环境 class=linkLabel_IDvZ>一键配置桌面环境</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/中文输入法><span title=中文输入法 class=linkLabel_IDvZ>中文输入法</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/交流群><span title=交流群 class=linkLabel_IDvZ>交流群</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/代理><span title=代理 class=linkLabel_IDvZ>代理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装ArchLinux><span title=安装ArchLinux class=linkLabel_IDvZ>安装ArchLinux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装GNOME><span title=安装GNOME class=linkLabel_IDvZ>安装GNOME</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Hyprland><span title=安装Hyprland class=linkLabel_IDvZ>安装Hyprland</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装KDE><span title=安装KDE class=linkLabel_IDvZ>安装KDE</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Labwc><span title=安装Labwc class=linkLabel_IDvZ>安装Labwc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Niri><span title=安装Niri class=linkLabel_IDvZ>安装Niri</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Wayfire><span title=安装Wayfire class=linkLabel_IDvZ>安装Wayfire</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装mangowc><span title=安装mangowc class=linkLabel_IDvZ>安装mangowc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装任意Linux系统的前期准备工作><span title=安装任意Linux系统的前期准备工作 class=linkLabel_IDvZ>安装任意Linux系统的前期准备工作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境前的准备><span title=安装桌面环境前的准备 class=linkLabel_IDvZ>安装桌面环境前的准备</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境或窗口管理器><span title=安装桌面环境或窗口管理器 class=linkLabel_IDvZ>安装桌面环境或窗口管理器</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/小技巧><span title=小技巧 class=linkLabel_IDvZ>小技巧</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/干净删除Linux><span title=干净删除Linux class=linkLabel_IDvZ>干净删除Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/快照和系统维护><span title=快照和系统维护 class=linkLabel_IDvZ>快照和系统维护</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/性能优化><span title=性能优化 class=linkLabel_IDvZ>性能优化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的GNOME自定义设置><span title=我的GNOME自定义设置 class=linkLabel_IDvZ>我的GNOME自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的KDE自定义设置><span title=我的KDE自定义设置 class=linkLabel_IDvZ>我的KDE自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/手动安装省流版><span title=手动安装省流版 class=linkLabel_IDvZ>手动安装省流版</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡切换><span title=显卡切换 class=linkLabel_IDvZ>显卡切换</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡驱动和硬件编解码><span title=显卡驱动和硬件编解码 class=linkLabel_IDvZ>显卡驱动和硬件编解码</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/热切换显卡直通><span title=热切换显卡直通 class=linkLabel_IDvZ>热切换显卡直通</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/玩游戏><span title=玩游戏 class=linkLabel_IDvZ>玩游戏</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/终端美化><span title=终端美化 class=linkLabel_IDvZ>终端美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/维护AUR包><span title=维护AUR包 class=linkLabel_IDvZ>维护AUR包</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/虚拟机><span title=虚拟机 class=linkLabel_IDvZ>虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/软件安装相关><span title=软件安装相关 class=linkLabel_IDvZ>软件安装相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/附录><span title=附录 class=linkLabel_IDvZ>附录</span></a></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>KVM虚拟机</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><p>目录</p>
+<ul>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E5%B5%8C%E5%A5%97%E8%99%9A%E6%8B%9F%E5%8C%96>嵌套虚拟化</a></li>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E9%85%8D%E7%BD%AE%E6%A1%A5%E6%8E%A5%E7%BD%91%E7%BB%9C>桥接网络</a></li>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E5%AE%89%E8%A3%85win11%E8%99%9A%E6%8B%9F%E6%9C%BA>win11虚拟机</a>
+<ul>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB>文件共享</a></li>
+</ul>
+</li>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2>远程桌面</a>
+<ul>
+<li class=""><a class="" href=/docs/KVM虚拟机#parsec>Parsec</a></li>
+<li class=""><a class="" href=/docs/KVM虚拟机#sunshinemoonlight>SunshineMoonlight</a></li>
+</ul>
+</li>
+<li class=""><a class="" href=/docs/KVM虚拟机#%E6%98%BE%E5%8D%A1%E7%9B%B4%E9%80%9A>显卡直通</a>
+<ul>
+<li class=""><a class="" href=/docs/KVM虚拟机#LookingGlass>LookingGlass</a></li>
+</ul>
+</li>
+</ul>
+<header><h1>KVM/QEMU虚拟机</h1></header>
+<ol>
+<li class="">
+<p>安装qemu，图形界面， TPM，网络组件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S qemu-full virt-manager swtpm dnsmasq</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>开启libvirtd系统服务</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemctl enable --now libvirtd</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>开启NAT default网络</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo virsh net-start default</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">sudo virsh net-autostart default</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>添加组权限 需要登出</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo usermod -a -G libvirt $(whoami)</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>启动virt-manager虚拟机管理程序</p>
+</li>
+</ol>
+<p>有一个注意点，virtmanager默认的连接是系统范围的，如果需要用户范围的话需要左上角新增一个用户会话连接。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=嵌套虚拟化>嵌套虚拟化<a href=#嵌套虚拟化 class=hash-link aria-label="Direct link to 嵌套虚拟化" title="Direct link to 嵌套虚拟化" translate=no>​</a></h2>
+<p>intel的话用 kvm_intel</p>
+<ul>
+<li class="">临时生效</li>
+</ul>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">modprobe kvm_amd nested=1</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">
+<p>永久生效</p>
+<ol>
+<li class="">编辑配置文件</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/modprobe.d/kvm_amd.conf</span><br/></div></code></pre></div></div>
+<p>写入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">options kvm_amd nested=1</span><br/></div></code></pre></div></div>
+<ol start=2>
+<li class="">重新生成initramfs</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo mkinitcpio -P</span><br/></div></code></pre></div></div>
+<ol start=3>
+<li class="">重启电脑</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=配置桥接网络>配置桥接网络<a href=#配置桥接网络 class=hash-link aria-label="Direct link to 配置桥接网络" title="Direct link to 配置桥接网络" translate=no>​</a></h2>
+<p>无线网卡无法配置桥接</p>
+<ol>
+<li class="">
+<p>启动高级网络配置工具（KDE进设置里的wifi和网络）</p>
+</li>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">nm-connection-editor</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>添加虚拟网桥，接口填bridge0</p>
+</li>
+<li class="">
+<p>添加网桥连接，选择以太网，选择网络设备</p>
+</li>
+<li class="">
+<p>保存后将网络连接改为刚才创建的以太网网桥连接</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=安装win11虚拟机>安装win11虚拟机<a href=#安装win11虚拟机 class=hash-link aria-label="Direct link to 安装win11虚拟机" title="Direct link to 安装win11虚拟机" translate=no>​</a></h2>
+<p><a href="https://www.bilibili.com/video/BV16h4y1B7md/?spm_id_from=333.337.search-card.all.click" target=_blank rel="noopener noreferrer" class="">手把手教你给笔记本重装系统（Windows篇）_哔哩哔哩_bilibili</a></p>
+<ol>
+<li class="">
+<p>任选一个网站下载镜像</p>
+<ul>
+<li class="">
+<p><a href=https://hellowindows.cn/ target=_blank rel="noopener noreferrer" class="">HelloWindows.cn - 精校 完整 极致 Windows系统下载仓储站</a></p>
+</li>
+<li class="">
+<p><a href=https://www.microsoft.com/zh-cn/software-download/windows11 target=_blank rel="noopener noreferrer" class="">下载 Windows 11</a></p>
+</li>
+<li class="">
+<p>可选：win11 iot LTS 镜像</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">https://go.microsoft.com/fwlink/?linkid=2270353&clcid=0x409&culture=en-us&country=us</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p>下载virtio驱动镜像</p>
+<p><a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/?C=M;O=A" target=_blank rel="noopener noreferrer" class="">Index of /groups/virt/virtio-win/direct-downloads/archive-virtio</a></p>
+<p>点击last modified，然后下载最新版本</p>
+</li>
+<li class="">
+<p><a href="https://www.bilibili.com/video/BV1L2gxzVEgs/?spm_id_from=333.1387.homepage.video_card.click&vd_source=65a8f230813d56660e48ae1afdfa4182" target=_blank rel="noopener noreferrer" class="">「Archlinux究极指南」从手动安装到显卡直通</a>按照视频里kvm虚拟机的部分安装。或者参照这篇教程<a href=https://github.com/winapps-org/winapps/blob/main/docs/libvirt.md target=_blank rel="noopener noreferrer" class="">winapps/docs/libvirt.md at main · winapps-org/winapps</a></p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=跳过联网>跳过联网<a href=#跳过联网 class=hash-link aria-label="Direct link to 跳过联网" title="Direct link to 跳过联网" translate=no>​</a></h3>
+<p>确保机器<strong>没有连接到网络</strong>，按下shift+f10 ，鼠标点击选中弹出来的cmd窗口，运行：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">oobe\bypassnro</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=文件分享>文件分享<a href=#文件分享 class=hash-link aria-label="Direct link to 文件分享" title="Direct link to 文件分享" translate=no>​</a></h3>
+<p>主要有smb和virtiofs两种，virtiofs的性能更好，但是因为是本机传输，所以smb也不差。</p>
+<ul>
+<li class="">
+<p>virtiofs</p>
+<p><a href=https://zhuanlan.zhihu.com/p/645234144 target=_blank rel="noopener noreferrer" class="">如何在 Linux 主机和 KVM 中的 Windows 客户机之间共享文件夹 | Linux 中国 - 知乎</a></p>
+<ol>
+<li class="">确认开启共享内存</li>
+<li class="">打开文件管理器，复制要共享的文件夹的路径</li>
+<li class="">在虚拟机管理器内添加共享文件夹,粘贴刚才复制的路径，取个名字</li>
+<li class="">win11虚拟机内安装winFSP
+<a href=https://winfsp.dev/rel/ target=_blank rel="noopener noreferrer" class="">https://winfsp.dev/rel/</a></li>
+<li class="">搜索service（服务），启用VirtIO-FS Service，设置为自动</li>
+</ol>
+</li>
+<li class="">
+<p>smb</p>
+<ol>
+<li class="">
+<p>安装<code>samba</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S samba </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>新建共享配置</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/samba/smb.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[global]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">workgroup = WORKGROUP</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">server string = MyArch</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">security = user</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">map to guest = bad user</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 优化虚拟机访问性能</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=131072 SO_SNDBUF=131072</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">[Share]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">path = /你的/arch/共享文件夹路径</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">valid users = 你的用户名</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">read only = no</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">browsable = yes</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置smb密码</p>
+<p><code>shorin</code>替换为你的用户名</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo smbpasswd -a shorin</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>启用服务</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">systemctl enable --now smb nmb</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>在虚拟机里确认虚拟机网关地址</p>
+<p>cmd运行<code>ipconfig</code>命令，一般是<code>192.168.122.1</code></p>
+</li>
+<li class="">
+<p>在虚拟机里连接smb</p>
+<p>打开win的文档管理器，在地址栏输入<code>\\192.168.122.1</code>，回车后会弹出密码框。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=远程桌面>远程桌面<a href=#远程桌面 class=hash-link aria-label="Direct link to 远程桌面" title="Direct link to 远程桌面" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=parsec>parsec<a href=#parsec class=hash-link aria-label="Direct link to parsec" title="Direct link to parsec" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p>win虚拟机上浏览器搜索安装</p>
+</li>
+<li class="">
+<p>linux上安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S parsec-bin</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>两个系统都开启，登录相同账号</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=sunshinemoonlight>sunshine+moonlight<a href=#sunshinemoonlight class=hash-link aria-label="Direct link to sunshine+moonlight" title="Direct link to sunshine+moonlight" translate=no>​</a></h3>
+<p><a href=https://github.com/LizardByte/Sunshine target=_blank rel="noopener noreferrer" class="">GitHub - LizardByte/Sunshine: Self-hosted game stream host for Moonlight.</a></p>
+<ol>
+<li class="">
+<p>虚拟机win11内安装sunshine</p>
+<p><a href=https://github.com/LizardByte/Sunshine target=_blank rel="noopener noreferrer" class="">https://github.com/LizardByte/Sunshine</a></p>
+<p>启动后右下角托盘右键sunshine的图标打开web网页，设置账号密码并登录。</p>
+</li>
+<li class="">
+<p>虚拟机内安装虚拟显示器</p>
+<p><a href=https://github.com/VirtualDrivers/Virtual-Display-Driver target=_blank rel="noopener noreferrer" class="">https://github.com/VirtualDrivers/Virtual-Display-Driver</a></p>
+</li>
+<li class="">
+<p>linux安装moonlight</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S moonlight-qt</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>linux启动moonlight后会搜索到win11内的sunshine，点击连接会出现pin码，在win11的sunshine web页面设置pin码添加设备就可以了。</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=显卡直通>显卡直通<a href=#显卡直通 class=hash-link aria-label="Direct link to 显卡直通" title="Direct link to 显卡直通" translate=no>​</a></h2>
+<p>分为冷切换和<a href=#%E7%83%AD%E5%88%87%E6%8D%A2 class="">热切换</a>两种。需要有两个显卡。</p>
+<p>再开始配置之前，要确认开启IOMMU（命令有输出说明开启）：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo dmesg | grep -e DMAR -e IOMMU</span><br/></div></code></pre></div></div>
+<p>现代设备通常都支持IOMMU且默认开启，BIOS里的选项通常为<code>Intel VT-d</code>、<code>AMD-V</code>或者<code>IOMMU</code>。如果没有的话搜索一下自己的cpu和主板型号看看是否支持。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=冷切换>冷切换<a href=#冷切换 class=hash-link aria-label="Direct link to 冷切换" title="Direct link to 冷切换" translate=no>​</a></h3>
+<p><a href=https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF target=_blank rel="noopener noreferrer" class="">PCI passthrough via OVMF - ArchWiki</a></p>
+<ol>
+<li class="">
+<p>获取显卡的硬件id，显卡所在group的所有设备的id都记下</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">for d in /sys/kernel/iommu_groups/*/devices/*; do </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    n=${d#*/iommu_groups/*}; n=${n%%/*}</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    printf 'IOMMU Group %s ' "$n"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    lspci -nns "${d##*/}"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">done</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>隔离GPU</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/modprobe.d/vfio.conf</span><br/></div></code></pre></div></div>
+<p>写入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">options vfio-pci ids=10de:28e0,10de:22be （硬件id与硬件id之间用英文逗号隔开）</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑内核参数让vfio-pci抢先加载</p>
+<ol>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/mkinitcpio.conf</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p><code>MODULES=（）</code>里面写入<code>vfio_pci vfio vfio_iommu_type1</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">MODULES=(... vfio_pci vfio vfio_iommu_type1  ...)</span><br/></div></code></pre></div></div>
+<p><code>HOOKS=()</code>里面确认有 <code>modconf</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">HOOKS=(... modconf ...)</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+<li class="">
+<p>重新生成initramfs</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo mkinitcpio -P</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>安装和配置ovmf</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed edk2-ovmf</span><br/></div></code></pre></div></div>
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/libvirt/qemu.conf</span><br/></div></code></pre></div></div>
+<p>搜索nvram，在合适的地方写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">nvram = [</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">	"/usr/share/ovmf/x64/OVMF_CODE.fd:/usr/share/ovmf/x64/OVMF_VARS.fd"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">]</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>重启电脑</p>
+<p>记得把显示器查到核显输出的口上。</p>
+</li>
+<li class="">
+<p>virt-manager的虚拟机页面内添加设备</p>
+<p>PCI Host Device里找到要直通的显卡（只直通显卡，不要直通类似audio的东西，可能会43报错，安装完驱动之后再直通audio）， 然后USB hostDevice里面把鼠标键盘也直通进去。</p>
+</li>
+<li class="">
+<p>开启win11虚拟机，下载nvidia-app安装驱动</p>
+</li>
+<li class="">
+<p>关闭虚拟机，虚拟机设置里显卡改成none</p>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=取消冷切换显卡直通>取消冷切换显卡直通<a href=#取消冷切换显卡直通 class=hash-link aria-label="Direct link to 取消冷切换显卡直通" title="Direct link to 取消冷切换显卡直通" translate=no>​</a></h4>
+<ol>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/modprobe.d/vfio.conf</span><br/></div></code></pre></div></div>
+<p>注释掉里面的东西</p>
+</li>
+<li class="">
+<p>重新生成initramfs</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo mkinitcpio -P</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=热切换>热切换<a href=#热切换 class=hash-link aria-label="Direct link to 热切换" title="Direct link to 热切换" translate=no>​</a></h3>
+<p>热切换属进阶内容，看：<a class="" href=/docs/热切换显卡直通>ShorinWiki_热切换显卡直通</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=lookingglass>LookingGlass<a href=#lookingglass class=hash-link aria-label="Direct link to LookingGlass" title="Direct link to LookingGlass" translate=no>​</a></h2>
+<blockquote>
+<p>参考：<a href=https://looking-glass.io/docs/B7/install/ target=_blank rel="noopener noreferrer" class="">Installation — Looking Glass B7 documentation</a> | <a href=https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF target=_blank rel="noopener noreferrer" class="">PCI passthrough via OVMF - ArchWiki</a></p>
+</blockquote>
+<p>looking glass通过共享内存实现屏幕分享，专为显卡直通虚拟机设计。win虚拟机内需要安装虚拟显示器：<a href=https://github.com/VirtualDrivers/Virtual-Display-Driver target=_blank rel="noopener noreferrer" class="">Virtual-Display-Driver</a></p>
+<ol>
+<li class="">
+<p><code>groups</code>命令确认自己在kvm组</p>
+<p>不在的话添加，注销才能生效</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo gpasswd -a $USER kvm </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>计算需要的内存大小</p>
+<p><img decoding=async loading=lazy src="data:image/png;base64,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" width=266 height=72 class=img_jwCa /></p>
+<p>计算结果以2的n次幂向上取整。</p>
+<p>不想算的话有个简单的口诀：</p>
+<ul>
+<li class="">1080p非高刷32MB</li>
+<li class="">1080p高刷或2k高刷64MB</li>
+<li class="">2k超高刷或4K高刷128MB</li>
+</ul>
+</li>
+<li class="">
+<p>共享内存配置</p>
+<p>分kvmfr内核模块和标准共享内存两种方式。</p>
+<ul>
+<li class="">
+<p>方法一：kvmfr （推荐）</p>
+<blockquote>
+<p>参考：<a href=https://looking-glass.io/docs/B7/ivshmem_kvmfr/ target=_blank rel="noopener noreferrer" class="">IVSHMEM with the KVMFR module </a></p>
+</blockquote>
+<p>kvmfr内核模块方式的looking glass性能更好，但是不能用virtiofs进行文件共享，需要使用smb，这个取舍是值得的。</p>
+<ol>
+<li class="">
+<p>安装模块</p>
+<p>请确保已经安装了你是用的内核的头文件。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S --needed linux-headers looking-glass-module-dkms-git</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>加载模块并配置权限</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/modprobe.d/kvmfr.conf</span><br/></div></code></pre></div></div>
+<blockquote>
+<p>把此处的<code>128</code>改成你实际需要的大小</p>
+</blockquote>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">options kvmfr static_size_mb=128</span><br/></div></code></pre></div></div>
+<p>用systemd加载：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/modules-load.d/kvmfr.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"># KVMFR Looking Glass module</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">kvmfr</span><br/></div></code></pre></div></div>
+<p>设置权限：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/udev/rules.d/99-kvmfr.rules</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">SUBSYSTEM=="kvmfr", OWNER="shorin", GROUP="kvm", MODE="0660"</span><br/></div></code></pre></div></div>
+<blockquote>
+<p>记得把<code>shorin</code>改成你的用户名</p>
+</blockquote>
+<p>然后编辑qemu的cgroup设备权限：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/libvirt/qemu.conf</span><br/></div></code></pre></div></div>
+<p>搜索<code>cgroup_device_acl</code>，取消注释后加上<code>/dev/kvmfr0</code>，注意逗号。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cgroup_device_acl =[</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "/dev/null", "/dev/full", "/dev/zero",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "/dev/random", "/dev/urandom",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "/dev/ptmx", "/dev/kvm", "/dev/kqemu",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "/dev/rtc","/dev/hpet", "/dev/vfio/vfio",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "/dev/kvmfr0"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">]</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">
+<p>可选：配置AppArmor权限</p>
+<p>如果你使用了AppArmor的话</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/apparmor.d/local/abstractions/libvirt-qemu</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"># Looking Glass</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">/dev/kvmfr0 rw,</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p>重启电脑</p>
+<p>重启后<code>sudo dmesg | grep kvmfr</code>应该能看到<code>kvmfr: creating 1 static devices</code>。</p>
+<p>用<code>ls -l /dev/kvmfr0</code>应该可以看到文件权限是<code>shorin kvm</code></p>
+</li>
+</ol>
+</li>
+<li class="">
+<p>方法二：shmem标准内存共享（配置了kvmfr的跳过这一节）</p>
+<blockquote>
+<p>参考：<a href=https://looking-glass.io/docs/B7/ivshmem_shm/ target=_blank rel="noopener noreferrer" class="">IVSHMEM with standard shared memory</a></p>
+</blockquote>
+<p>如果你一定要用virtiofs，可以通过shmem配置lookingglass</p>
+<ol>
+<li class="">
+<p>设置共享内存设备对应的文件的规则</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/tmpfiles.d/10-looking-glass.conf</span><br/></div></code></pre></div></div>
+<p>写入（<code>shorin</code>改为自己的用户名）：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">f /dev/shm/looking-glass 0660 shorin kvm -</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>f</code> 代表定文件规则</p>
+</blockquote>
+<blockquote>
+<p><code>/dev/shm/looking-glass</code>是共享内存文件的路径</p>
+</blockquote>
+<blockquote>
+<p><code>0660</code> 设置所有者和所属组的读写权限</p>
+</blockquote>
+<blockquote>
+<p><code>shorin</code> 设置所有者</p>
+</blockquote>
+<blockquote>
+<p><code>kvm</code> 设置所属组</p>
+</blockquote>
+<blockquote>
+<p><code>-</code>代表保留时间永久，不进行清理</p>
+</blockquote>
+</li>
+<li class="">
+<p>无须重启，现在手动创建文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemd-tmpfiles --create /etc/tmpfiles.d/10-looking-glass.conf</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li class="">
+<p>虚拟机配置</p>
+<p>打开virt-manager，点击编辑 > 首选项，勾选启用xml编辑。现在要把刚刚创建的共享内存加进虚拟机，并配置鼠标键盘音频剪贴板同步什么的。</p>
+<ol>
+<li class="">
+<p>添加设备</p>
+<ul>
+<li class="">
+<p>如果使用kvmfr的话</p>
+<p>xml最顶部应该有一行<code>&lt;domain type='kvm'></code>加上namespace</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'></span><br/></div></code></pre></div></div>
+<p>然后在最底部<code>&lt;/domain></code>上面一行插入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;qemu:commandline></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;qemu:arg value="-device"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;qemu:arg value="{'driver':'ivshmem-plain','id':'shmem0','memdev':'looking-glass'}"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;qemu:arg value="-object"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;qemu:arg value="{'qom-type':'memory-backend-file','id':'looking-glass','mem-path':'/dev/kvmfr0','size':134217728,'share':true}"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/qemu:commandline></span><br/></div></code></pre></div></div>
+<blockquote>
+<p>把<code>'size':134217728</code>的数值改成你实际的数值，计算方法是：<code>你之前计算出来的内存（MB）*1024*1024</code>。</p>
+</blockquote>
+</li>
+<li class="">
+<p>如果使用shmem的话</p>
+<p>找到xml底部的  <code>&lt;/devices></code>，在  <code>&lt;/devices></code>的上面一行添加，size记得该成自己需要的，就是这种感觉：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;devices></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ...</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;shmem name='looking-glass'></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;model type='ivshmem-plain'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;size unit='M'>64&lt;/size> </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;/shmem></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/devices></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p>设置spice协议</p>
+<p>确认有<code>spice显示协议</code>，<code>显卡</code>设置为<code>none</code></p>
+<ol start=2>
+<li class="">
+<p>键鼠传输</p>
+<p>添加virtio键盘和virtio鼠标（要在xml里面更改<code>bus=“ps2”</code>为<code>bus=“virtio”</code>）</p>
+</li>
+<li class="">
+<p>剪贴板同步</p>
+<p>确认有<code>信道(spice)</code>，没有的话添加，设备类型为<code>spice</code></p>
+</li>
+<li class="">
+<p>声音传输</p>
+<p>确认有<code>声卡ich9</code>，点击概况，去到xml底部，在里面找到下面这段，确认<code>type</code>为<code>spice</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;audio id='1' type='spice'/></span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="">
+<p>安装looking glass服务端</p>
+<p><a href=https://looking-glass.io/downloads target=_blank rel="noopener noreferrer" class="">Looking Glass - Download Looking Glass</a></p>
+<p>浏览器搜索 looking glass，点击<code>download</code>，下载<code>bleeding-edge</code>的<code>windows host binary</code>，解压后双击exe安装</p>
+</li>
+<li class="">
+<p>linux安装客户端</p>
+<p>服务端和客户端的版本要匹配，最容易出错的就是这个地方。<code>bleeding-edge</code>对应<code>-git</code>包</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S looking-glass-git</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>linux打开looking glass即可连接</p>
+</li>
+<li class="">
+<p>关闭虚拟机。克隆虚拟机之后使用克隆机而不是初号机，避免日后需要重新配置</p>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=使用技巧>使用技巧<a href=#使用技巧 class=hash-link aria-label="Direct link to 使用技巧" title="Direct link to 使用技巧" translate=no>​</a></h4>
+<p>具体可以看这个页面：<a href=https://looking-glass.io/docs/B6-rc1/usage/ target=_blank rel="noopener noreferrer" class="">https://looking-glass.io/docs/B6-rc1/usage/</a></p>
+<p>开启looking-glass后使用scroll lock键有很多功能，包括最重要的键鼠捕获。长按会显示可用功能的列表.如果你的键盘没有scroll lock键，可以修改配置文件更改。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"> vim ~/.config/looking-glass/client.ini</span><br/></div></code></pre></div></div>
+<p>写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[input]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">escapeKey=KEY_F9</span><br/></div></code></pre></div></div>
+<p>把F9换成自己想要的键，可用的键可以在终端输入 looking-glass-client -m KEY 查看</p>
+<p>我是用桌面环境的快捷键切换全屏和窗口的，你也可以选择设置以全屏模式开启，还是刚才那个配置文件，写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[win]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">fullScreen = yes </span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=kvm虚拟机性能优化和伪装>KVM虚拟机性能优化和伪装<a href=#kvm虚拟机性能优化和伪装 class=hash-link aria-label="Direct link to KVM虚拟机性能优化和伪装" title="Direct link to KVM虚拟机性能优化和伪装" translate=no>​</a></h2>
+<p>优化后可以做到原生九成五的性能。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=禁用memballoon>禁用memballoon<a href=#禁用memballoon class=hash-link aria-label="Direct link to 禁用memballoon" title="Direct link to 禁用memballoon" translate=no>​</a></h3>
+<p><a href=https://looking-glass.io/docs/B7/install_libvirt/#memballoon target=_blank rel="noopener noreferrer" class="">libvirt/QEMU Installation — Looking Glass B7 documentation</a></p>
+<p>memlbaloon的目的是提高内存的利用率，但是由于它会不停地“取走”和“归还”虚拟机内存，导致显卡 直通时虚拟机内存性能极差。</p>
+<p>将虚拟机xml里面的memballoon改为none，这将显著提高low帧。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;memballoon model="none"/></span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=内存大页>内存大页<a href=#内存大页 class=hash-link aria-label="Direct link to 内存大页" title="Direct link to 内存大页" translate=no>​</a></h3>
+<p><a href=https://wiki.archlinuxcn.org/wiki/KVM#%E5%BC%80%E5%90%AF%E5%86%85%E5%AD%98%E5%A4%A7%E9%A1%B5 target=_blank rel="noopener noreferrer" class="">KVM - Arch Linux 中文维基</a></p>
+<p>可以大幅提高内存性能。用minecraft实测帧数提升了20%。注意，设置大页的那部分内存本机无法使用。</p>
+<p>内存大页默认是2MB，如果你内存够大的话可以试试1GB大页</p>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=2mb>2MB<a href=#2mb class=hash-link aria-label="Direct link to 2MB" title="Direct link to 2MB" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p>计算大页大小</p>
+<p>内存（GB）* 1024 / 2 = 需要的大小</p>
+<p>比如16GB内存就是16*1024/2=8192，wiki建议略大一些，那就8200。</p>
+<p>我通常给虚拟机分24GB内存，24*1024/2=12288，略大一些就是12300。</p>
+</li>
+<li class="">
+<p>编辑虚拟机xml</p>
+<p>在virt-manager的g首选项里开启xml编辑，找到<code>&lt;memoryBacking></code>并添加<code>&lt;hugepages/></code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">  &lt;memoryBacking></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;hugepages/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;/memoryBacking></span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>永久生效</p>
+<p>记得把数字改成自己需要的</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/sysctl.d/40-hugepage.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vm.nr_hugepages = 8800</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>reboot</p>
+</li>
+<li class="">
+<p>虚拟机开启后查看大页使用情况</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grep HugePages /proc/meminfo</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<ul>
+<li class="">
+<p>取消大页</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo rm /etc/sysctl.d/40-hugepage.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=1gb>1GB<a href=#1gb class=hash-link aria-label="Direct link to 1GB" title="Direct link to 1GB" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p>编辑启动参数</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/default/grub</span><br/></div></code></pre></div></div>
+<p>在内核参数（就是<code>loglevel=5</code>的地方）写：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">default_hugepagesz=1G hugepagesz=1G hugepages=16</span><br/></div></code></pre></div></div>
+<p>此处的16是你实际要使用的大页数量</p>
+<p>编辑<code>/etc/default/grub</code>后记得更新<code>grub.cfg</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo grub-mkconfig -o /boot/grub/grub.cfg</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑虚拟机xml</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;memoryBacking></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">   &lt;hugepages></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">      &lt;page size='1048576' unit='KiB'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">   &lt;/hugepages></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/memoryBacking></span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<p>这样就可以了。</p>
+<ul>
+<li class="">
+<p>查看大页使用情况：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"># 查看成功分配到了多少个 1GB 大页</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">cat /sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 查看有多少个正在被虚拟机使用</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">cat /sys/kernel/mm/hugepages/hugepages-1048576kB/resv_hugepages</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=cpupin>cpupin<a href=#cpupin class=hash-link aria-label="Direct link to cpupin" title="Direct link to cpupin" translate=no>​</a></h3>
+<p><a href=https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#CPU_pinning target=_blank rel="noopener noreferrer" class="">PCI passthrough via OVMF - ArchWiki</a></p>
+<p>主要目的是提升cpu缓存性能。避免虚拟机cpu线程对应的物理cpu线程变化导致缓存性能下降。</p>
+<p>通常在virt-manager里手动设置cpu拓扑为1插槽，核心数和线程数跟自己的cpu对应就够用了，如果要极致的优化继续往下看。</p>
+<ol>
+<li class="">
+<p>查看物理cpu拓扑</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">lscpu -e</span><br/></div></code></pre></div></div>
+<p>主要看3项，cpu是线程，core是物理核心，L1d:L1i:L2:L3是缓存。如果开启了超线程，会出现一个core对应两个cpu的情况。究竟该pin哪些cpu需要看缓存。</p>
+<p>看一个例子：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">  CPU    NODE     SOCKET    CORE L1d:L1i:L2:L3 ONLINE    MAXMHZ   MINMHZ       MHZ</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  0    0      0    0 0:0:0:0           是 5263.0610 402.7860 4687.7769</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  1    0      0    1 1:1:1:0           是 5263.0610 402.7860 4687.6860</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  2    0      0    2 2:2:2:0           是 5263.0610 402.7860 4688.5659</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  3    0      0    3 3:3:3:0           是 5263.0610 402.7860 4688.6870</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  4    0      0    4 4:4:4:0           是 5263.0610 402.7860 4688.7310</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  5    0      0    5 5:5:5:0           是 5263.0610 402.7860 4689.5552</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  6    0      0    6 6:6:6:0           是 5263.0610 402.7860 4689.2202</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  7    0      0    7 7:7:7:0           是 5263.0610 402.7860 4689.5889</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  8    0      0    0 0:0:0:0           是 5263.0610 402.7860 4688.2788</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  9    0      0    1 1:1:1:0           是 5263.0610 402.7860 2361.5911</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 10    0      0    2 2:2:2:0           是 5263.0610 402.7860 4688.4370</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 11    0      0    3 3:3:3:0           是 5263.0610 402.7860 4688.4502</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 12    0      0    4 4:4:4:0           是 5263.0610 402.7860 4688.4072</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 13    0      0    5 5:5:5:0           是 5263.0610 402.7860 4688.2578</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 14    0      0    6 6:6:6:0           是 5263.0610 402.7860 4688.2778</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> 15    0      0    7 7:7:7:0           是 5263.0610 402.7860 4688.3350</span><br/></div></code></pre></div></div>
+<p>这个例子里所有核心共享L3缓存，所以无法优化L3缓存性能。但是可以优化L1和L2。比如core0对应cpu0和cpu8，cpu0和cpu8共享同一个L1L2缓存，如果仅pin cpu0就会导致运行到cpu8的缓存里，导致缓存性能下降，所以必须同时pin cpu0和cpu8</p>
+</li>
+<li class="">
+<p>修改xml，在<code>  &lt;vcpu placement="static">16&lt;/vcpu></code>下方插入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">  &lt;iothreads>2&lt;/iothreads></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;cputune></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="0" cpuset="2"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="1" cpuset="10"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="2" cpuset="3"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="3" cpuset="11"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="4" cpuset="4"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="5" cpuset="12"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="6" cpuset="5"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="7" cpuset="13"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="8" cpuset="6"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="9" cpuset="14"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="10" cpuset="7"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;vcpupin vcpu="11" cpuset="15"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;emulatorpin cpuset="0,8,1,9"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;iothreadpin iothread="1" cpuset="0,8,1,9"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;iothreadpin iothread="2" cpuset="0,8,1,9"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;/cputune></span><br/></div></code></pre></div></div>
+<p><code>&lt;iothreads>2&lt;/iothreads></code>设置io线程</p>
+<p><code>&lt;vcpupin vcpu="0" cpuset="2"/></code>虚拟机有几个线程就写几行vcpu，0算第一个。cpuset指定vcpu对应的主机cpu线程，也就是<code>lscpu -e</code>输出结果里的cpu那一列。比如举例的这段的意思是vcpu0对应本机的cpu2</p>
+<p><code>    &lt;emulatorpin cpuset="0,1,8,9"/></code>这一段设置专门用来处理虚拟机相关工作的cpu。</p>
+<p><code>&lt;iothreadpin iothread="1" cpuset="0,1,8,9"/></code>指定专门用来做io相关工作的cpu。</p>
+</li>
+<li class="">
+<p>禁用大部分timer，以减少虚拟机空闲时的cpu占用</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;clock offset='localtime'></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;timer name='rtc' present='no' tickpolicy='catchup'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;timer name='pit' present='no' tickpolicy='delay'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;timer name='hpet' present='no'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;timer name='kvmclock' present='no'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;timer name='hypervclock' present='yes'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/clock></span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>启用 Hyper-V enlightenments</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;hyperv></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;relaxed state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;vapic state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;spinlocks state='on' retries='8191'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;vpindex state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;synic state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;stimer state='on'></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;direct state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/stimer></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;reset state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;frequencies state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;reenlightenment state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;tlbflush state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;ipi state='on'/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/hyperv> </span><br/></div></code></pre></div></div>
+<p>让 KVM “伪装”成 Hyper-V，以“欺骗”Windows 开启高性能模式，大幅提升 Windows 虚拟机的运行性能、降低CPU消耗，并改善其稳定性</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=伪装虚拟机>伪装虚拟机<a href=#伪装虚拟机 class=hash-link aria-label="Direct link to 伪装虚拟机" title="Direct link to 伪装虚拟机" translate=no>​</a></h3>
+<p>这部分内容也许过时了</p>
+<p><a href=https://www.reddit.com/r/VFIO/comments/18p8hkf/how_to_play_pubg_with_battleeye_on_a_windows_vm/ target=_blank rel="noopener noreferrer" class="">How to play PUBG (with BattleEye) on a Windows VM : r/VFIO</a></p>
+<p>为了避免被反作弊程序检测到虚拟机，需要修改xml伪装虚拟机。</p>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=️警告进入虚拟机的反作弊之间的猫鼠游戏意味着你做好了被封号的觉悟>⚠️警告：进入虚拟机的反作弊之间的猫鼠游戏意味着你做好了被封号的觉悟<a href=#️警告进入虚拟机的反作弊之间的猫鼠游戏意味着你做好了被封号的觉悟 class=hash-link aria-label="Direct link to ⚠️警告：进入虚拟机的反作弊之间的猫鼠游戏意味着你做好了被封号的觉悟" title="Direct link to ⚠️警告：进入虚拟机的反作弊之间的猫鼠游戏意味着你做好了被封号的觉悟" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=️警告每进行一步都要确认虚拟机能正常运行再进行下一步>⚠️警告：每进行一步都要确认虚拟机能正常运行再进行下一步<a href=#️警告每进行一步都要确认虚拟机能正常运行再进行下一步 class=hash-link aria-label="Direct link to ⚠️警告：每进行一步都要确认虚拟机能正常运行再进行下一步" title="Direct link to ⚠️警告：每进行一步都要确认虚拟机能正常运行再进行下一步" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p>可选：使用sata硬盘和e1000网卡</p>
+</li>
+<li class="">
+<p>在<code>&lt;/hyperv> </code>下面一行插入：</p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;kvm></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;hidden state="on"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/kvm> </span><br/></div></code></pre></div></div>
+<ol start=3>
+<li class="">在<code> &lt;os firmware="efi"></code>上面一行插入，这是伪装bios。然后复制xml顶部的uuid，替换下面这段里的【这里要粘贴自己虚拟机的uuid】。里面的name信息可以按需修改。</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">&lt;sysinfo type="smbios"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;bios></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="vendor">American Megatrends International, LLC.&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="version">F21&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="date">10/01/2024&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/bios></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;system></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="manufacturer">Gigabyte Technology Co., Ltd.&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="product">X670E AORUS MASTER&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="version">1.0&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="serial">12345678&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="uuid">【这里要粘贴自己虚拟机的uuid】&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="sku">GBX670EAM&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;entry name="family">X670E MB&lt;/entry></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/system></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/sysinfo> </span><br/></div></code></pre></div></div>
+<ol start=4>
+<li class="">禁用migratable</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">  &lt;cpu mode="host-passthrough" check="none" migratable="off">  </span><br/></div></code></pre></div></div>
+<p>migratable是为服务器集群准备的“搬家”功能，关闭。</p>
+<ol start=5>
+<li class="">在<code>    &lt;topology sockets="1" dies="1" clusters="1" cores="8" threads="2"/></code>下面一行插入（<strong>这里仅适用于amd处理器，由于我没有intel处理器所以没法测试适用于intel的配置，可以问一问ai</strong>）</li>
+</ol>
+<p>主要是为了伪装成一个友好的hyper-v，调整cpu时钟，修复cpu安全漏洞、设置高级指令集、隐藏cpu虚拟化。顺便一提如果伪装成hyper-v的话就没法在虚拟机里面安装vmware了，<code>&lt;feature policy="disable" name="svm"/></code>这个申明虚拟机cpu没有虚拟化功能，也就玩不了安卓模拟器之类的东西了。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">    &lt;cache mode="passthrough"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="hypervisor"/> </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="disable" name="aes"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="topoext"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="disable" name="svm"/> </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="amd-stibp"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="ibpb"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="stibp"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="virt-ssbd"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="amd-ssbd"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="pdpe1gb"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="tsc-deadline"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="tsc_adjust"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="rdctl-no"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="skip-l1dfl-vmentry"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="mds-no"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="pschange-mc-no"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="invtsc"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="cmp_legacy"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="xsaves"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="perfctr_core"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="clzero"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;feature policy="require" name="xsaveerptr"/></span><br/></div></code></pre></div></div>
+<ol start=6>
+<li class="">时钟，找到clock offset那段修改，时区可以按需修改，不改也没事。</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">  &lt;clock offset="timezone" timezone="Asia/Japan"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="rtc" present="no" tickpolicy="catchup"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="pit" tickpolicy="discard"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="hpet" present="no"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="kvmclock" present="no"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="hypervclock" present="yes"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    &lt;timer name="tsc" present="yes" mode="native"/></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  &lt;/clock></span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=下一节玩游戏>下一节：<a class="" href=/docs/玩游戏>玩游戏</a><a href=#下一节玩游戏 class=hash-link aria-label="Direct link to 下一节玩游戏" title="Direct link to 下一节玩游戏" translate=no>​</a></h2>
+<hr/></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/CachyOS><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>CachyOS</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/Linuxmint入门><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Linuxmint入门</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#嵌套虚拟化 class="table-of-contents__link toc-highlight">嵌套虚拟化</a><li><a href=#配置桥接网络 class="table-of-contents__link toc-highlight">配置桥接网络</a><li><a href=#安装win11虚拟机 class="table-of-contents__link toc-highlight">安装win11虚拟机</a><ul><li><a href=#跳过联网 class="table-of-contents__link toc-highlight">跳过联网</a><li><a href=#文件分享 class="table-of-contents__link toc-highlight">文件分享</a></ul><li><a href=#远程桌面 class="table-of-contents__link toc-highlight">远程桌面</a><ul><li><a href=#parsec class="table-of-contents__link toc-highlight">parsec</a><li><a href=#sunshinemoonlight class="table-of-contents__link toc-highlight">sunshine+moonlight</a></ul><li><a href=#显卡直通 class="table-of-contents__link toc-highlight">显卡直通</a><ul><li><a href=#冷切换 class="table-of-contents__link toc-highlight">冷切换</a><li><a href=#热切换 class="table-of-contents__link toc-highlight">热切换</a></ul><li><a href=#lookingglass class="table-of-contents__link toc-highlight">LookingGlass</a><li><a href=#kvm虚拟机性能优化和伪装 class="table-of-contents__link toc-highlight">KVM虚拟机性能优化和伪装</a><ul><li><a href=#禁用memballoon class="table-of-contents__link toc-highlight">禁用memballoon</a><li><a href=#内存大页 class="table-of-contents__link toc-highlight">内存大页</a><li><a href=#cpupin class="table-of-contents__link toc-highlight">cpupin</a><li><a href=#伪装虚拟机 class="table-of-contents__link toc-highlight">伪装虚拟机</a></ul><li><a href=#下一节玩游戏 class="table-of-contents__link toc-highlight">下一节：玩游戏</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>

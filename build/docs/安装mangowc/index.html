@@ -1,0 +1,485 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-安装mangowc" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>安装mangowc | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs/安装mangowc /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="安装mangowc | Geek-guide"/><meta data-rh=true name=description content=目录 /><meta data-rh=true property=og:description content=目录 /><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs/安装mangowc /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装mangowc hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装mangowc hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs/安装mangowc","name":"安装mangowc","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.ede952b1.js defer></script><script src=/assets/js/main.bee7d22c.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Home><span title=Home class=linkLabel_IDvZ>Home</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Arch部署Astrbot><span title=Arch部署Astrbot class=linkLabel_IDvZ>Arch部署Astrbot</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/CachyOS><span title=CachyOS class=linkLabel_IDvZ>CachyOS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/KVM虚拟机><span title=KVM虚拟机 class=linkLabel_IDvZ>KVM虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Linuxmint入门><span title=Linuxmint入门 class=linkLabel_IDvZ>Linuxmint入门</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/ShorinNiri功能介绍><span title=ShorinNiri功能介绍 class=linkLabel_IDvZ>ShorinNiri功能介绍</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/grub美化><span title=grub美化 class=linkLabel_IDvZ>grub美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/issues><span title=issues class=linkLabel_IDvZ>issues</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/nixos/><span title=nixos class=linkLabel_IDvZ>nixos</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/一键配置桌面环境><span title=一键配置桌面环境 class=linkLabel_IDvZ>一键配置桌面环境</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/中文输入法><span title=中文输入法 class=linkLabel_IDvZ>中文输入法</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/交流群><span title=交流群 class=linkLabel_IDvZ>交流群</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/代理><span title=代理 class=linkLabel_IDvZ>代理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装ArchLinux><span title=安装ArchLinux class=linkLabel_IDvZ>安装ArchLinux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装GNOME><span title=安装GNOME class=linkLabel_IDvZ>安装GNOME</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Hyprland><span title=安装Hyprland class=linkLabel_IDvZ>安装Hyprland</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装KDE><span title=安装KDE class=linkLabel_IDvZ>安装KDE</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Labwc><span title=安装Labwc class=linkLabel_IDvZ>安装Labwc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Niri><span title=安装Niri class=linkLabel_IDvZ>安装Niri</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Wayfire><span title=安装Wayfire class=linkLabel_IDvZ>安装Wayfire</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/安装mangowc><span title=安装mangowc class=linkLabel_IDvZ>安装mangowc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装任意Linux系统的前期准备工作><span title=安装任意Linux系统的前期准备工作 class=linkLabel_IDvZ>安装任意Linux系统的前期准备工作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境前的准备><span title=安装桌面环境前的准备 class=linkLabel_IDvZ>安装桌面环境前的准备</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境或窗口管理器><span title=安装桌面环境或窗口管理器 class=linkLabel_IDvZ>安装桌面环境或窗口管理器</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/小技巧><span title=小技巧 class=linkLabel_IDvZ>小技巧</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/干净删除Linux><span title=干净删除Linux class=linkLabel_IDvZ>干净删除Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/快照和系统维护><span title=快照和系统维护 class=linkLabel_IDvZ>快照和系统维护</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/性能优化><span title=性能优化 class=linkLabel_IDvZ>性能优化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的GNOME自定义设置><span title=我的GNOME自定义设置 class=linkLabel_IDvZ>我的GNOME自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的KDE自定义设置><span title=我的KDE自定义设置 class=linkLabel_IDvZ>我的KDE自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/手动安装省流版><span title=手动安装省流版 class=linkLabel_IDvZ>手动安装省流版</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡切换><span title=显卡切换 class=linkLabel_IDvZ>显卡切换</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡驱动和硬件编解码><span title=显卡驱动和硬件编解码 class=linkLabel_IDvZ>显卡驱动和硬件编解码</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/热切换显卡直通><span title=热切换显卡直通 class=linkLabel_IDvZ>热切换显卡直通</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/玩游戏><span title=玩游戏 class=linkLabel_IDvZ>玩游戏</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/终端美化><span title=终端美化 class=linkLabel_IDvZ>终端美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/维护AUR包><span title=维护AUR包 class=linkLabel_IDvZ>维护AUR包</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/虚拟机><span title=虚拟机 class=linkLabel_IDvZ>虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/软件安装相关><span title=软件安装相关 class=linkLabel_IDvZ>软件安装相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/附录><span title=附录 class=linkLabel_IDvZ>附录</span></a></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>安装mangowc</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>安装mangowc</h1></header><p>目录</p>
+<ul>
+<li class=""><a class="" href=/docs/安装Mangowc#%E4%BB%80%E4%B9%88%E6%98%AFmangowc>Mangowc简介</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%8F%AF%E9%80%89%E5%AE%89%E8%A3%85fish>安装Fish</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%AE%89%E8%A3%85aur%E5%8A%A9%E6%89%8B>AUR助手</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%AE%89%E8%A3%85mangowc>安装Mangowc</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E7%A7%BB%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6>配置文件</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC>自启动脚本</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E6%98%BE%E7%A4%BA%E5%99%A8%E9%85%8D%E7%BD%AE>显示器配置</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E7%A6%81%E7%94%A8%E9%BC%A0%E6%A0%87%E5%8A%A0%E9%80%9F>鼠标设置</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E8%A7%A6%E6%91%B8%E6%9D%BF%E8%87%AA%E7%84%B6%E6%BB%9A%E5%8A%A8>触摸板设置</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E9%87%8D%E8%A6%81%E7%A8%8B%E5%BA%8F>基础组件</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#gui%E6%96%87%E6%A1%A3%E7%AE%A1%E7%90%86%E5%99%A8>文件管理器</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E9%94%81%E5%B1%8F>锁屏设置</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E8%87%AA%E5%8A%A8%E9%94%81%E5%B1%8F%E7%86%84%E5%B1%8F%E4%BC%91%E7%9C%A0>电源管理</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E4%BB%BB%E5%8A%A1%E6%A0%8Fwaybar>Waybar面板</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E4%BB%BB%E5%8A%A1%E6%A0%8F%E7%BB%84%E4%BB%B6>面板组件</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%89%AA%E8%B4%B4%E6%9D%BF>剪贴板</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E5%A3%81%E7%BA%B8%E5%88%87%E6%8D%A2>壁纸管理</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E6%88%AA%E5%9B%BE%E5%92%8C%E5%BD%95%E5%B1%8F>截图录屏</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E8%AF%AD%E8%A8%80%E4%B8%BA%E4%B8%AD%E6%96%87>系统语言</a></li>
+<li class=""><a class="" href=/docs/安装Mangowc#%E7%AA%97%E5%8F%A3%E8%A7%84%E5%88%99%E4%BF%AE%E5%A4%8D>窗口规则</a></li>
+</ul>
+<hr/>
+<h1>⚠️警告⚠️：这篇文章已经严重过时，很久不用mangowc了</h1>
+<p>本文从tty开始安装mangowc</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=什么是mangowc>什么是mangowc？<a href=#什么是mangowc class=hash-link aria-label="Direct link to 什么是mangowc？" title="Direct link to 什么是mangowc？" translate=no>​</a></h2>
+<p><a href=https://github.com/DreamMaoMao/mangowc target=_blank rel="noopener noreferrer" class="">https://github.com/DreamMaoMao/mangowc</a></p>
+<p>mangowc基于dwl开发，兼顾了轻量、动画、软件兼容，最大的特点是多布局切换。可以自由切换master、网格、滚动等布局。</p>
+<ul>
+<li class="">
+<p>mangowc的“致命”问题</p>
+<ol>
+<li class="">
+<p>某些游戏在窗口的大小发生变化后会运行异常，包括不限于掉帧、卡顿、卡死，极其影响游戏体验。</p>
+</li>
+<li class="">
+<p>不支持触屏和数位板</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=可选安装fish>可选：安装fish<a href=#可选安装fish class=hash-link aria-label="Direct link to 可选：安装fish" title="Direct link to 可选：安装fish" translate=no>​</a></h2>
+<p>需要频繁用到终端，安装个fish会方便很多</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S fish</span><br/></div></code></pre></div></div>
+<p>运行fish命令即可打开fish。如果之后想在打开终端的时候自动进入fish的话可以设置类似<code>kitty -e fish</code> <code>ghostty -e fish</code>这样的快捷键。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=安装aur助手><a class="" href=/docs/yay-AUR助手>安装aur助手</a><a href=#安装aur助手 class=hash-link aria-label="Direct link to 安装aur助手" title="Direct link to 安装aur助手" translate=no>​</a></h2>
+<p>mangowc在aur里，所以需要先安装aur助手（点击超链接可以跳转安装aur助手页面）。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=安装mangowc>安装mangowc<a href=#安装mangowc class=hash-link aria-label="Direct link to 安装mangowc" title="Direct link to 安装mangowc" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S mangowc-git rofi foot firefox</span><br/></div></code></pre></div></div>
+<p>没有特殊需求的话安装的时候出选项选<code>pipewire-jack</code>，字体选<code>noto-fonts</code>，其他一路回车
+<code>rofi</code>应用启动菜单
+<code>foot</code>终端
+<code>firefox</code>浏览器</p>
+</li>
+<li class="">
+<p>启动</p>
+<p>使用<code>mango</code>命令启动</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=默认配置文件>默认配置文件<a href=#默认配置文件 class=hash-link aria-label="Direct link to 默认配置文件" title="Direct link to 默认配置文件" translate=no>​</a></h2>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/mango</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">cp /etc/mango/config.conf ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>默认<code>alt+回车</code>打开<code>foot</code>，<code>ctrl+shift+加减号</code>可以缩放<code>foot</code>；<code>alt+空格</code>打开<code>rofi</code>；<code>alt+q</code>关闭窗口；<code>super+r</code>重新加载配置。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=创建程序自动启动脚本>创建程序自动启动脚本<a href=#创建程序自动启动脚本 class=hash-link aria-label="Direct link to 创建程序自动启动脚本" title="Direct link to 创建程序自动启动脚本" translate=no>​</a></h2>
+<p>mangowc可以在配置里通过<code>exec-once</code>设置软件自动启动，也可以使用autostart.sh脚本，wiki似乎推荐使用脚本。</p>
+<ol>
+<li class="">
+<p>创建自动程序脚本</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">touch ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>添加可执行权限</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">chmod +x ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=显示器配置>显示器配置<a href=#显示器配置 class=hash-link aria-label="Direct link to 显示器配置" title="Direct link to 显示器配置" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>使用<code>wlr-randr</code>获取显示器信息</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S wlr-randr</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">wlr-randr</span><br/></div></code></pre></div></div>
+<p>记住<code>eDP-1</code>这样的接口名称，然后在mode里找到自己需要的分辨率和刷新率</p>
+</li>
+<li class="">
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>按两下g键盘跳转到文件顶部，按shift+o键在当前行的上方新建一行。</p>
+<p>格式：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">monitorrule=接口名称,mfact,nmaster,平铺布局,旋转,缩放,x轴,y轴,横向分辨率,竖向分辨率,刷新率</span><br/></div></code></pre></div></div>
+<p><code>mfact</code>和n<code>master</code>是master布局相关的设置，<code>mfact</code>是主要区域的大小，<code>nmaster</code>是主要区域内窗口数量。</p>
+<p>示例：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">monitorrule=eDP-1,0.55,1,tile,0,1,0,0,2880,1800,120</span><br/></div></code></pre></div></div>
+<p><code>eDP-1</code>是名称；0.55设置master布局主要区域大小，1设置主要区域内窗口数量为1，tile设置平铺布局（这些设置貌似都不生效，维持默认，在别的地方改就行）；0设置没有旋转；1设置缩放；0,0设置位置；2880,1800设置分辨率；120设置刷新率。</p>
+<p>设置完成后esc退出编辑模式，:w保存，然后使用快捷键刷新配置。</p>
+</li>
+</ol>
+<ul>
+<li class="">
+<p>熄屏显示器</p>
+<p>使用wlr-dpms</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S wlr-dpms</span><br/></div></code></pre></div></div>
+<p>获取显示器名字</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">wlr-dpms query</span><br/></div></code></pre></div></div>
+<p>切换开关</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">wlr-dpms eDP-1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">wlr-dpms on eDP-1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">wlr-dpms off eDP-1</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>禁用显示器</p>
+<p>使用wlr-randr</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">wlr-randr --output eDP-1 --toggle</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=禁用鼠标加速>禁用鼠标加速<a href=#禁用鼠标加速 class=hash-link aria-label="Direct link to 禁用鼠标加速" title="Direct link to 禁用鼠标加速" translate=no>​</a></h2>
+<p>左斜杠搜索mouse。<code>accel_profile=1</code>可以关闭鼠标/触摸板加速，<code>accel_speed</code>可以设置鼠标/触摸板速度。</p>
+<p>设置完成后需要重新开启一次mangowc。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=触摸板自然滚动>触摸板自然滚动<a href=#触摸板自然滚动 class=hash-link aria-label="Direct link to 触摸板自然滚动" title="Direct link to 触摸板自然滚动" translate=no>​</a></h2>
+<p><code>tracpad_natural_scrolling</code>的值为1可以设置自然滚动。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=重要程序>重要程序<a href=#重要程序 class=hash-link aria-label="Direct link to 重要程序" title="Direct link to 重要程序" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S xorg-xwayland libnotify mako polkit-gnome </span><br/></div></code></pre></div></div>
+<p><code>xorg-xwayland</code>提供xwayland功能</p>
+<p><code>libnotify</code>是通知相关的库</p>
+<p><code>mako</code>提供通知功能</p>
+<p><code>polkit-gnome</code>让软件能够询问管理员权限</p>
+</li>
+<li class="">
+<p>设置自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<p>写入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">#!/bin/bash</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 通知程序</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">mako & </span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 权限询问</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>重启mangowc</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=gui文档管理器>GUI文档管理器<a href=#gui文档管理器 class=hash-link aria-label="Direct link to GUI文档管理器" title="Direct link to GUI文档管理器" translate=no>​</a></h2>
+<p><a href=https://www.xfce.org/projects target=_blank rel="noopener noreferrer" class="">Xfce4-Projects</a></p>
+<p>可以按照你的喜好安装文档管理器和对应的xdg桌面门户，比如dolphin对应xdg-desktop-portal-kde，nautilus对应xdg-desktop-portal-gnome。我比较喜欢thunar。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S xdg-desktop-portal-gtk thunar tumbler ffmpegthumbnailer poppler-glib gvfs-smb file-roller thunar-archive-plugin gnome-keyring</span><br/></div></code></pre></div></div>
+<p>出选项的话选<code>pipewire-jack</code></p>
+<p><code>xdg-desktop-portal-gtk</code>提供文件选取等功能</p>
+<p><code>tumbler</code>提供图片预览功能</p>
+<p><code>ffmpegthumbnailer</code>视频预览</p>
+<p><code>poppler-glib</code>pdf预览</p>
+<p><code>gvfs-smb</code> 检查可挂载的外部设备，访问smb分享等功能</p>
+<p><code>file-roller</code> 提供压缩解压缩功能</p>
+<p><code>thunar-archive-plugin</code>在thunar的右键菜单添加压缩解压缩选项</p>
+<p><code>gnome-keyring</code>提供密码保存功能。第一次保存密码会让你设置keyring的密码，可以空着。</p>
+<p>其他thunar的额外功能可以看<a href=https://wiki.archlinux.org/title/Thunar target=_blank rel="noopener noreferrer" class="">archwiki的thunar页面</a></p>
+<ul>
+<li class="">
+<p>设置快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>左斜杠搜索bind，在合适的写入以下内容设置一个打开thunar的快捷键（如果你用的是我的配置文件的话已经配置好了）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER,e,spawn,thunar</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=右键从此处打开终端>右键从此处打开终端<a href=#右键从此处打开终端 class=hash-link aria-label="Direct link to 右键从此处打开终端" title="Direct link to 右键从此处打开终端" translate=no>​</a></h3>
+<p>点击左上角编辑（edit） > 配置自定义动作（configure custom actions） > 选中open in terminal here > 点击小齿轮 > 命令改成<code>kitty -e fish</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=更改默认终端为kitty>更改默认终端为kitty<a href=#更改默认终端为kitty class=hash-link aria-label="Direct link to 更改默认终端为kitty" title="Direct link to 更改默认终端为kitty" translate=no>​</a></h3>
+<p>安装<code>xdg-terminal-exec</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S xdg-terminal-exec</span><br/></div></code></pre></div></div>
+<p>编辑<code>~/.config/xdg-terminals.list</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">echo "kitty.desktop" > ~/.config/xdg-terminals.list</span><br/></div></code></pre></div></div>
+<p>如果有多个终端的话就按照顺序写多行。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=生成home目录下的目录>生成home目录下的目录<a href=#生成home目录下的目录 class=hash-link aria-label="Direct link to 生成home目录下的目录" title="Direct link to 生成home目录下的目录" translate=no>​</a></h3>
+<p><a href=https://wiki.archlinux.org/title/XDG_user_directories target=_blank rel="noopener noreferrer" class="">Archwiki-XDG-user-directories</a></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S xdg-user-dirs</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">xdg-user-dirs-update</span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=锁屏>锁屏<a href=#锁屏 class=hash-link aria-label="Direct link to 锁屏" title="Direct link to 锁屏" translate=no>​</a></h2>
+<p>hyprland的部分使用了hyprlock，这里也可以使用hyprlock，为了新鲜感我装个swaylock-effects</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S swaylock-effects</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>创建配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/swaylock</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">touch ~/.config/swaylock/config</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/swaylock/config</span><br/></div></code></pre></div></div>
+<p>写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">screenshots</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">clock</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator-radius=200</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator-thickness=15</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">effect-blur=10x5</span><br/></div></code></pre></div></div>
+<p><code>screenshots</code>让锁屏显示桌面</p>
+<p><code>effect-blur=10x5</code>设置模糊</p>
+<p><code>indicator</code>显示屏幕中间显示一个圆环</p>
+<p><code>clock</code>显示时钟</p>
+<p><code>indicator-radius=200</code>圆环大小</p>
+<p><code>indicator-thickness=15</code>圆环粗细</p>
+<p>更详细的配置可以看官方文档<a href=https://github.com/mortie/swaylock-effects target=_blank rel="noopener noreferrer" class="">sway-effects</a></p>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>我设置了super+alt+L锁屏</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER+ALT,L,spawn,swaylock</span><br/></div></code></pre></div></div>
+<p>保存后重新加载一次mango的配置，我设置的快捷键是super+f1，默认是super+r</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=自动锁屏熄屏休眠>自动锁屏/熄屏/休眠<a href=#自动锁屏熄屏休眠 class=hash-link aria-label="Direct link to 自动锁屏/熄屏/休眠" title="Direct link to 自动锁屏/熄屏/休眠" translate=no>​</a></h2>
+<p>hypridle的配置更加简单所以继续用hypridle</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S hypridle brightnessctl</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/hypr</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/hypr/hypridle.conf</span><br/></div></code></pre></div></div>
+<p><a href=https://wiki.hypr.land/Hypr-Ecosystem/hypridle/ target=_blank rel="noopener noreferrer" class="">复制wiki底下的示例配置</a></p>
+<p>把<code>lock_cmd</code>里的hyprlock改成swaylock</p>
+<p>再把所有的<code>hyprctl dispatch dpms off</code>改成<code>wlr-dpms off</code></p>
+<p>所有的<code>hyprctl dispatch dpms on</code>改成<code>wlr-dpms on</code></p>
+</li>
+<li class="">
+<p>设置自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">hypridle & </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">hypridle & disown</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=任务栏waybar>任务栏waybar<a href=#任务栏waybar class=hash-link aria-label="Direct link to 任务栏waybar" title="Direct link to 任务栏waybar" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S waybar ttf-jetbrains-mono-nerd otf-font-awesome</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>下载默认配置</p>
+<p><a href=https://github.com/Alexays/Waybar/tree/master/resources target=_blank rel="noopener noreferrer" class="">在这里下载默认的waybar配置</a>，分别是config.jsonc、style.css，还有costom_modules目录里的power_menu.xml。把这三个文件剪贴到<code>~/.config/waybar</code>目录。</p>
+</li>
+<li class="">
+<p>修改默认配置</p>
+<p>在配置文件的底部，把shutdown改成poweroff。</p>
+<p>然后<a href=https://github.com/DreamMaoMao/mangowc/wiki#config target=_blank rel="noopener noreferrer" class="">在这里复制</a>或者在下面复制mangowcwiki里的waybar模块配置，粘贴到config.jsonc文件末尾最后一个大括号的上面，注意在原先的倒数第二个大括号后面加上逗号。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">"ext/workspaces": {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"format": "{icon}",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"ignore-hidden": true,</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"on-click": "activate",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"on-click-right": "deactivate",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"sort-by-id": true,</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">},</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"dwl/tags": {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  "num-tags":9,</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">},</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">"dwl/window": {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  "format": "[{layout}]{title}"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">},</span><br/></div></code></pre></div></div>
+<p>然后把文件开头moudules-left里面的"sway/workspaces"改成"ext/workspaces"，把"sway/window"改成"dwl/window"。</p>
+</li>
+<li class="">
+<p>修改字体</p>
+<p>打开style.css</p>
+<p>在<code>font-family:</code>的部分添加<code>JetBrainsMono NFP,</code>，修改后是这样的：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">font-family: JetBrainsMono NFP, FontAwesome, Roboto ......;</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>现在启动waybar</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">waybar & disown</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置重启waybar的快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>左斜杠搜索bind，在合适的位置新建（我的配置文件里已经有了，super+f2键重启waybar）：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER,F2,spawn_shell,pkill waybar || true && waybar</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>自动启动</p>
+<p>需要编辑autostart.sh</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<p>新增：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">waybar &</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=任务栏组件>任务栏组件<a href=#任务栏组件 class=hash-link aria-label="Direct link to 任务栏组件" title="Direct link to 任务栏组件" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>网络</p>
+<ol>
+<li class="">安装</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed networkmanager network-manager-applet dnsmasq</span><br/></div></code></pre></div></div>
+<p><code>networkmanager``network-manager-applet</code>提供联网功能和网络组件</p>
+<p><code>dnsmasq</code>高级网络配置工具需要</p>
+<ol>
+<li class="">现在启动</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">nm-applet & disown</span><br/></div></code></pre></div></div>
+<p>可以看到waybar的托盘里出现网络组件
+3. 自动启动</p>
+<p>需要编辑autostart.sh</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<p>新增：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">nm-applet &</span><br/></div></code></pre></div></div>
+<ol>
+<li class="">浮动模式打开
+<code>nm-connection-editor</code>打开高级网络配置工具，然后<code>mmsg -w</code>获取appid</li>
+</ol>
+<p>编辑配置文件新增窗口规则</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">windowrule=isfloating:1,appid:nm-connection-editor</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>蓝牙</p>
+<ol>
+<li class="">安装</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed bluez blueman</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemctl enable --now bluetooth</span><br/></div></code></pre></div></div>
+<p><code>blueman-manager</code>启动gui。</p>
+<ol>
+<li class="">现在启动</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">blueman-applet & disown</span><br/></div></code></pre></div></div>
+<p>可以看到waybar的托盘里出现蓝牙组件</p>
+<ol>
+<li class="">自动启动</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<p>新增：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">blueman-applet &</span><br/></div></code></pre></div></div>
+<ol>
+<li class="">浮动模式打开</li>
+</ol>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">windowrule=isfloating:1,appid:blueman-manager</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>性能模式切换</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S power-profiles-daemon</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemctl enable --now power-profiles-daemon </span><br/></div></code></pre></div></div>
+<p>安装完成后使用快捷键重启waybar，或者终端运行<code>pkill waybar && waybar</code>重启waybar。</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=剪贴板>剪贴板<a href=#剪贴板 class=hash-link aria-label="Direct link to 剪贴板" title="Direct link to 剪贴板" translate=no>​</a></h2>
+<p>使用开箱即用的copyq</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S copyq</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">copyq & disown </span><br/></div></code></pre></div></div>
+<p>可以看到任务栏托盘出现一把小剪刀，左键可以打开剪贴板。</p>
+</li>
+<li class="">
+<p>自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">copyq &</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER+ALT,v,spawn,copyq toggle</span><br/></div></code></pre></div></div>
+<p>我的配置里已经有了。</p>
+</li>
+<li class="">
+<p>以浮动窗口打开</p>
+<p>终端运行<code>mmsg -w</code>命令，然后打开copyq，聚焦之后可以在终端的输出里找到copyq的appid和title。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<p>按shift+g键到文件底部，新增：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">windowrule=isfloating:1,width:500,height:500,appid:com.github.hluk.copyq</span><br/></div></code></pre></div></div>
+<p>这段配置设置一个新的窗口规则，具体内容为：浮动窗口、宽500、高500，然后用appid指定规则应用的窗口为copyq。</p>
+<p>保存后刷新一次mango，我设置的快捷键是super+f1，默认是super+r。</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=壁纸切换>壁纸切换<a href=#壁纸切换 class=hash-link aria-label="Direct link to 壁纸切换" title="Direct link to 壁纸切换" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S awww waypaper-git</span><br/></div></code></pre></div></div>
+<p><code>awww</code>提供带动画的壁纸切换功能</p>
+<p><code>waypaper</code>是gui</p>
+</li>
+<li class="">
+<p>设置自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<p>新增</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">awww-daemon &</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>使用waypaper切换壁纸
+可以从菜单启动waypaper，或者运行<code>waypaper</code>命令启动</p>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<p>我的配置里设置的是super+alt+w</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER+ALT,W,spawn,waypaper</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>浮动窗口模式打开</p>
+<p><code>mmsg -w</code>获取窗口信息，然后新增一个窗口规则：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">windowrule=isfloating:1,appid:waypaper</span><br/></div></code></pre></div></div>
+<p>保存后重新加载一次mango的配置</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=截图和录屏>截图和录屏<a href=#截图和录屏 class=hash-link aria-label="Direct link to 截图和录屏" title="Direct link to 截图和录屏" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>依赖</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed xdg-desktop-portal-wlr xdg-desktop-portal-hyprland grim slurp wl-clipboard</span><br/></div></code></pre></div></div>
+<p>ps：wiki说只要装wlr的xdp就好了，但是我发现必须装上hyprland的xdp才能解决无法录制高帧率视频的问题。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/autostart.sh</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">/usr/lib/xdg-desktop-portal-wlr &</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>截图</p>
+<ol>
+<li class="">
+<p>安装</p>
+<p>推荐使用gradia</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S gradia</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">gradia --screenshot</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>禁用slurp的blur效果</p>
+<p>获取layer名称</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mmsg -e</span><br/></div></code></pre></div></div>
+<p>编辑配置文件设置layer规则</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">layerrule=layer_name:selection,noblur:1</span><br/></div></code></pre></div></div>
+<p>保存后重载mango。</p>
+</li>
+<li class="">
+<p>以浮动模式打开gradia</p>
+<p>获取窗口信息</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mmsg -w</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">windowrule=isfloating:1,appid:be.alexandervanhee.gradia</span><br/></div></code></pre></div></div>
+<p>保存后重载mango</p>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<p>我的配置里是super+shift+S</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER+SHIFT,s,spawn,gradia --screenshot</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>拓展内容</p>
+<p>很多时候我们只是想快速截个图保存到剪贴板，所以每次截图完都会打开编辑工具可能有点不方便。为此，可以直接使用grim+slurp+wl-clipboard做到基本的截图功能</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S wl-clipboard</span><br/></div></code></pre></div></div>
+<p>运行这段命令截图：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grim -g "$(slurp)" - | wl-copy</span><br/></div></code></pre></div></div>
+<p>打开copyq剪贴板就能看到截图保存到了剪贴板。</p>
+<p>可以设置一个快捷键，我的配置里是super+alt+a</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bind=SUPER+ALT,a,spawn_shell,grim -g "$(slurp)" - | wl-copy</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+<li class="">
+<p>录屏</p>
+<p>推荐使用kooha和obs</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S kooha</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=修改系统语言为中文>修改系统语言为中文<a href=#修改系统语言为中文 class=hash-link aria-label="Direct link to 修改系统语言为中文" title="Direct link to 修改系统语言为中文" translate=no>​</a></h2>
+<p>利用wm的配置文件设置系统语言。</p>
+<p>设置时一定要让<code>LANG</code>为英文，否则中文输入法会出现异常，然后通过<code>LC_MESSAGES</code>变量设置主要界面的语言为中文。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mango/config.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">env=LC_MESSAGES,zh_CN.UTF-8</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">
+<p>如果是archinstall安装，需要进行如下操作：</p>
+<ol>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/locale.gen </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>左斜杠键搜索，取消<code>zh_CN.UTF-8</code>的注释</p>
+</li>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo locale-gen</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>登出</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>重启mango</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=窗口规则修复>窗口规则修复<a href=#窗口规则修复 class=hash-link aria-label="Direct link to 窗口规则修复" title="Direct link to 窗口规则修复" translate=no>​</a></h2>
+<p>在我的配置文件的底部设置了一些窗口规则，修复了一些不合适的窗口动画和窗口效果。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=其他重要的通用配置>其他重要的通用配置<a href=#其他重要的通用配置 class=hash-link aria-label="Direct link to 其他重要的通用配置" title="Direct link to 其他重要的通用配置" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/docs/中文输入法>中文输入法</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=下一节软件安装相关>下一节：<a class="" href=/docs/软件安装相关>软件安装相关</a><a href=#下一节软件安装相关 class=hash-link aria-label="Direct link to 下一节软件安装相关" title="Direct link to 下一节软件安装相关" translate=no>​</a></h2></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/安装Wayfire><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>安装Wayfire</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/安装任意Linux系统的前期准备工作><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>安装任意Linux系统的前期准备工作</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#什么是mangowc class="table-of-contents__link toc-highlight">什么是mangowc？</a><li><a href=#可选安装fish class="table-of-contents__link toc-highlight">可选：安装fish</a><li><a href=#安装aur助手 class="table-of-contents__link toc-highlight">安装aur助手</a><li><a href=#安装mangowc class="table-of-contents__link toc-highlight">安装mangowc</a><li><a href=#默认配置文件 class="table-of-contents__link toc-highlight">默认配置文件</a><li><a href=#创建程序自动启动脚本 class="table-of-contents__link toc-highlight">创建程序自动启动脚本</a><li><a href=#显示器配置 class="table-of-contents__link toc-highlight">显示器配置</a><li><a href=#禁用鼠标加速 class="table-of-contents__link toc-highlight">禁用鼠标加速</a><li><a href=#触摸板自然滚动 class="table-of-contents__link toc-highlight">触摸板自然滚动</a><li><a href=#重要程序 class="table-of-contents__link toc-highlight">重要程序</a><li><a href=#gui文档管理器 class="table-of-contents__link toc-highlight">GUI文档管理器</a><ul><li><a href=#右键从此处打开终端 class="table-of-contents__link toc-highlight">右键从此处打开终端</a><li><a href=#更改默认终端为kitty class="table-of-contents__link toc-highlight">更改默认终端为kitty</a><li><a href=#生成home目录下的目录 class="table-of-contents__link toc-highlight">生成home目录下的目录</a></ul><li><a href=#锁屏 class="table-of-contents__link toc-highlight">锁屏</a><li><a href=#自动锁屏熄屏休眠 class="table-of-contents__link toc-highlight">自动锁屏/熄屏/休眠</a><li><a href=#任务栏waybar class="table-of-contents__link toc-highlight">任务栏waybar</a><li><a href=#任务栏组件 class="table-of-contents__link toc-highlight">任务栏组件</a><li><a href=#剪贴板 class="table-of-contents__link toc-highlight">剪贴板</a><li><a href=#壁纸切换 class="table-of-contents__link toc-highlight">壁纸切换</a><li><a href=#截图和录屏 class="table-of-contents__link toc-highlight">截图和录屏</a><li><a href=#修改系统语言为中文 class="table-of-contents__link toc-highlight">修改系统语言为中文</a><li><a href=#窗口规则修复 class="table-of-contents__link toc-highlight">窗口规则修复</a><li><a href=#其他重要的通用配置 class="table-of-contents__link toc-highlight">其他重要的通用配置</a><li><a href=#下一节软件安装相关 class="table-of-contents__link toc-highlight">下一节：软件安装相关</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>

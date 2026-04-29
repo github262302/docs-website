@@ -1,0 +1,194 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Arch部署Astrbot" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Arch部署Astrbot | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs/Arch部署Astrbot /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Arch部署Astrbot | Geek-guide"/><meta data-rh=true name=description content="本文在Arch Linux部署本地AstrBot Ai Agent并接入QQ。"/><meta data-rh=true property=og:description content="本文在Arch Linux部署本地AstrBot Ai Agent并接入QQ。"/><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs/Arch部署Astrbot /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/Arch部署Astrbot hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/Arch部署Astrbot hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs/Arch部署Astrbot","name":"Arch部署Astrbot","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.ede952b1.js defer></script><script src=/assets/js/main.bee7d22c.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Home><span title=Home class=linkLabel_IDvZ>Home</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/Arch部署Astrbot><span title=Arch部署Astrbot class=linkLabel_IDvZ>Arch部署Astrbot</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/CachyOS><span title=CachyOS class=linkLabel_IDvZ>CachyOS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/KVM虚拟机><span title=KVM虚拟机 class=linkLabel_IDvZ>KVM虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Linuxmint入门><span title=Linuxmint入门 class=linkLabel_IDvZ>Linuxmint入门</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/ShorinNiri功能介绍><span title=ShorinNiri功能介绍 class=linkLabel_IDvZ>ShorinNiri功能介绍</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/grub美化><span title=grub美化 class=linkLabel_IDvZ>grub美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/issues><span title=issues class=linkLabel_IDvZ>issues</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/nixos/><span title=nixos class=linkLabel_IDvZ>nixos</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/一键配置桌面环境><span title=一键配置桌面环境 class=linkLabel_IDvZ>一键配置桌面环境</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/中文输入法><span title=中文输入法 class=linkLabel_IDvZ>中文输入法</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/交流群><span title=交流群 class=linkLabel_IDvZ>交流群</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/代理><span title=代理 class=linkLabel_IDvZ>代理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装ArchLinux><span title=安装ArchLinux class=linkLabel_IDvZ>安装ArchLinux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装GNOME><span title=安装GNOME class=linkLabel_IDvZ>安装GNOME</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Hyprland><span title=安装Hyprland class=linkLabel_IDvZ>安装Hyprland</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装KDE><span title=安装KDE class=linkLabel_IDvZ>安装KDE</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Labwc><span title=安装Labwc class=linkLabel_IDvZ>安装Labwc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Niri><span title=安装Niri class=linkLabel_IDvZ>安装Niri</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Wayfire><span title=安装Wayfire class=linkLabel_IDvZ>安装Wayfire</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装mangowc><span title=安装mangowc class=linkLabel_IDvZ>安装mangowc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装任意Linux系统的前期准备工作><span title=安装任意Linux系统的前期准备工作 class=linkLabel_IDvZ>安装任意Linux系统的前期准备工作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境前的准备><span title=安装桌面环境前的准备 class=linkLabel_IDvZ>安装桌面环境前的准备</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境或窗口管理器><span title=安装桌面环境或窗口管理器 class=linkLabel_IDvZ>安装桌面环境或窗口管理器</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/小技巧><span title=小技巧 class=linkLabel_IDvZ>小技巧</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/干净删除Linux><span title=干净删除Linux class=linkLabel_IDvZ>干净删除Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/快照和系统维护><span title=快照和系统维护 class=linkLabel_IDvZ>快照和系统维护</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/性能优化><span title=性能优化 class=linkLabel_IDvZ>性能优化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的GNOME自定义设置><span title=我的GNOME自定义设置 class=linkLabel_IDvZ>我的GNOME自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的KDE自定义设置><span title=我的KDE自定义设置 class=linkLabel_IDvZ>我的KDE自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/手动安装省流版><span title=手动安装省流版 class=linkLabel_IDvZ>手动安装省流版</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡切换><span title=显卡切换 class=linkLabel_IDvZ>显卡切换</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡驱动和硬件编解码><span title=显卡驱动和硬件编解码 class=linkLabel_IDvZ>显卡驱动和硬件编解码</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/热切换显卡直通><span title=热切换显卡直通 class=linkLabel_IDvZ>热切换显卡直通</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/玩游戏><span title=玩游戏 class=linkLabel_IDvZ>玩游戏</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/终端美化><span title=终端美化 class=linkLabel_IDvZ>终端美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/维护AUR包><span title=维护AUR包 class=linkLabel_IDvZ>维护AUR包</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/虚拟机><span title=虚拟机 class=linkLabel_IDvZ>虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/软件安装相关><span title=软件安装相关 class=linkLabel_IDvZ>软件安装相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/附录><span title=附录 class=linkLabel_IDvZ>附录</span></a></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Arch部署Astrbot</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Arch部署Astrbot</h1></header><p>本文在Arch Linux部署本地AstrBot Ai Agent并接入QQ。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=启动astrbot>启动AstrBot<a href=#启动astrbot class=hash-link aria-label="Direct link to 启动AstrBot" title="Direct link to 启动AstrBot" translate=no>​</a></h2>
+<blockquote>
+<p>参考资料：<a href=https://astrbot.app/ target=_blank rel="noopener noreferrer" class="">Astrbot官方文档</a></p>
+</blockquote>
+<ol>
+<li class="">
+<p>安装<code>uv</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S uv </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>用<code>uv</code>安装<code>astrbot</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">uv tool install astrbot</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>astrbot</code>相关文件会被安装到<code>~/.local/share/uv/tools/astrbot</code>，通过链接的方式在<code>~/.local/bin</code>存放了一个<code>astrbot</code>可执行文件。</p>
+</blockquote>
+</li>
+<li class="">
+<p>初始化并启动</p>
+<p>在你觉得合适的地方创建一个用于存放Astrbot数据的目录，进入那个目录后再初始化Astrbot（不要直接在<code>~</code>代表的home目录下初始化，会浑身难受）。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"># 创建目录</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/Documents/Astrbot</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 进入目录</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">cd ~/Documents/Astrbot</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 初始化</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">astrbot init</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 启动</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">astrbot run</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 以后再次启动前记得先切换到这个目录</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>访问webui</p>
+<p>你会在<code>astrbot run</code>的输出里看到如下内容：</p>
+<p><img decoding=async loading=lazy src=/assets/images/astrbot-run-68733aaa8398dd7761212423ead0548d.png width=594 height=361 class=img_jwCa /></p>
+<p>在浏览器输入图中的任意地址访问webui。例如本地访问时使用的<code>http://localhost:6185</code>，推荐将地址添加进收藏夹。</p>
+</li>
+<li class="">
+<p>登录和修改账号密码</p>
+<p>访问webui后登录默认账号。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">用户名：astrbot</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">密码：astrbot</span><br/></div></code></pre></div></div>
+<p>然后会弹出AstrBot仪表盘提示更改用户名和密码，修改后重新登录。</p>
+<p><img decoding=async loading=lazy src=/assets/images/passwd-fe1599ba10c88efdb7e51976e5e4a8ac.png width=548 height=757 class=img_jwCa /></p>
+</li>
+</ol>
+<p>Astrbot的启动到此结束，下一步需要创建机器人，本文只介绍NapCat一种。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=创建机器人>创建机器人<a href=#创建机器人 class=hash-link aria-label="Direct link to 创建机器人" title="Direct link to 创建机器人" translate=no>​</a></h2>
+<blockquote>
+<p>参考资料：<a href=https://docs.astrbot.app/platform/aiocqhttp.html target=_blank rel="noopener noreferrer" class="">AstrbotDocs_OneBot v11</a> | <a href=https://napneko.github.io/ target=_blank rel="noopener noreferrer" class="">NapCat官方文档</a></p>
+</blockquote>
+<ol>
+<li class="">
+<p>安装依赖和NapCat</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S xorg-server-xvfb</span><br/></div></code></pre></div></div>
+<p>NapCat使用Appimage版本可能更方便一些，<a href=https://github.com/NapNeko/NapCatAppImageBuild/releases target=_blank rel="noopener noreferrer" class="">下载地址在这</a>。x86_64架构下载<code>-amd64.AppImage</code>版本。</p>
+<p><img decoding=async loading=lazy src=/assets/images/download-napcat-fb7c5331055a8afe77633331b830e5c4.png width=455 height=229 class=img_jwCa /></p>
+</li>
+<li class="">
+<p>启动NapCat</p>
+<p>在你觉得合适的地方创建一个用于存放NapCat数据的目录，将下载下来的AppImage移动到新建的目录下。为了方便使用，可以给appimage重命名为<code>napcat</code>，然后右键添加执行权限，或者使用命令：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">chmod +x napcat</span><br/></div></code></pre></div></div>
+<p>在当前目录打开终端后启动appimage：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">./napcat</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>登录</p>
+<p>注意如下输出：</p>
+<p><img decoding=async loading=lazy src=/assets/images/run-napcat-a99a9da3c2c80e4e63aeeee78e5ab488.png width=1255 height=1056 class=img_jwCa /></p>
+<p>记录访问WebUi的地址。然后扫码登录你的小号qq，或者新建一个qq号当作机器人。后续可以用以下方式快速登录</p>
+<p><code>./napcat --no-sandbox -q 你的qq号</code></p>
+<blockquote>
+<p>日后如果token找不到了可以在<code>config/webui.json</code>中找到。</p>
+</blockquote>
+</li>
+<li class="">
+<p>新建Websocket客户端</p>
+<p>在webui点进<code>网络配置</code>--><code>新建</code>--><code>Websocket客户端</code></p>
+<p><img decoding=async loading=lazy src=/assets/images/napcat-websocket-a76348203da6b6069fe24d1c8f95a9e4.png width=1194 height=742 class=img_jwCa /></p>
+<p>按照下图进行配置：</p>
+<p><img decoding=async loading=lazy src=/assets/images/napcat-websocket4-5bc6fe2faa4de7cc40e9251eda112cac.png width=529 height=603 class=img_jwCa /></p>
+<p>激活<code>启用</code>，<code>名称</code>按需填写，<code>URL</code>填写<code>ws://localhost:6199/ws</code></p>
+</li>
+<li class="">
+<p>把NapCat接入AstrBot</p>
+<p>回到AstrBot的WebUI，添加消息平台类别为<code>OneBot v11</code>机器人。</p>
+<p><img decoding=async loading=lazy src=/assets/images/newabot-cfd240bfea37b0cf67bc6051d8668fab.png width=1199 height=751 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/setnewbot-e48726cb44ce2e9e80a13f6df8782901.png width=812 height=760 class=img_jwCa /></p>
+<p>稍作等待之后应该会出现已连接的日志：</p>
+<p><img decoding=async loading=lazy src=/assets/images/suclog-db6350e19435d5588c670a5913722ecc.png width=789 height=63 class=img_jwCa /></p>
+</li>
+</ol>
+<p>现在我们需要对机器人做最后的配置。</p>
+<ul>
+<li class="">
+<p>如果appimage版本失败了，可以尝试aur包</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S xorg-server-xvfb napcatqq-git linuxqq</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">xvfb-run -a linuxqq --no-sandbox</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=设置模型提供源>设置模型提供源<a href=#设置模型提供源 class=hash-link aria-label="Direct link to 设置模型提供源" title="Direct link to 设置模型提供源" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>添加对话模型</p>
+<p><img decoding=async loading=lazy src=/assets/images/addmodel-7310539603f55b5c2719b84336938727.png width=249 height=204 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/setllm-f1af87a594872dc74962786921074f09.png width=953 height=635 class=img_jwCa /></p>
+<p>这一步结束之后就可以在QQ里像跟好友聊天一样跟刚刚登录NapCat的那个账号聊天啦。</p>
+</li>
+</ol>
+<details class="details_KT8V alert alert--info details_VWQL" data-collapsed=true><summary><h3>[展开/收起]如果你不知道怎么获取Api_Key，不知道怎么本地部署Ai的话</h3></summary><div><div class=collapsibleContent_b7if>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=获取apikey>获取ApiKey<a href=#获取apikey class=hash-link aria-label="Direct link to 获取ApiKey" title="Direct link to 获取ApiKey" translate=no>​</a></h2>
+<p>在想用的模型后面加上api关键词就可以找到对应模型的api平台，例如<code>deepseek api平台</code>。通常通过 <code>登录账号</code> --> <code>设置付款方式</code> --> <code>创建Api Key</code>这几个步骤之后就可以获取到api。</p>
+<p><img decoding=async loading=lazy src=/assets/images/deepseekapi-e108eaea9d9960759279a70225654a49.png width=1181 height=393 class=img_jwCa /></p>
+<p>然后在astrbot的提供商源的<code>新增</code>列表里选择对应提供商的选项即可。如果没有对应选项的话就选择<code>Open Ai Compatible</code>，然后去查你用的ai的Api文档，他们会提供兼容openAI的<code>base_url</code>给你，替换掉<code>Open Ai Compatible</code>配置页面里的<code>API Base URL</code>即可。</p>
+<p><img decoding=async loading=lazy src=/assets/images/deepseek2-dc2e296faf4dae727b138af002dc21f1.png width=676 height=451 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/deepseek3-dc16ed0430231a27ad0d7fb21bb8fb28.png width=1170 height=980 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/deepseek4-c4b943fde419d4994c1668b553fd06ca.png width=712 height=204 class=img_jwCa /></p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=本地部署ai>本地部署Ai<a href=#本地部署ai class=hash-link aria-label="Direct link to 本地部署Ai" title="Direct link to 本地部署Ai" translate=no>​</a></h2>
+<p>本地部署的话推荐使用<a href=https://lmstudio.ai/ target=_blank rel="noopener noreferrer" class="">LM Studio</a>，简单快捷，开箱即用。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">paru -S lmstudio-bin</span><br/></div></code></pre></div></div>
+<p>按照自己的硬件配置下载合适的模型。</p>
+<p><img decoding=async loading=lazy src=/assets/images/lmstudio-62d00b4d6d7ff3ba1fac96a06834beb4.png width=1165 height=1180 class=img_jwCa /></p>
+<p>lmstudio会贴心地提示你能不能使用。</p>
+<p><img decoding=async loading=lazy src=/assets/images/lmstudio2-6efe0124b6b30205fb786b6f41df44d7.png width=611 height=390 class=img_jwCa /></p>
+<p>下载完成后要进入lm studio的server页面启动服务器，记住lm studio使用的时<code>1234</code>端口。</p>
+<p><img decoding=async loading=lazy src=/assets/images/lmstudio3-4f7270400cc0215ec73588a32634620c.png width=808 height=258 class=img_jwCa /></p>
+<p>然后在astrbot里添加lmstudio，启用模型。</p>
+<p><img decoding=async loading=lazy src=/assets/images/lmstudio4-74b2e240705f1655852b4533db6f1172.png width=1164 height=910 class=img_jwCa /></p>
+</div></div></details>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=基本配置>基本配置<a href=#基本配置 class=hash-link aria-label="Direct link to 基本配置" title="Direct link to 基本配置" translate=no>​</a></h2>
+<p><img decoding=async loading=lazy src=/assets/images/astrbot-menu-55f451ca676f876156a2d53690b94a5e.png width=245 height=728 class=img_jwCa /></p>
+<p>修改配置之后记得右下角保存。</p>
+<ul>
+<li class="">
+<p>Ai配置</p>
+<p>现在我们来做一些基本设置。先看Ai配置页面。</p>
+<ul>
+<li class="">
+<p>默认对话模型</p>
+<p>在<code>模型</code>板块设置<code>默认对话模型</code>。</p>
+<p><img decoding=async loading=lazy src=/assets/images/astrbot-config1-fb2479870b738dd1944ccc19879290ce.png width=738 height=556 class=img_jwCa /></p>
+</li>
+<li class="">
+<p>人格</p>
+<p>在<code>人格</code>板块设置最基本的角色设定和提示词。</p>
+<p><img decoding=async loading=lazy src=/assets/images/renge0-09489a8618018308ea093be0c5105cae.png width=746 height=425 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/renge1-403021cbeaecfdc6abbf3e234a295b25.png width=982 height=711 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/renge2-02f5bc018de6e488e3113ffc44e1d3b5.png width=1159 height=865 class=img_jwCa /></p>
+</li>
+<li class="">
+<p>网页搜索</p>
+<p>如果你没有自己的api的话可以试试<a href=https://www.tavily.com/ target=_blank rel="noopener noreferrer" class="">tavily</a>的免费api。</p>
+</li>
+<li class="">
+<p>使用电脑能力</p>
+<p>这一项之后还需要在<code>平台配置</code>页面设置<code>管理员ID</code>才能让ai使用电脑</p>
+<p><img decoding=async loading=lazy src=/assets/images/local-cce08b621701839cfda00b684224bc8f.png width=727 height=294 class=img_jwCa /></p>
+</li>
+<li class="">
+<p>其他配置</p>
+<p>推荐激活<code>流式输出</code>、<code>用户识别</code>、<code>显示群名称</code>。</p>
+<p><img decoding=async loading=lazy src=/assets/images/otherconfig-517cff5b55d552468efaa3b30d7cf3a1.png width=731 height=646 class=img_jwCa /></p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>平台配置</p>
+<ul>
+<li class="">
+<p>基本</p>
+<ul>
+<li class="">
+<p>管理员ID</p>
+<p>给机器人发消息：<code>/sid</code>。然后机器人会回复你<code>UMO</code>和<code>UID</code>。在<code>管理员ID</code>的地方点击<code>添加更多</code>，把<code>UID</code>加进去。</p>
+<p><img decoding=async loading=lazy src=/assets/images/uid-9b1c812479289fed70bb4df244bb3b61.png width=997 height=333 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/uid2-58c8a5e7ad11622201acfa9b5b2f99b1.png width=642 height=335 class=img_jwCa /></p>
+<p>这样ai就可以操作你的电脑了。</p>
+</li>
+<li class="">
+<p>白名单</p>
+<p>如果你想要Ai在群里只回复你的消息的话可以把<code>UMO</code>加进<code>白名单ID列表</code>里</p>
+<p><img decoding=async loading=lazy src=/assets/images/baimindan-37b778e7ec5d2e5981f4f71fb50bbd23.png width=642 height=335 class=img_jwCa /></p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>内容安全</p>
+<p>推荐设置一些额外安全屏蔽词。</p>
+<p><img decoding=async loading=lazy src=/assets/images/safe1-abd2607c53b3f0d66900228037e84055.png width=718 height=351 class=img_jwCa /></p>
+<p><img decoding=async loading=lazy src=/assets/images/safe2-89ddd827e395d7b4b6ea7521f0b4e9af.png width=594 height=398 class=img_jwCa /></p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>扩展功能</p>
+<p>还可以在扩展功能里开启一些让ai更<code>真</code>的功能</p>
+<p><img decoding=async loading=lazy src=/assets/images/extraconfig-e5f1b5f07dc4da6b68e65a1b3b859931.png width=776 height=559 class=img_jwCa /></p>
+</li>
+</ul>
+<p>至此，享受吧！</p>
+<p>别的玩法交给你自己研究啦~</div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/Home><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Home</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/CachyOS><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>CachyOS</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#启动astrbot class="table-of-contents__link toc-highlight">启动AstrBot</a><li><a href=#创建机器人 class="table-of-contents__link toc-highlight">创建机器人</a><li><a href=#设置模型提供源 class="table-of-contents__link toc-highlight">设置模型提供源</a><li><a href=#获取apikey class="table-of-contents__link toc-highlight">获取ApiKey</a><li><a href=#本地部署ai class="table-of-contents__link toc-highlight">本地部署Ai</a><li><a href=#基本配置 class="table-of-contents__link toc-highlight">基本配置</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>

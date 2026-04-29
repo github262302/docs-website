@@ -1,0 +1,242 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-docs-my docs-version-current docs-doc-page docs-doc-id-Typescript/tsconfig.json" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>tsconfig.json | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs-my/Typescript/tsconfig.json /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-docs-my-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-docs-my-current /><meta data-rh=true property=og:title content="tsconfig.json | Geek-guide"/><meta data-rh=true name=description content=给我总结精简一下，我要存入markdown笔记 /><meta data-rh=true property=og:description content=给我总结精简一下，我要存入markdown笔记 /><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs-my/Typescript/tsconfig.json /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs-my/Typescript/tsconfig.json hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs-my/Typescript/tsconfig.json hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs-my/Typescript/tsconfig.json","name":"tsconfig.json","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.ede952b1.js defer></script><script src=/assets/js/main.bee7d22c.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/踩坑日记/ssh反向代理断电后服务端端口仍被占用怎么处理><span title=踩坑日记 class=categoryLinkLabel_mKOp>踩坑日记</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href="/docs-my/使用教程/GitHub 搜索语法完全指南"><span title=使用教程 class=categoryLinkLabel_mKOp>使用教程</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href="/docs-my/服务器维护部署/Docker 与 Dockerfile 使用"><span title=服务器维护部署 class=categoryLinkLabel_mKOp>服务器维护部署</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/Geek/FFmpeg使用指南><span title=Geek class=categoryLinkLabel_mKOp>Geek</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/docs-my/Typescript/tsconfig.json><span title=Typescript class=categoryLinkLabel_mKOp>Typescript</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs-my/Typescript/tsconfig.json><span title=tsconfig.json class=linkLabel_IDvZ>tsconfig.json</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/Archlinux/adduser><span title=Archlinux class=categoryLinkLabel_mKOp>Archlinux</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/chrome-cleanup-commands><span title="Chrome 浏览器清理命令" class=linkLabel_IDvZ>Chrome 浏览器清理命令</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/docker-ubuntu-guide><span title="Ubuntu Docker 常用命令" class=linkLabel_IDvZ>Ubuntu Docker 常用命令</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/home><span title=home class=linkLabel_IDvZ>home</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/mirror><span title=mirror class=categoryLinkLabel_mKOp>mirror</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/mongodb-速通><span title="Mongodb Ubuntu 24 速通" class=linkLabel_IDvZ>Mongodb Ubuntu 24 速通</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/n8n/notWritable><span title=n8n class=categoryLinkLabel_mKOp>n8n</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/sed-usage><span title="sed 命令使用指南" class=linkLabel_IDvZ>sed 命令使用指南</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/shell/Shell脚本入门><span title=shell class=categoryLinkLabel_mKOp>shell</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs-my/ubuntu24-apt-http-proxy><span title="Ubuntu 24 配置 APT HTTP 代理教程" class=linkLabel_IDvZ>Ubuntu 24 配置 APT HTTP 代理教程</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/wrt/r5s><span title=wrt class=categoryLinkLabel_mKOp>wrt</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_JUQ9 menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs-my/wsl/cleanPath><span title=wsl class=categoryLinkLabel_mKOp>wsl</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Typescript</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>tsconfig.json</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>tsconfig.json</h1></header><h2 class="anchor anchorTargetStickyNavbar_AJoT" id=给我总结精简一下我要存入markdown笔记>给我总结精简一下，我要存入markdown笔记<a href=#给我总结精简一下我要存入markdown笔记 class=hash-link aria-label="Direct link to 给我总结精简一下，我要存入markdown笔记" title="Direct link to 给我总结精简一下，我要存入markdown笔记" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-一句话总结>🔥 一句话总结<a href=#-一句话总结 class=hash-link aria-label="Direct link to 🔥 一句话总结" title="Direct link to 🔥 一句话总结" translate=no>​</a></h3>
+<p>👉 <strong><code>node</code> 是“老模式（随便找）”</strong>
+👉 <strong><code>node16</code> 是“严格 ESM 模式（必须按规则来）”</strong></p>
+<hr/>
+<p>你现在已经踩到 TS 最容易乱的点了，我给你<strong>直接压缩讲清楚</strong>👇</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-1-moduleresolution-node老规则>🧠 1. <code>moduleResolution: node</code>（老规则）<a href=#-1-moduleresolution-node老规则 class=hash-link aria-label="Direct link to -1-moduleresolution-node老规则" title="Direct link to -1-moduleresolution-node老规则" translate=no>​</a></h3>
+<p>特点：<strong>很宽松，甚至有点“乱找”</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=加载类型顺序>加载类型顺序：<a href=#加载类型顺序 class=hash-link aria-label="Direct link to 加载类型顺序：" title="Direct link to 加载类型顺序：" translate=no>​</a></h3>
+<p>1️⃣ 看 <code>types</code> / <code>typings</code>
+2️⃣ 看 <code>main</code> 推断
+3️⃣ 自动找 <code>.d.ts</code>
+4️⃣ 自动扫：</p>
+<div class='language-id="rp8d4v" codeBlockContainer_RTPy theme-code-block' style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class='prism-code language-id="rp8d4v" codeBlock_HdHX thin-scrollbar' style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">node_modules/@types/*</span><br/></div></code></pre></div></div>
+<p>👉 <strong>重点：</strong></p>
+<ul>
+<li class="">会自动补全</li>
+<li class="">会猜路径</li>
+<li class="">workspace 也比较容易“误打误撞成功”</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=️-2-moduleresolution-node16你现在用的>⚠️ 2. <code>moduleResolution: node16</code>（你现在用的）<a href=#️-2-moduleresolution-node16你现在用的 class=hash-link aria-label="Direct link to ️-2-moduleresolution-node16你现在用的" title="Direct link to ️-2-moduleresolution-node16你现在用的" translate=no>​</a></h3>
+<p>特点：<strong>严格按 Node.js ESM 规则</strong></p>
+<p>👉 本质对齐 Node.js 的加载逻辑</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=加载规则变成>加载规则变成：<a href=#加载规则变成 class=hash-link aria-label="Direct link to 加载规则变成：" title="Direct link to 加载规则变成：" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=1️⃣-必须看-packagejson>1️⃣ 必须看 <code>package.json</code><a href=#1️⃣-必须看-packagejson class=hash-link aria-label="Direct link to 1️⃣-必须看-packagejson" title="Direct link to 1️⃣-必须看-packagejson" translate=no>​</a></h3>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"exports"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"types"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>""</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"main"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>""</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p>👉 没写 = 很可能直接找不到</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=2️⃣-区分-esm--cjs>2️⃣ 区分 ESM / CJS<a href=#2️⃣-区分-esm--cjs class=hash-link aria-label="Direct link to 2️⃣ 区分 ESM / CJS" title="Direct link to 2️⃣ 区分 ESM / CJS" translate=no>​</a></h3>
+<p>看：</p>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token property" style=color:#36acaa>"type"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"module"</span><br/></div></code></pre></div></div>
+<p>👉 不同类型 → 不同解析路径</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=3️⃣-不再乱猜>3️⃣ 不再“乱猜”<a href=#3️⃣-不再乱猜 class=hash-link aria-label="Direct link to 3️⃣ 不再“乱猜”" title="Direct link to 3️⃣ 不再“乱猜”" translate=no>​</a></h3>
+<p>👉 不会再自动：</p>
+<ul>
+<li class="">❌ 补 <code>.ts</code></li>
+<li class="">❌ 猜 index</li>
+<li class="">❌ 扫你 workspace</li>
+<li class="">❌ 自动加载奇怪路径</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=4️⃣-types-不再万能>4️⃣ <code>types</code> 不再万能<a href=#4️⃣-types-不再万能 class=hash-link aria-label="Direct link to 4️⃣-types-不再万能" title="Direct link to 4️⃣-types-不再万能" translate=no>​</a></h3>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token property" style=color:#36acaa>"types"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token string" style=color:#e3116c>"xxx"</span><span class="token punctuation" style=color:#393A34>]</span><br/></div></code></pre></div></div>
+<p>👉 只有在：</p>
+<ul>
+<li class="">标准 type package</li>
+<li class="">node_modules 可解析</li>
+</ul>
+<p>才会生效</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-你这次为什么炸>💥 你这次为什么炸<a href=#-你这次为什么炸 class=hash-link aria-label="Direct link to 💥 你这次为什么炸" title="Direct link to 💥 你这次为什么炸" translate=no>​</a></h3>
+<p>你的情况：</p>
+<ul>
+<li class="">workspace 包 ✔</li>
+<li class="">namespace ✔</li>
+<li class="">非标准 types 包 ❌</li>
+<li class="">Node16 模式 ✔</li>
+</ul>
+<p>👉 结果：</p>
+<p><strong>TS 根本不加载你的包</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-你最后那招为什么有效>💡 你最后那招为什么有效<a href=#-你最后那招为什么有效 class=hash-link aria-label="Direct link to 💡 你最后那招为什么有效" title="Direct link to 💡 你最后那招为什么有效" translate=no>​</a></h3>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token property" style=color:#36acaa>"typeRoots"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token string" style=color:#e3116c>"../"</span><span class="token punctuation" style=color:#393A34>]</span><br/></div></code></pre></div></div>
+<p>👉 等于：</p>
+<blockquote>
+<p>“别用 node 解析了，我自己指定路径”</p>
+</blockquote>
+<p>👉 直接绕开：</p>
+<ul>
+<li class="">node_modules</li>
+<li class="">exports</li>
+<li class="">workspace</li>
+<li class="">ESM 判断</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=-对比总结核心>📊 对比总结（核心）<a href=#-对比总结核心 class=hash-link aria-label="Direct link to 📊 对比总结（核心）" title="Direct link to 📊 对比总结（核心）" translate=no>​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>行为<th>node<th>node16<tbody><tr><td>自动补路径<td>✅<td>❌<tr><td>自动扫 workspace<td>✅（误打误撞）<td>❌<tr><td>依赖 package.json<td>❌<td>✅<tr><td>namespace 全局好用<td>✅<td>⚠️<tr><td>types 自动生效<td>✅<td>❌（更严格）</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-真实工程结论别犹豫>💀 真实工程结论（别犹豫）<a href=#-真实工程结论别犹豫 class=hash-link aria-label="Direct link to 💀 真实工程结论（别犹豫）" title="Direct link to 💀 真实工程结论（别犹豫）" translate=no>​</a></h3>
+<p>👉 你现在这种玩法：</p>
+<ul>
+<li class="">namespace</li>
+<li class="">全局类型</li>
+<li class="">workspace</li>
+</ul>
+<p>👉 <strong>用 node16 就是找麻烦</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-我的建议很直接>🚀 我的建议（很直接）<a href=#-我的建议很直接 class=hash-link aria-label="Direct link to 🚀 我的建议（很直接）" title="Direct link to 🚀 我的建议（很直接）" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-想继续用-namespace你现在这样>✔ 想继续用 namespace（你现在这样）<a href=#-想继续用-namespace你现在这样 class=hash-link aria-label="Direct link to ✔ 想继续用 namespace（你现在这样）" title="Direct link to ✔ 想继续用 namespace（你现在这样）" translate=no>​</a></h3>
+<p>👉 保持：</p>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token property" style=color:#36acaa>"typeRoots"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token string" style=color:#e3116c>"../"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"./node_modules/@types"</span><span class="token punctuation" style=color:#393A34>]</span><br/></div></code></pre></div></div>
+<p>👉 别折腾 node16 解析</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=-想走正统路线未来>✔ 想走正统路线（未来）<a href=#-想走正统路线未来 class=hash-link aria-label="Direct link to ✔ 想走正统路线（未来）" title="Direct link to ✔ 想走正统路线（未来）" translate=no>​</a></h3>
+<p>👉 改成：</p>
+<div class="language-ts codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-ts codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>interface</span><span class="token plain"> </span><span class="token class-name">User</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p>然后：</p>
+<div class="language-ts codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-ts codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>import</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> User </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>from</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"@workspace/dbmodel"</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=️-最后一句话重点>⚠️ 最后一句话（重点）<a href=#️-最后一句话重点 class=hash-link aria-label="Direct link to ⚠️ 最后一句话（重点）" title="Direct link to ⚠️ 最后一句话（重点）" translate=no>​</a></h4>
+<p>👉 <strong>node16 不是“更好用”，是“更严格、更真实”</strong></p>
+<p>但你现在这套：</p>
+<p>👉 <strong>明显是“全局类型 + 工程捷径流”</strong></p>
+<p>👉 那就别硬套 node16 那套规则</p>
+<hr/>
+<p>要我说实话：</p>
+<p>👉 你这波不是 bug，是<strong>TS 在强行让你现代化，但你在反抗（而且反抗成功了）</strong> 😏</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=给我总结精简一下我要存入markdown笔记-1>给我总结精简一下，我要存入markdown笔记<a href=#给我总结精简一下我要存入markdown笔记-1 class=hash-link aria-label="Direct link to 给我总结精简一下，我要存入markdown笔记" title="Direct link to 给我总结精简一下，我要存入markdown笔记" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=typescript-node-vs-node16-模块解析精简版>TypeScript <code>node</code> vs <code>node16</code> 模块解析（精简版）<a href=#typescript-node-vs-node16-模块解析精简版 class=hash-link aria-label="Direct link to typescript-node-vs-node16-模块解析精简版" title="Direct link to typescript-node-vs-node16-模块解析精简版" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=一句话>一句话<a href=#一句话 class=hash-link aria-label="Direct link to 一句话" title="Direct link to 一句话" translate=no>​</a></h3>
+<ul>
+<li class=""><code>node</code>：宽松、会“乱找”</li>
+<li class=""><code>node16</code>：严格、必须按规则（贴近 Node.js ESM）</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=node旧模式>node（旧模式）<a href=#node旧模式 class=hash-link aria-label="Direct link to node（旧模式）" title="Direct link to node（旧模式）" translate=no>​</a></h3>
+<p>特点：自动补全 + 容错高</p>
+<p>加载行为：</p>
+<ul>
+<li class="">自动找 <code>types / typings</code></li>
+<li class="">自动推断 <code>.d.ts</code></li>
+<li class="">自动扫描 <code>node_modules/@types</code></li>
+<li class="">会猜路径（index / 扩展名）</li>
+</ul>
+<p>👉 适合：</p>
+<ul>
+<li class="">namespace 全局类型</li>
+<li class="">workspace 随便用</li>
+<li class="">老项目</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=node16esm模式>node16（ESM模式）<a href=#node16esm模式 class=hash-link aria-label="Direct link to node16（ESM模式）" title="Direct link to node16（ESM模式）" translate=no>​</a></h3>
+<p>特点：严格、依赖 package.json</p>
+<p>加载规则：</p>
+<ul>
+<li class="">必须看 <code>package.json</code>（types / exports）</li>
+<li class="">区分 ESM / CJS（type: module）</li>
+<li class="">不再自动补路径</li>
+<li class="">不乱扫 workspace</li>
+<li class=""><code>types</code> 不保证生效</li>
+</ul>
+<p>👉 本质对齐：<div>oaicite:0</div><p></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=核心区别>核心区别<a href=#核心区别 class=hash-link aria-label="Direct link to 核心区别" title="Direct link to 核心区别" translate=no>​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>行为<th>node<th>node16<tbody><tr><td>自动补路径<td>✅<td>❌<tr><td>自动扫 workspace<td>✅<td>❌<tr><td>依赖 package.json<td>❌<td>✅<tr><td>namespace 全局<td>✅<td>⚠️<tr><td>types 自动加载<td>✅<td>❌</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=常见问题本质>常见问题本质<a href=#常见问题本质 class=hash-link aria-label="Direct link to 常见问题本质" title="Direct link to 常见问题本质" translate=no>​</a></h3>
+<p>👉 node16 下：</p>
+<ul>
+<li class="">TS 不会自动加载你的类型包</li>
+<li class="">namespace 很容易失效</li>
+<li class="">workspace 包容易“找不到”</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=你的解决方案有效>你的解决方案（有效）<a href=#你的解决方案有效 class=hash-link aria-label="Direct link to 你的解决方案（有效）" title="Direct link to 你的解决方案（有效）" translate=no>​</a></h3>
+<div class="language-json codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-json codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"typeRoots"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token string" style=color:#e3116c>"../"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"./node_modules/@types"</span><span class="token punctuation" style=color:#393A34>]</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"types"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token string" style=color:#e3116c>"dbmodel"</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p>作用：
+👉 手动指定类型目录，绕过 node16 解析</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=结论>结论<a href=#结论 class=hash-link aria-label="Direct link to 结论" title="Direct link to 结论" translate=no>​</a></h3>
+<ul>
+<li class="">想省事 → 用 <code>node</code></li>
+<li class="">想规范 → 用 <code>node16</code> + import type</li>
+<li class="">想全局 namespace → 用 <code>typeRoots</code>（最稳）</li>
+</ul>
+<pre tabindex=0 class="codeBlockStandalone_ApSW thin-scrollbar codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><code class=codeBlockLines_ntnQ></code></pre></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs-my/Geek/硬盘速度测试><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>硬盘速度测试</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs-my/Archlinux/adduser><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>adduser</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#给我总结精简一下我要存入markdown笔记 class="table-of-contents__link toc-highlight">给我总结精简一下，我要存入markdown笔记</a><ul><li><a href=#-一句话总结 class="table-of-contents__link toc-highlight">🔥 一句话总结</a><li><a href=#-1-moduleresolution-node老规则 class="table-of-contents__link toc-highlight">🧠 1. <code>moduleResolution: node</code>（老规则）</a><li><a href=#加载类型顺序 class="table-of-contents__link toc-highlight">加载类型顺序：</a><li><a href=#️-2-moduleresolution-node16你现在用的 class="table-of-contents__link toc-highlight">⚠️ 2. <code>moduleResolution: node16</code>（你现在用的）</a><li><a href=#加载规则变成 class="table-of-contents__link toc-highlight">加载规则变成：</a><li><a href=#1️⃣-必须看-packagejson class="table-of-contents__link toc-highlight">1️⃣ 必须看 <code>package.json</code></a><li><a href=#2️⃣-区分-esm--cjs class="table-of-contents__link toc-highlight">2️⃣ 区分 ESM / CJS</a><li><a href=#3️⃣-不再乱猜 class="table-of-contents__link toc-highlight">3️⃣ 不再“乱猜”</a><li><a href=#4️⃣-types-不再万能 class="table-of-contents__link toc-highlight">4️⃣ <code>types</code> 不再万能</a><li><a href=#-你这次为什么炸 class="table-of-contents__link toc-highlight">💥 你这次为什么炸</a><li><a href=#-你最后那招为什么有效 class="table-of-contents__link toc-highlight">💡 你最后那招为什么有效</a><li><a href=#-真实工程结论别犹豫 class="table-of-contents__link toc-highlight">💀 真实工程结论（别犹豫）</a><li><a href=#-我的建议很直接 class="table-of-contents__link toc-highlight">🚀 我的建议（很直接）</a><li><a href=#-想继续用-namespace你现在这样 class="table-of-contents__link toc-highlight">✔ 想继续用 namespace（你现在这样）</a><li><a href=#-想走正统路线未来 class="table-of-contents__link toc-highlight">✔ 想走正统路线（未来）</a></ul><li><a href=#给我总结精简一下我要存入markdown笔记-1 class="table-of-contents__link toc-highlight">给我总结精简一下，我要存入markdown笔记</a><ul><li><a href=#typescript-node-vs-node16-模块解析精简版 class="table-of-contents__link toc-highlight">TypeScript <code>node</code> vs <code>node16</code> 模块解析（精简版）</a><li><a href=#一句话 class="table-of-contents__link toc-highlight">一句话</a><li><a href=#node旧模式 class="table-of-contents__link toc-highlight">node（旧模式）</a><li><a href=#node16esm模式 class="table-of-contents__link toc-highlight">node16（ESM模式）</a><li><a href=#核心区别 class="table-of-contents__link toc-highlight">核心区别</a><li><a href=#常见问题本质 class="table-of-contents__link toc-highlight">常见问题本质</a><li><a href=#你的解决方案有效 class="table-of-contents__link toc-highlight">你的解决方案（有效）</a><li><a href=#结论 class="table-of-contents__link toc-highlight">结论</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>
