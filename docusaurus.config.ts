@@ -61,7 +61,7 @@ const config = (props: any) => {
         {
           docs: {
             sidebarPath: './sidebars.ts',
-            path: 'docs',
+            path: 'docs-archlinux',
             routeBasePath: '/docs'
           },
           blog: false,
