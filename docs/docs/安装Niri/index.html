@@ -1,0 +1,815 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-安装Niri" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>安装Niri | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs/安装Niri /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="安装Niri | Geek-guide"/><meta data-rh=true name=description content=目录 /><meta data-rh=true property=og:description content=目录 /><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs/安装Niri /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装Niri hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装Niri hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs/安装Niri","name":"安装Niri","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.e64bb66d.js defer></script><script src=/assets/js/main.37a07b4d.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Home><span title=Home class=linkLabel_IDvZ>Home</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Arch部署Astrbot><span title=Arch部署Astrbot class=linkLabel_IDvZ>Arch部署Astrbot</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/CachyOS><span title=CachyOS class=linkLabel_IDvZ>CachyOS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/KVM虚拟机><span title=KVM虚拟机 class=linkLabel_IDvZ>KVM虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Linuxmint入门><span title=Linuxmint入门 class=linkLabel_IDvZ>Linuxmint入门</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/ShorinNiri功能介绍><span title=ShorinNiri功能介绍 class=linkLabel_IDvZ>ShorinNiri功能介绍</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/grub美化><span title=grub美化 class=linkLabel_IDvZ>grub美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/issues><span title=issues class=linkLabel_IDvZ>issues</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/nixos/><span title=nixos class=linkLabel_IDvZ>nixos</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/一键配置桌面环境><span title=一键配置桌面环境 class=linkLabel_IDvZ>一键配置桌面环境</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/中文输入法><span title=中文输入法 class=linkLabel_IDvZ>中文输入法</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/交流群><span title=交流群 class=linkLabel_IDvZ>交流群</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/代理><span title=代理 class=linkLabel_IDvZ>代理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装ArchLinux><span title=安装ArchLinux class=linkLabel_IDvZ>安装ArchLinux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装GNOME><span title=安装GNOME class=linkLabel_IDvZ>安装GNOME</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Hyprland><span title=安装Hyprland class=linkLabel_IDvZ>安装Hyprland</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装KDE><span title=安装KDE class=linkLabel_IDvZ>安装KDE</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Labwc><span title=安装Labwc class=linkLabel_IDvZ>安装Labwc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/安装Niri><span title=安装Niri class=linkLabel_IDvZ>安装Niri</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Wayfire><span title=安装Wayfire class=linkLabel_IDvZ>安装Wayfire</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装mangowc><span title=安装mangowc class=linkLabel_IDvZ>安装mangowc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装任意Linux系统的前期准备工作><span title=安装任意Linux系统的前期准备工作 class=linkLabel_IDvZ>安装任意Linux系统的前期准备工作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境前的准备><span title=安装桌面环境前的准备 class=linkLabel_IDvZ>安装桌面环境前的准备</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境或窗口管理器><span title=安装桌面环境或窗口管理器 class=linkLabel_IDvZ>安装桌面环境或窗口管理器</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/小技巧><span title=小技巧 class=linkLabel_IDvZ>小技巧</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/干净删除Linux><span title=干净删除Linux class=linkLabel_IDvZ>干净删除Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/快照和系统维护><span title=快照和系统维护 class=linkLabel_IDvZ>快照和系统维护</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/性能优化><span title=性能优化 class=linkLabel_IDvZ>性能优化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的GNOME自定义设置><span title=我的GNOME自定义设置 class=linkLabel_IDvZ>我的GNOME自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的KDE自定义设置><span title=我的KDE自定义设置 class=linkLabel_IDvZ>我的KDE自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/手动安装省流版><span title=手动安装省流版 class=linkLabel_IDvZ>手动安装省流版</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡切换><span title=显卡切换 class=linkLabel_IDvZ>显卡切换</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡驱动和硬件编解码><span title=显卡驱动和硬件编解码 class=linkLabel_IDvZ>显卡驱动和硬件编解码</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/热切换显卡直通><span title=热切换显卡直通 class=linkLabel_IDvZ>热切换显卡直通</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/玩游戏><span title=玩游戏 class=linkLabel_IDvZ>玩游戏</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/终端美化><span title=终端美化 class=linkLabel_IDvZ>终端美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/维护AUR包><span title=维护AUR包 class=linkLabel_IDvZ>维护AUR包</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/虚拟机><span title=虚拟机 class=linkLabel_IDvZ>虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/软件安装相关><span title=软件安装相关 class=linkLabel_IDvZ>软件安装相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/附录><span title=附录 class=linkLabel_IDvZ>附录</span></a></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>安装Niri</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>安装Niri</h1></header><p>目录</p>
+<ul>
+<li class=""><a class="" href=/docs/安装Niri#%E4%BB%80%E4%B9%88%E6%98%AFniri>Niri简介</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%8F%AF%E9%80%89%E6%9B%B4%E6%8D%A2shell%E4%B8%BAfish>更换Shell</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%AE%89%E8%A3%85>安装Niri</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E6%98%BE%E7%A4%BA%E5%99%A8%E9%85%8D%E7%BD%AE>显示器配置</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%85%B3%E9%97%AD%E9%BC%A0%E6%A0%87%E5%8A%A0%E9%80%9F>鼠标设置</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E9%87%8D%E8%A6%81%E7%A8%8B%E5%BA%8F>基础组件</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E8%AF%AD%E8%A8%80%E4%B8%BA%E4%B8%AD%E6%96%87>系统语言</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95>中文输入法</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%96%87%E6%A1%A3%E7%AE%A1%E7%90%86%E5%99%A8>文件管理器</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E9%94%81%E5%B1%8F>锁屏设置</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E8%87%AA%E5%8A%A8%E7%86%84%E5%B1%8F%E9%94%81%E5%B1%8F%E4%BC%91%E7%9C%A0>电源管理</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E8%93%9D%E7%89%99>蓝牙</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%89%AA%E8%B4%B4%E6%9D%BF>剪贴板</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E6%88%AA%E5%9B%BE>截图配置</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%B1%8F%E5%B9%95%E5%88%86%E4%BA%AB>屏幕分享</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E8%BD%AF%E4%BB%B6%E5%95%86%E5%9F%8E>软件商店</a></li>
+<li class=""><a class="" href=/docs/安装Niri#alttab%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3>窗口切换</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%B1%8F%E5%B9%95%E4%BA%AE%E5%BA%A6%E8%B0%83%E8%8A%82>亮度调节</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%A3%81%E7%BA%B8%E5%88%87%E6%8D%A2>壁纸管理</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E9%9D%A2%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F>面板(Waybar)</a></li>
+<li class=""><a class="" href=/docs/安装Niri#niri%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9>进阶配置</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E8%AE%BE%E7%BD%AEoverview%E8%83%8C%E6%99%AF%E5%A3%81%E7%BA%B8>Overview壁纸</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%8F%AF%E9%80%89%E5%A4%A7%E5%86%99%E9%94%81%E5%AE%9A%E6%98%BE%E7%A4%BA>大写锁定</a></li>
+<li class=""><a class="" href=/docs/安装Niri#%E5%8F%AF%E9%80%89%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95>自动登录</a></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=这是你在这篇文章之后能够获得的niri环境>这是你在这篇文章之后能够获得的niri环境<a href=#这是你在这篇文章之后能够获得的niri环境 class=hash-link aria-label="Direct link to 这是你在这篇文章之后能够获得的niri环境" title="Direct link to 这是你在这篇文章之后能够获得的niri环境" translate=no>​</a></h2>
+<p><img decoding=async loading=lazy src=/assets/images/waybar-bottom-niri-aabca59064ba9a3562d8f736b6010d2c.png width=2560 height=1440 class=img_jwCa /></p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1fgUEBMEMZ/?share_source=copy_web&vd_source=1c6a132d86487c8c4a29c7ff5cd8ac50" target=_blank rel="noopener noreferrer" class="">「Niri入门指南」颠覆传统桌面体验，最适合新手的窗口管理器</a></p>
+<p>如果你想用我的配置文件一键安装niri，看：<a href=https://github.com/SHORiN-KiWATA/shorin-arch-setup target=_blank rel="noopener noreferrer" class="">https://github.com/SHORiN-KiWATA/shorin-arch-setup</a></p>
+<p>由于Niri很特别，所以简单介绍一下。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=什么是niri>什么是Niri？<a href=#什么是niri class=hash-link aria-label="Direct link to 什么是Niri？" title="Direct link to 什么是Niri？" translate=no>​</a></h2>
+<p>Niri官方的demo视频用几分钟简单地演示了Niri的特性，绝对值得一看：<a href=https://github.com/YaLTeR/niri target=_blank rel="noopener noreferrer" class="">Niri演示视频</a></p>
+<p>Niri的一切都是围绕scrolling layout滚动布局设计的。niri的特点：</p>
+<ol>
+<li class="">
+<p>无限卷轴式平铺</p>
+<p>传统桌面不论是win、mac、kde、gnome、hyprland、sway，它们的工作区都只有一个屏幕的大小，新开的窗口会挤占其他窗口的空间。而Niri的工作区可以横向无限延伸，像是一个无限长的“卷轴”。</p>
+</li>
+<li class="">
+<p>垂直工作区切换</p>
+<p>顾名思义，工作区切换是垂直的而不是常见的水平切换。</p>
+</li>
+<li class="">
+<p>动态工作区数量增减</p>
+</li>
+<li class="">
+<p>column合并</p>
+<p>可以将窗口合并到同一列，甚至可以开启标签页，这让niri可以同时做到mater布局、网格布局和标签页布局。</p>
+</li>
+<li class="">
+<p>其他细节设计</p>
+<p>比如overview、快捷键教程、舒适的默认配置等等。</p>
+</li>
+</ol>
+<p>这些结合起来组成了极其舒适的桌面体验。</p>
+<ul>
+<li class="">
+<p>niri的“致命”问题</p>
+<ol>
+<li class="">fcitx5导致gtk应用无法弹出窗口。比如nautilus的“重命名”、easyeffects的“添加效果”。解决方法是设置一个快捷键开关输入法。（后记：设置GTK_IM_MODULE=fcitx环境变量可以解决nautilus重命名的问题，其他异常的程序也可以尝试这个设置，但不一定有效，这个bug仍在排查中）</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=可选更换shell为fish>可选：更换shell为fish<a href=#可选更换shell为fish class=hash-link aria-label="Direct link to 可选：更换shell为fish" title="Direct link to 可选：更换shell为fish" translate=no>​</a></h2>
+<p><a href=https://fishshell.com/ target=_blank rel="noopener noreferrer" class="">FishShell</a></p>
+<p>由于会频繁用到命令行，有一个便利的shell会方便很多</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S fish</span><br/></div></code></pre></div></div>
+<p>运行<code>fish</code>命令即可打开fish。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=安装>安装<a href=#安装 class=hash-link aria-label="Direct link to 安装" title="Direct link to 安装" translate=no>​</a></h2>
+<p><a href=https://yalter.github.io/niri/Getting-Started.html target=_blank rel="noopener noreferrer" class="">Niri-Getting-Started</a></p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome fuzzel alacritty（自己喜欢的终端仿真器）firefox   </span><br/></div></code></pre></div></div>
+<p>出现选项选择<code>pipewire-jack</code></p>
+<blockquote>
+<p><code>niri</code>本体</p>
+</blockquote>
+<blockquote>
+<p><code>xwayland-satellite</code>提供xwayland功能</p>
+</blockquote>
+<blockquote>
+<p><code>xdg-desktop-portal-gnome</code>是niri推荐使用的桌面门户，提供文件选择、屏幕分享等功能</p>
+</blockquote>
+<blockquote>
+<p><code>fuzzel</code>是niri默认的程序启动器</p>
+</blockquote>
+<blockquote>
+<p><code>alacritty</code>是niri默认的终端仿真器</p>
+</blockquote>
+<blockquote>
+<p><code>firefox</code>是linux上好用的浏览器</p>
+</blockquote>
+</li>
+<li class="">
+<p>第一次运行（此时会生成配置文件）</p>
+<p>运行<code>niri-session</code>打开niri会话。有显示管理器的话在显示管理器切换会话。</p>
+</li>
+<li class="">
+<p>可选：修改默认终端</p>
+<p>如果你使用的是别的终端的话可以编辑配置文件修改按键打开的终端。</p>
+<p>super+shift+E退出niri</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<p>PS：没有特指的话后面所有“编辑配置文件”指的都是这个文件。</p>
+<p><code>/</code>键，搜索<code>alacritty</code>；</p>
+<p>找到：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>hotkey-overlay-title="Open a Terminal: alacritty"</code>设置<code>super+shift+/</code>打开的界面里的显示内容。改成<code>=null</code>可以隐藏。</p>
+</blockquote>
+<p>把<code>spawn "alacritty"</code>改成<code>spawn "kitty" "-e" "fish"</code></p>
+<ul>
+<li class="">
+<p>关于niri设置自定义快捷键</p>
+<p>当命令有多个部分时，有两种写法。一种是<code>spawn</code>，需要把命令分段写在多个引号里。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn "kitty" "-e" "fish"</span><br/></div></code></pre></div></div>
+<p>另一种是<code>spawn-sh</code>，命令不用分段，直接写在一个引号里</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-sh "kitty -e fish"</span><br/></div></code></pre></div></div>
+<p><code>-sh</code>的写法性能消耗会略高一点（但是方便）</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>基础使用方法</p>
+<p><code>super+shift+/</code>打开重要快捷键教程</p>
+<p><code>super+t</code>打开终端</p>
+<p><code>super+d</code>打开应用启动器</p>
+<p><code>super+u/i</code>上下切换工作区</p>
+<p>知道这些就可以开始使用niri啦。</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=显示器配置>显示器配置<a href=#显示器配置 class=hash-link aria-label="Direct link to 显示器配置" title="Direct link to 显示器配置" translate=no>​</a></h2>
+<p><a href=https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs target=_blank rel="noopener noreferrer" class="">niri_wiki_outputs</a></p>
+<ol start=0>
+<li class="">
+<p>可选：GUI</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S wdisplays</span><br/></div></code></pre></div></div>
+<p>PS:<code>wdisplays</code>可以临时修改显示设置，但无法保存到niri文件。</p>
+</li>
+<li class="">
+<p>运行命令获取显示器信息</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">niri msg outputs</span><br/></div></code></pre></div></div>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Output "BOE NE156QHM-NY1 Unknown" (eDP-1)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Current mode: 2560x1440 @ 165.000 Hz (preferred)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Variable refresh rate: supported, disabled</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Physical size: 340x190 mm</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Logical position: 0, 0</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Logical size: 1920x1080</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Scale: 1.3333333333333333</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Transform: normal</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Available modes:</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    2560x1440@165.000 (current, preferred)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    2560x1440@60.000 (preferred)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">……………………</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Output "Shenzhen KTC Technology Group H27T22C 0x00000001" (DP-2)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Current mode: 2560x1440 @ 180.000 Hz</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Variable refresh rate: supported, disabled</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Physical size: 600x330 mm</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Logical position: 1925, 0</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Logical size: 2560x1440</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Scale: 1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Transform: normal</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  Available modes:</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    2560x1440@59.951 (preferred)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    2560x1440@180.000 (current)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    2560x1440@164.999</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">………………</span><br/></div></code></pre></div></div>
+<p>记住<code>eDP-1</code>和<code>DP-2</code>这部分，然后在<code>avaliable modes</code>里找到自己需要的模式，格式为<code>分辨率@刷新率</code>。</p>
+</li>
+<li class="">
+<p>配置文件内修改<code>output{}</code></p>
+<p>左斜杠搜索<code>output</code>在示例配置下面自己写一个</p>
+<div class="language-rust codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-rust codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">output </span><span class="token string" style=color:#e3116c>"eDP-1"</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//分辨率和刷新率</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> mode </span><span class="token string" style=color:#e3116c>"2560x1440@165"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//缩放倍率</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> scale </span><span class="token number" style=color:#36acaa>1.33</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//位置，x=0 y=0代表最左上角</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> position x</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> y</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//启动时聚焦此显示器</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> focus</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">at</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">startup</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//取消下面这行的注释设置可变刷新率</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//variable-refresh-rate </span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//取消下面这行的注释可以设置旋转，参数有：90, 180, 270, flipped（水平翻转）, flipped-90（水平翻转后旋转）, flipped-180 and flipped-270</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//transform "90"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p>有多个显示器的话就再写一个<code>output{}</code>，把最左上角的显示器的位置设置为<code>position x=0 y=0</code>，然后计算其他显示器的位置。</p>
+<p>我的eDP-1显示器位置是<code>x=0 y=0</code>在最左上角，我想把DP-2显示器放在它的右边，那就要更改<code>x=0</code>的值。eDP-1是2560x1440分辨率，1.33缩放，那横向就是2560/1.33=1924.81203008，约等于1925。那我DP-2的位置就是<code>x=1925 y=0</code>。其他位置也是按照这个方法计算。想放在下面就修改y轴的值。设置了旋转的话计算的时候横竖的值也要对应旋转。</p>
+<div class="language-rust codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-rust codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"> output </span><span class="token string" style=color:#e3116c>"DP-2"</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> mode </span><span class="token string" style=color:#e3116c>"2560x1440@180"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> scale </span><span class="token number" style=color:#36acaa>1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> position x</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>1925</span><span class="token plain"> y</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=关闭鼠标加速>关闭鼠标加速<a href=#关闭鼠标加速 class=hash-link aria-label="Direct link to 关闭鼠标加速" title="Direct link to 关闭鼠标加速" translate=no>​</a></h2>
+<p><a href=https://github.com/YaLTeR/niri/wiki/Configuration:-Input target=_blank rel="noopener noreferrer" class="">niri_wiki_input</a></p>
+<p>找到<code>input{mouse{}</code>取消<code>accel-profile "flat"</code>的注释。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mouse {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //取消下面这行注释修改鼠标速度，正数加快，负数减慢</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //accel-speed -0.2</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //鼠标加速是默认开启的，设置这一行可以关闭鼠标加速度</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    accel-profile "flat"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //滚轮滚动速度，如果是负号的话会变更方向</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //scroll-factor horizontal=2.0 vertical=-1.0 </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=重要程序>重要程序<a href=#重要程序 class=hash-link aria-label="Direct link to 重要程序" title="Direct link to 重要程序" translate=no>​</a></h2>
+<p><a href=https://yalter.github.io/niri/Important-Software.html target=_blank rel="noopener noreferrer" class="">Niri-List-of-Important_Software</a></p>
+<p><a href=https://yalter.github.io/niri/Xwayland.html target=_blank rel="noopener noreferrer" class="">Niri-XWayland</a></p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S libnotify mako polkit-gnome </span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>mako</code>精简好用的通知服务</p>
+</blockquote>
+<blockquote>
+<p><code>polkit-gnome</code>需要管理员权限的软件会通过polkit询问权限，没有polkit的话就无法启动，例如<code>btrfs-assistant</code>。</p>
+</blockquote>
+</li>
+<li class="">
+<p>设置重要程序随着niri启动</p>
+<p>niri会话是作为systemd服务启动的，所以可以用systemd启动那些重要程序，但是修改niri配置文件会更方便移植。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<p>搜索<code>spawn-at-startup</code>，在合适的地方写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "mako"</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & disown </span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mako & disown </span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>&</code>代表在终端后台运行。</p>
+</blockquote>
+<blockquote>
+<p><code>disown</code>命令从终端解绑程序。</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li class="">
+<p>编辑mako的配置文件设置通知的显示时长</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/mako</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/mako/config</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">default-timeout=8000</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">border-radius=8</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">makoctl reload</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=修改系统语言为中文>修改系统语言为中文<a href=#修改系统语言为中文 class=hash-link aria-label="Direct link to 修改系统语言为中文" title="Direct link to 修改系统语言为中文" translate=no>​</a></h2>
+<p>利用配置文件提供的环境变量功能设置系统语言。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">environment {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    LANG "zh_CN.UTF-8"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    LC_CTYPE "en_US.UTF-8"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+<p>用<code>LANG</code>变量设置本地化使用中文。再把<code>LC_CTYPE</code>设置为英文解决输入法漏字的异常。</p>
+<ul>
+<li class="">
+<p>如果是archinstall安装，需要额外进行如下操作：</p>
+<ol>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/locale.gen </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>左斜杠键搜索，取消<code>zh_CN.UTF-8</code>的注释</p>
+</li>
+<li class="">
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo locale-gen</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>登出</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=安装中文输入法>安装中文输入法<a href=#安装中文输入法 class=hash-link aria-label="Direct link to 安装中文输入法" title="Direct link to 安装中文输入法" translate=no>​</a></h2>
+<ol start=0>
+<li class="">
+<p>需要<a class="" href=/docs/安装桌面环境前的准备#AUR%E5%8A%A9%E6%89%8B>添加archlinuxcn</a></p>
+</li>
+<li class="">
+<p>安装</p>
+<p>看中文输入法一节：<a class="" href=/docs/中文输入法>中文输入法</a></p>
+</li>
+<li class="">
+<p>设置环境变量</p>
+<p>在niri配置文件的<code>environment{}</code>里面写入<code>XMODIFIERS "@im=fcitx"</code>即可</p>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">fcitx5 -d</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "fcitx5" "-d"</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>可选：设置开关输入法的快捷键</p>
+<p>fcitx5会导致部分gtk应用无法弹出窗口，可以设置一个快捷键开启和关闭输入法。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Mod+F1 {spawn-sh "pkill fcitx5 || fcitx5";} </span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=配置图形化文档管理器>配置图形化文档管理器<a href=#配置图形化文档管理器 class=hash-link aria-label="Direct link to 配置图形化文档管理器" title="Direct link to 配置图形化文档管理器" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=nautilus>nautilus<a href=#nautilus class=hash-link aria-label="Direct link to nautilus" title="Direct link to nautilus" translate=no>​</a></h3>
+<p>安装<code>xdg-desktop-portal-gnome</code>会默认把<code>nautilus</code>装上，这是gnome的文档管理器。使用这条命令补全nautilus的功能。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S ffmpegthumbnailer gvfs-smb nautilus-open-any-terminal file-roller gnome-keyring gst-plugins-base gst-plugins-good gst-libav</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>ffmpegthumbnailer</code>视频预览</p>
+</blockquote>
+<blockquote>
+<p><code>gvfs-smb</code> 检查可挂载的外部设备，访问smb分享等功能</p>
+</blockquote>
+<blockquote>
+<p><code>nautilus-open-any-terminal</code> 右键从此处打开终端</p>
+</blockquote>
+<blockquote>
+<p><code>file-roller</code> 提供压缩解压缩功能</p>
+</blockquote>
+<blockquote>
+<p><code>gnome-keyring</code>提供密码保存功能。第一次保存密码会让你设置keyring的密码，可以空着。</p>
+</blockquote>
+<blockquote>
+<p><code>gst-plugins-base gst-plugins-good gst-libav</code>这些让你可以预览视频信息</p>
+</blockquote>
+<blockquote>
+<p>可选：</p>
+</blockquote>
+<blockquote>
+<p><code>nautilus-image-converter</code>右键方便调整图片大小或者旋转</p>
+</blockquote>
+<blockquote>
+<p><code>libheif webp-pixbuf-loader libopenraw gst-plugins-bad gst-plugins-ugly</code>提供更多视频、图片格式支持</p>
+</blockquote>
+<blockquote>
+<p><code>gnome-font-viewer</code>字体缩略图</p>
+</blockquote>
+<ul>
+<li class="">
+<p>更改默认终端为kitty</p>
+<p>安装<code>xdg-terminal-exec</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S xdg-terminal-exec</span><br/></div></code></pre></div></div>
+<p>编辑<code>~/.config/xdg-terminals.list</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">echo "kitty.desktop" > ~/.config/xdg-terminals.list</span><br/></div></code></pre></div></div>
+<p>如果有多个终端的话就按照顺序写多行。</p>
+</li>
+<li class="">
+<p>设置nautilus右键从此处打开kitty</p>
+<p>使用dbus设置dconf</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置右键从此处打开终端的shell为fish</p>
+<p>从nautilus右键打开kiity默认是bash，这里介绍另一种打开kitty就是fish的方法:</p>
+<p>可以修改kitty的配置文件设置kitty的shell为fish</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/kitty/kitty.conf</span><br/></div></code></pre></div></div>
+<p>写入</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">shell fish</span><br/></div></code></pre></div></div>
+<p>美化kitty的部分在这里：<a class="" href=/docs/终端美化#Kitty%E7%BE%8E%E5%8C%96>kitty美化</a></p>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<p>搜索bind</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Mod+E { spawn "nautilus";}</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>如果nautilus启动慢</p>
+<p>是因为gtk4使用的新的渲染器和n卡驱动工具之间有一些兼容性问题，即这个包：'nvidia-utils'，解决办法是编辑nautilus的环境变量，使用旧的渲染器。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">env GSK_RENDERER=gl nautilus</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>如果无法打开重命名窗口</p>
+<p>加上<code>GTK_IM_MODULE</code>环境变量</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">env GSK_RENDERER=gl GTK_IM_MODULE=fcitx nautilus</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=thunar>thunar<a href=#thunar class=hash-link aria-label="Direct link to thunar" title="Direct link to thunar" translate=no>​</a></h3>
+<p><a href=https://www.xfce.org/projects target=_blank rel="noopener noreferrer" class="">Xfce4-Projects</a></p>
+<p>如果你不想用nautilus，我推荐使用<code>xdg-desktop-portal-gtk</code>的thunar。thunar功能强大且内存占用仅50MB，推荐。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed xdg-desktop-portal-gtk thunar tumbler ffmpegthumbnailer poppler-glib gvfs-smb file-roller thunar-archive-plugin gnome-keyring thunar-volman gvfs-mtp gvfs-gphoto2 webp-pixbuf-loader</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>xdg-dekstop-portal-gtk</code>是gtk的xdg桌面门户</p>
+</blockquote>
+<blockquote>
+<p><code>tumbler</code>提供图片预览功能</p>
+</blockquote>
+<blockquote>
+<p><code>ffmpegthumbnailer</code>视频预览</p>
+</blockquote>
+<blockquote>
+<p><code>poppler-glib</code>pdf预览</p>
+</blockquote>
+<blockquote>
+<p><code>gvfs-smb</code> 检查可挂载的外部设备，访问smb分享等功能</p>
+</blockquote>
+<blockquote>
+<p><code>file-roller</code> 提供压缩解压缩功能</p>
+</blockquote>
+<blockquote>
+<p><code>thunar-archive-plugin</code>在thunar的右键菜单添加压缩解压缩选项</p>
+</blockquote>
+<blockquote>
+<p><code>gnome-keyring</code>提供密码保存功能。第一次保存密码会让你设置keyring的密码，可以空着。</p>
+</blockquote>
+<blockquote>
+<p><code>thunar-volman</code>自动管理移动硬盘等设备</p>
+</blockquote>
+<blockquote>
+<p><code>gvfs-mtp</code>连接手机</p>
+</blockquote>
+<blockquote>
+<p><code>gvfs-gphoto2</code>连相机</p>
+</blockquote>
+<blockquote>
+<p><code>webp-pixbuf-loader</code> webp缩略图</p>
+</blockquote>
+<p>远程服务器上的图片的缩略图预览功能需要在首选项里手动开启。</p>
+<ul>
+<li class="">
+<p>清理没什么用的侧边栏书签</p>
+<p>在侧边栏的空白处右键即可设置显示哪些东西</p>
+</li>
+<li class="">
+<p>右键从此处打开终端</p>
+<p>thunar提供了强大的自定义右键功能。</p>
+<p>点击左上角编辑 > 配置自定义动作 > 选中open in terminal here > 点击小齿轮 > 命令改成<code>kitty -e fish</code></p>
+</li>
+<li class="">
+<p>配置门户</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/xdg-desktop-portal/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/xdg-desktop-portal/niri-portals.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[preferred]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">default=gnome;gtk;</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">org.freedesktop.impl.portal.FileChooser=gtk</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>default=gnome;gtk;</code>设置默认portal是gnome，如果gnome不行就fallback到gtk。</p>
+</blockquote>
+<blockquote>
+<p><code>org.freedesktop.impl.portal.FileChooser=gtk</code>设置文件选择器用gtk</p>
+</blockquote>
+<p>如果你使用的是kde的dolphin，可以把gtk改成kde。</p>
+</li>
+<li class="">
+<p>如果使用dolphin没有默认应用菜单可以看</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S archlinux-xdg-menu</span><br/></div></code></pre></div></div>
+<p>编辑niri的环境变量</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">XDG_MENU_PREFIX "arch-"</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=锁屏>锁屏<a href=#锁屏 class=hash-link aria-label="Direct link to 锁屏" title="Direct link to 锁屏" translate=no>​</a></h2>
+<p>niri默认使用swaylock</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S swaylock-effects</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>创建目录并编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/swaylock</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/swaylock/config</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">screenshots</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">clock</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator-radius=200</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">indicator-thickness=15</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">effect-blur=10x5</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">font=Source Han Sans CN</span><br/></div></code></pre></div></div>
+<p>从上到下分别是：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">用桌面当背景</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">显示时钟</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">显示圆环</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">圆环大小</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">圆环粗细</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">背景模糊</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">字体（如果不设置这一项并且你没有设置fontconfig的话中文会乱码，具体使用什么字体取决于你安装了哪个字体。可以使用gnome-font-viewer查看）</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<p>niri配置文件默认设置了一个Mod+Alt+L锁屏的快捷键，可以搜索swaylock自行修改</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=自动熄屏锁屏睡眠>自动熄屏锁屏睡眠<a href=#自动熄屏锁屏睡眠 class=hash-link aria-label="Direct link to 自动熄屏锁屏睡眠" title="Direct link to 自动熄屏锁屏睡眠" translate=no>​</a></h2>
+<p>使用swayidle</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S swayidle</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>创建swayidle脚本</p>
+<p>虽然niri的wiki说可以使用systemd，但是为了方便移植，我使用脚本</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/niri/scripts</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/scripts/swayidle.sh</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">#!/usr/bin/env bash</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 5分钟锁屏，10分钟熄屏，20分钟睡眠</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># swaylock -f是前台运行swaylock，如果不加的话后续的timeout命令会不生效</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">swayidle -w \</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    timeout 300  'swaylock -f' \</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    timeout 600  'niri msg action power-off-monitors' \</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    resume       'niri msg action power-on-monitors' \</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    timeout 1200 'systemctl suspend' \</span><br/></div></code></pre></div></div>
+<blockquote>
+<p>因兼容性问题，此处会报错<code>Failed to parse get BlockInhibited property: Invalid argument</code>。属于正常情况，不影响脚本功能。</p>
+</blockquote>
+<p>添加可执行权限</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">chmod +x ~/.config/niri/scripts/swayidle.sh</span><br/></div></code></pre></div></div>
+<p>现在开启（此处会有一个报错，正常，无视就行）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">bash ~/.config/niri/scripts/swayidle.sh & disown</span><br/></div></code></pre></div></div>
+<p>设置自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "~/.config/niri/scripts/swayidle.sh"</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=蓝牙>蓝牙<a href=#蓝牙 class=hash-link aria-label="Direct link to 蓝牙" title="Direct link to 蓝牙" translate=no>​</a></h2>
+<p><a href=https://wiki.archlinux.org/title/Bluetooth target=_blank rel="noopener noreferrer" class="">ArchWiki-Bluetooth</a></p>
+<p>我这里使用bluetui。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S --needed bluez bluetui</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemctl enable --now bluetooth</span><br/></div></code></pre></div></div>
+<p><code>bluetui</code>可以打开终端交互界面</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=剪贴板>剪贴板<a href=#剪贴板 class=hash-link aria-label="Direct link to 剪贴板" title="Direct link to 剪贴板" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S cliphist wl-clipboard</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>wl-clipboard</code>是wayland合成器标配剪贴板工具。</p>
+</blockquote>
+<blockquote>
+<p><code>cliphist</code>提供剪贴板历史记录功能。</p>
+</blockquote>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">wl-paste --watch cliphist store & disown</span><br/></div></code></pre></div></div>
+<p>原理是开启<code>wl-paste --watch</code>监测剪贴板变化。每一次出现新条目时自动运行<code>cliphist store</code>保存到cliphist的历史记录里。</p>
+<p>cliphist保存的剪贴板历史可以通过<code>cliphist list</code>查看。</p>
+<p><code>cliphist decode</code>通过传入的cliphist<strong>列表序号</strong>解码真实的数据，这个数据存放在<code>.cache/cliphist/db</code></p>
+</li>
+<li class="">
+<p>设置守护进程自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "wl-paste" "--watch" "cliphist" "store"</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<ul>
+<li class="">
+<p>小游戏</p>
+<p>这里我们可以玩一些小游戏。安装<code>fzf</code>，这是一个模糊搜索、tui菜单程序。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S fzf</span><br/></div></code></pre></div></div>
+<p>复制点东西，运行：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cliphist list | fzf</span><br/></div></code></pre></div></div>
+<p>这条命令把cliphist的列表数据传给了fzf，你会得到一个可供选择的剪贴板历史菜单。回车任意选择一项，终端就会打印出<code>1    这是我的剪贴板历史</code>格式的内容，这是cliphist的列表数据格式。</p>
+<p>再试着运行以下命令：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cliphist list | fzf | cliphist decode</span><br/></div></code></pre></div></div>
+<p>通过<code>decode</code>，可以将列表数据转换为原本的剪贴板内容并打印在终端（注意，这不是简单的去掉序号，图片数据经过<code>decode</code>会从纯文字变成二进制数据）。</p>
+<p>接下来再试试运行这段命令：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cliphist list | fzf | cliphist decode | wl-copy</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>wl-copy</code>将数据写入当前剪贴板。</p>
+</blockquote>
+<p>至此，一个简易的剪贴板TUI就做好了，我觉得这很有趣，分享给你。这个小游戏里我们使用<code>fzf</code>处理数据，还可以使用别的东西，比如类似<code>fuzzel</code>的菜单程序，万变不离其宗，原理都是一样的。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cliphist | fuzzel -d | cliphist decode | wl-copy</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<ol>
+<li class="">
+<p>安装TUI</p>
+<p>我做的TUI，使用<code>kitty icat</code>进行图片预览，原理就是刚刚小游戏中的原理，占用仅7MB。</p>
+<p><a href=https://github.com/SHORiN-KiWATA/cliphist-tui target=_blank rel="noopener noreferrer" class="">https://github.com/SHORiN-KiWATA/cliphist-tui</a></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S cliphist-tui-git</span><br/></div></code></pre></div></div>
+<p>运行<code>cliphist-tui</code>命令就能打开</p>
+<p>记得设置TUI的快捷键：</p>
+<div class="language-rust codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-rust codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token class-name">Mod</span><span class="token operator" style=color:#393A34>+</span><span class="token class-name">Alt</span><span class="token operator" style=color:#393A34>+</span><span class="token class-name">V</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">spawn</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">sh </span><span class="token string" style=color:#e3116c>"kitty --single-instance --class cliphist-tui -e cliphist-tui"</span><span class="token punctuation" style=color:#393A34>;</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// 因为这是一个bash脚本，所以快捷键命令会长一些</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// --single-instance避免每次开kitty都新开进程导致不必要的内存占用</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// --class 指定要打开的kitty的app-id</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// -e 指定打开时自动运行的命令</span><br/></div></code></pre></div></div>
+<p>以浮动模式打开：</p>
+<div class="language-rust codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-rust codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">window</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">rule</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>//用app-id指定窗口</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token keyword" style=color:#00009f>match</span><span class="token plain"> app</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">id</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"cliphist-tui"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// 默认长宽</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">default</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">column</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">width </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> fixed </span><span class="token number" style=color:#36acaa>625</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    default</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">window</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">height </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> fixed </span><span class="token number" style=color:#36acaa>700</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//以浮动模式打开</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    open</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">floating </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>//默认打开位置，这里的x和y是偏移量。这里的例子是在顶部中心打开，y轴向下18个逻辑像素</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    default</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">floating</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">position x</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> y</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>18</span><span class="token plain"> relative</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">to</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"top"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=截图>截图<a href=#截图 class=hash-link aria-label="Direct link to 截图" title="Direct link to 截图" translate=no>​</a></h2>
+<p>niri自带了截图功能，不仅可以截区域，还可以截取窗口或者全屏，很好用。在配置文件搜索<code>screenshot</code>可以找到键位。<code>screenshot-path</code>可以设置壁纸保存的位置和文件名模板。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=编辑截图>编辑截图<a href=#编辑截图 class=hash-link aria-label="Direct link to 编辑截图" title="Direct link to 编辑截图" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S satty</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">
+<p>设置satty的复制命令为<code>wl-copy</code></p>
+<div class="language-bash codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-bash codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/satty</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/satty/config.toml</span><br/></div></code></pre></div></div>
+<div class="language-toml codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-toml codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[general]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">copy-command = "wl-copy"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">focus-toggles-toolbars= true</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">actions-on-right-click = ["save-to-clipboard"]</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<p>​  ><code>focus-toggles-toolbars= true</code>设置自动隐藏工具栏</p>
+<p>​  ><code>actions-on-right-click = ["save-to-clipboard"]</code>设置右键复制到剪贴板</p>
+<p>niri截图的命令行工具暂时不支持把图片的数据传给别的软件，但截图数据会自动保存到剪贴板，我们可以从剪贴板获取图片数据。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Mod+Shift+S {spawn-sh "wl-paste | satty -f -";}</span><br/></div></code></pre></div></div>
+<p>先用niri的截图工具截图（不论全屏、选择区域、聚焦窗口截图都可以），然后按下这个快捷键手动让satty读取剪贴板里的那张截图。最可控，最简单，无额外性能开销。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=屏幕分享>屏幕分享<a href=#屏幕分享 class=hash-link aria-label="Direct link to 屏幕分享" title="Direct link to 屏幕分享" translate=no>​</a></h2>
+<p>录屏推荐使用obs或者kooha。想要最好的录屏效果可以了解一下<code>wf-recorder</code>或<code>wl-screenrec</code>，<code>wl-screenrec</code>性能更好。</p>
+<p>niri通过gnome的xdg桌面门户进行屏幕分享，我们已经安装了，此时应该已经可以用了。如果无法使用的话设置：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-sh-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=niri & /usr/lib/xdg-desktop-portal-gnome"</span><br/></div></code></pre></div></div>
+<p>做两件事，通过<code>WAYLAND_DISPLAY</code>和<code>XDG_CURRENT_DESKTOP=niri</code>这两个变量让dbus和systemd知道我的当前wayland会话是哪个，桌面环境是什么。然后确保启动gnome的桌面门户提供屏幕分享功能。设置完之后要重启niri。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=软件商城>软件商城<a href=#软件商城 class=hash-link aria-label="Direct link to 软件商城" title="Direct link to 软件商城" translate=no>​</a></h2>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S bazaar</span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=alttab切换窗口>alt+tab切换窗口<a href=#alttab切换窗口 class=hash-link aria-label="Direct link to alt+tab切换窗口" title="Direct link to alt+tab切换窗口" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>niri自带</p>
+<p><a href=https://github.com/YaLTeR/niri/wiki/Configuration:-Recent-Windows target=_blank rel="noopener noreferrer" class="">https://github.com/YaLTeR/niri/wiki/Configuration:-Recent-Windows</a></p>
+</li>
+<li class="">
+<p>可选：niriswitcher</p>
+<p>（niri从25.11版本开始自带有缩略图预览的alt+tab切换功能，此配置不再必须）</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S niriswitcher</span><br/></div></code></pre></div></div>
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">niriswitcher & disown</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "niriswitcher"</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Alt+Tab repeat=false {spawn "niriswitcherctl" "show" "--window";}</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑niriswitcher的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/niriswitcher</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niriswitcher/config.toml</span><br/></div></code></pre></div></div>
+<p>设置只显示当前显示器</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">current_output_only = true</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">niriswitcher & disown</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=笔记本屏幕亮度调节>笔记本屏幕亮度调节<a href=#笔记本屏幕亮度调节 class=hash-link aria-label="Direct link to 笔记本屏幕亮度调节" title="Direct link to 笔记本屏幕亮度调节" translate=no>​</a></h2>
+<p>笔记本用户装这个包之后可以用笔记本键盘的快捷键调节屏幕亮度</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S brightnessctl</span><br/></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=壁纸切换>壁纸切换<a href=#壁纸切换 class=hash-link aria-label="Direct link to 壁纸切换" title="Direct link to 壁纸切换" translate=no>​</a></h2>
+<p>使用<code>awww</code>和<code>waypaper</code>。</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S awww waypaper</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>打开waypaper切换壁纸</p>
+</li>
+<li class="">
+<p>设置<code>awww-daemon</code>自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "awww-daemon"</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置快捷键</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">Mod+Alt+W {spawn "waypaper";}</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置窗口规则</p>
+<p>打开waypaper窗口，运行：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">niri msg pick-window</span><br/></div></code></pre></div></div>
+<p>选择waypaper窗口获取窗口信息，然后在niri的配置文件里面设置窗口规则</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">window-rule {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    match app-id="waypaper"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    open-floating true</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=面板任务栏>面板（任务栏）<a href=#面板任务栏 class=hash-link aria-label="Direct link to 面板（任务栏）" title="Direct link to 面板（任务栏）" translate=no>​</a></h2>
+<p><a href=https://github.com/Alexays/Waybar/wiki target=_blank rel="noopener noreferrer" class="">Github-Wiki-Waybar</a></p>
+<p>初学使用waybar即可</p>
+<ol>
+<li class="">
+<p>安装</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S waybar ttf-jetbrains-mono-nerd otf-font-awesome</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>ttf-jetbrains-mono-nerd</code>提供图标文字</p>
+</blockquote>
+<blockquote>
+<p><code>otf-font-awesome</code>是wayabr的基础字体包依赖</p>
+</blockquote>
+</li>
+<li class="">
+<p>现在启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">waybar & disown</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>开机自启</p>
+<p>编辑niri的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "waybar"</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置重启waybar的快捷键</p>
+<p>后续自定义waybar需要频繁更新waybar配置，所以设置一个重启waybar的快捷键。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<p>找到快捷键的部分，新增以下内容</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"> Mod+F12 {spawn-sh "pkill waybar || true && waybar";}</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>Mod+F12</code>设置具体的快捷键为Mod+F12</p>
+</blockquote>
+<blockquote>
+<p><code>{spawn-sh "";}</code>设置具体命令，与<code>spawn</code>不同，<code>spawn-sh</code>可以在引号里写入完整的命令，而<code>spawn</code>要把命令拆开放在多个引号里。</p>
+</blockquote>
+<blockquote>
+<p><code>pkill waybar</code>按照进程名字关闭waybar</p>
+</blockquote>
+<blockquote>
+<p><code>||</code>如果左边的命令运行失败则运行右边的命令</p>
+</blockquote>
+<blockquote>
+<p><code>true</code>输出一个运行成功的信号</p>
+</blockquote>
+<blockquote>
+<p><code>&&</code>如果运行成功则运行下一条命令</p>
+</blockquote>
+<blockquote>
+<p><code>waybar</code>开启waybar</p>
+</blockquote>
+<p>这段命令的完整意思是：尝试<code>pkill waybar</code>杀死waybar进程，成功则运行<code>waybar</code>开启waybar，失败（waybar尚未启动的情况下pkill会运行失败）则运行<code>true</code>发送成功信号触发<code>waybar</code>命令开启waybar。</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=使用我的配置>使用我的配置<a href=#使用我的配置 class=hash-link aria-label="Direct link to 使用我的配置" title="Direct link to 使用我的配置" translate=no>​</a></h3>
+<p>我之前直播重装niri的时候新配置了一个类似win11布局的waybar，可以基于壁纸自动更改颜色，有兴趣的可以使用。</p>
+<ol>
+<li class="">
+<p>安装依赖</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S --needed cava grim slurp hyprpicker waybar-niri-taskbar-git ddcutil-service</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>grim</code> 截图工具</p>
+</blockquote>
+<blockquote>
+<p><code>slurp</code>选取区域工具</p>
+</blockquote>
+<blockquote>
+<p><code>hyprpicker</code>提取屏幕颜色</p>
+</blockquote>
+<blockquote>
+<p><code>waybar-niri-taskbar-git</code>waybar的niri任务栏模块</p>
+</blockquote>
+<blockquote>
+<p><code>ddcutil-service</code>ddc调节外接屏幕亮度</p>
+</blockquote>
+<ul>
+<li class="">
+<p>ddcutil安装和使用方法</p>
+<p><a class="" href=/docs/我的GNOME自定义设置#%E8%B0%83%E8%8A%82%E5%A4%96%E6%8E%A5%E5%B1%8F%E5%B9%95%E4%BA%AE%E5%BA%A6>我的GNOME自定义设置#调节外接屏幕亮度</a></p>
+<p>需要添加组然后重启</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo gpasswd -a $USER i2c</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p>下载我的仓库</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">git clone https://github.com/SHORiN-KiWATA/ShorinArchExperience-ArchlinuxGuide.git</span><br/></div></code></pre></div></div>
+<p>找到<code>dotfiles/.config/waybar-niri-LikeWin11</code>文件夹，复制到<code>~/.config/</code>目录下，把文件夹重命名为<code>waybar</code></p>
+<p>重启waybar就可以啦</p>
+<p>PS：如果有模块无法正常使用的话检查一下<code>.config/waybar/modules.jsonc</code>里的脚本路径对不对。还有部分依赖由<code>shorin-conrtib-git</code>提供，按需安装和调整吧。</p>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=根据壁纸自动更改颜色>根据壁纸自动更改颜色<a href=#根据壁纸自动更改颜色 class=hash-link aria-label="Direct link to 根据壁纸自动更改颜色" title="Direct link to 根据壁纸自动更改颜色" translate=no>​</a></h4>
+<p>使用matugen根据壁纸生成颜色，让waybar自动变更颜色。</p>
+<ol>
+<li class="">
+<p>安装matugen</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yay -S matugen </span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>创建需要的目录和配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/matugen</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/matugen/templates</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>复制颜色模板</p>
+<p>找到我文档里的<code>dotfiles/.config/matugen/templates/</code>目录，把<code>colos.css</code>文件复制粘贴到<code>~/.config/matugen/templates</code>目录里。</p>
+</li>
+<li class="">
+<p>编辑matugen配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/matugen/config.toml</span><br/></div></code></pre></div></div>
+<p>写入如下内容：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[config.wallpaper]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">command = "awww"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">[templates.waybar]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">input_path = '~/.config/matugen/templates/colors.css'</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">output_path = '~/.config/waybar/colors.css'</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑waypaper的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/waypaper/config.ini</span><br/></div></code></pre></div></div>
+<p>把<code>post_command</code>改成：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">post_command = matugen image $wallpaper</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>使用wayppaer切换壁纸</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=niri配置文件修改>niri配置文件修改<a href=#niri配置文件修改 class=hash-link aria-label="Direct link to niri配置文件修改" title="Direct link to niri配置文件修改" translate=no>​</a></h2>
+<ol>
+<li class="">
+<p>全局窗口规则</p>
+<p>搜索<code>geometry-corner-radius</code>，会搜到一个被注释掉的window-rule，这是niri默认配置配置文件自带的全局生效的窗口规则。删除前面的<code>/-</code>取消注释：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">window-rule {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //圆角</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    geometry-corner-radius 8</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //剪掉圆角外的窗口内容</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    clip-to-geometry true</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //透明度</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    opacity 0.99</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //禁止边框画到窗口后面</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    draw-border-with-background false</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>边框</p>
+<p><code>focus-ring</code>可以调整窗口的边框。</p>
+</li>
+<li class="">
+<p>隐藏窗口的标题栏</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">prefer-no-csd</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>聚焦跟随鼠标</p>
+<p>搜索<code>focus-follows-mouse</code></p>
+</li>
+<li class="">
+<p>切换聚焦自动移动鼠标到聚焦窗口上</p>
+<p>搜索<code>warp-mouse-to-focus</code></p>
+</li>
+<li class="">
+<p>切换光标主题</p>
+<p>强烈推荐breeze光标主题</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S breeze-cursors</span><br/></div></code></pre></div></div>
+<p>在合适的位置写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cursor {</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //鼠标的光标主题</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    xcursor-theme "breeze_cursors"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //大小</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    xcursor-size 30</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    //闲置15s自动隐藏光标</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    hide-after-inactive-ms 15000</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=设置overview背景壁纸>设置overview背景壁纸<a href=#设置overview背景壁纸 class=hash-link aria-label="Direct link to 设置overview背景壁纸" title="Direct link to 设置overview背景壁纸" translate=no>​</a></h2>
+<p>任意壁纸程序都可以，这里以awww为例。</p>
+<ol>
+<li class="">
+<p>启用壁纸程序</p>
+<p>awww可以同时运行多个不同namespace的守护进程，所以我们可以创建一个专门用于overview壁纸的awww守护进程。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">awww-daemon -n overview</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>获取layer的namespace</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">niri msg layers</span><br/></div></code></pre></div></div>
+<p>会找到<code>awww-daemonoverview</code>这个layer</p>
+</li>
+<li class="">
+<p>niri配置文件里设置layer规则</p>
+<p>通过<code>place-within-backdrop true</code>这个规则把刚刚运行的壁纸程序放进overview</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">layer-rule{</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    match namespace="awww-daemonoverview"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    place-within-backdrop true</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">}</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置一个喜欢的壁纸</p>
+<p>需要用<code>-n</code>选项指定overview的awww守护进程</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">awww img 你喜欢的壁纸.png -n overview</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<p>然后你就可以发挥想象力了。比如利用<code>imagemagick</code>提供的<code>magick</code>命令自动把当前壁纸处理成模糊暗色版本放进overview之类的。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=可选大写锁定显示>可选：大写锁定显示<a href=#可选大写锁定显示 class=hash-link aria-label="Direct link to 可选：大写锁定显示" title="Direct link to 可选：大写锁定显示" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>swayosd</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo pacman -S swayosd</span><br/></div></code></pre></div></div>
+<p>开启监控输入的后端</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo systemctl enable --now swayosd-libinput-backend.service</span><br/></div></code></pre></div></div>
+<p>设置自动启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">spawn-at-startup "swayosd-server"</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=可选自动登录>可选：自动登录<a href=#可选自动登录 class=hash-link aria-label="Direct link to 可选：自动登录" title="Direct link to 可选：自动登录" translate=no>​</a></h2>
+<p>这一节配置完的效果是进入tty1自动登录，然后自动打开niri会话。完全不用输密码，不用输命令。适合单用户单桌面会话的情况。</p>
+<p><a href=https://wiki.archlinux.org/title/Getty target=_blank rel="noopener noreferrer" class="">ArchWiki-getty</a></p>
+<ul>
+<li class="">
+<p>自动登录tty</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo mkdir -p /etc/systemd/system/getty@tty1.service.d/</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">sudo vim /etc/systemd/system/getty@tty1.service.d/autologin.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[Service]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">ExecStart= </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">ExecStart=-/sbin/agetty --noreset --noclear --autologin shorin - ${TERM}</span><br/></div></code></pre></div></div>
+<p><code>shorin</code>改成要自动登录的账户的用户名</p>
+</li>
+<li class="">
+<p>自动启动niri</p>
+<p><a href=https://www.reddit.com/r/niri/comments/1kdgc08/autostarting_niri_without_a_dm/ target=_blank rel="noopener noreferrer" class="">Autostarting Niri without a DM</a></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkdir -p ~/.config/systemd/user</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/systemd/user/niri-autostart.service</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[Service]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">ExecStart=/usr/bin/niri-session</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">[Install]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">WantedBy=default.target</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">systemctl --user enable niri-autostart.service</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>重启电脑</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=拓展内容带blur的niri>拓展内容：带blur的niri<a href=#拓展内容带blur的niri class=hash-link aria-label="Direct link to 拓展内容：带blur的niri" title="Direct link to 拓展内容：带blur的niri" translate=no>​</a></h2>
+<p>安装<code>niri-git</code>包即可。</p>
+<ol>
+<li class="">
+<p>编辑niri配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim ~/.config/niri/config.kdl</span><br/></div></code></pre></div></div>
+<p>以下是我的推荐配置：</p>
+<div class="language-rust codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-rust codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// --- NIRI BLUR START ---</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// 顶层的blur配置，细节调整blur的效果</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">blur </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    passes </span><span class="token number" style=color:#36acaa>3</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    offset </span><span class="token number" style=color:#36acaa>3</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    noise </span><span class="token number" style=color:#36acaa>0.02</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    saturation </span><span class="token number" style=color:#36acaa>1.5</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// 全局窗口规则。让所有普通窗口以xray的形式显示blur。xray仅渲染一次模糊版本的背景，然后将其以类似“壁纸”的形式显示在窗口后面，不是实时渲染模糊，所以完全没有性能消耗。</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">window</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">rule </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    background</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">effect </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        xray </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        blur </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// 浮动窗口禁用xray可以实时渲染模糊效果但是性能消耗高，开启xray会穿过浮动窗口底下的窗口直接透视到桌面。看个人喜好选择禁用与否吧。</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">window</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">rule </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>match</span><span class="token plain"> is</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">floating</span><span class="token operator" style=color:#393A34>=</span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    background</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">effect </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        xray </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        blur </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// fuzzle专属的layer规则</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">layer</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">rule </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>match</span><span class="token plain"> namespace</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"^launcher$"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    geometry</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">corner</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">radius </span><span class="token number" style=color:#36acaa>8</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    background</span><span class="token operator" style=color:#393A34>-</span><span class="token plain">effect </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        xray </span><span class="token boolean" style=color:#36acaa>false</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        blur </span><span class="token boolean" style=color:#36acaa>true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// --- NIRI BLUR END ---</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=接下来你可以按照自己的需求决定安装什么软件当然你也可以选择参考我的>接下来你可以按照自己的需求决定安装什么软件。当然，你也可以选择参考我的<a href=#接下来你可以按照自己的需求决定安装什么软件当然你也可以选择参考我的 class=hash-link aria-label="Direct link to 接下来你可以按照自己的需求决定安装什么软件。当然，你也可以选择参考我的" title="Direct link to 接下来你可以按照自己的需求决定安装什么软件。当然，你也可以选择参考我的" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=下一节软件安装相关>下一节：<a class="" href=/docs/软件安装相关>软件安装相关</a><a href=#下一节软件安装相关 class=hash-link aria-label="Direct link to 下一节软件安装相关" title="Direct link to 下一节软件安装相关" translate=no>​</a></h2></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/安装Labwc><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>安装Labwc</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/安装Wayfire><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>安装Wayfire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#这是你在这篇文章之后能够获得的niri环境 class="table-of-contents__link toc-highlight">这是你在这篇文章之后能够获得的niri环境</a><li><a href=#什么是niri class="table-of-contents__link toc-highlight">什么是Niri？</a><li><a href=#可选更换shell为fish class="table-of-contents__link toc-highlight">可选：更换shell为fish</a><li><a href=#安装 class="table-of-contents__link toc-highlight">安装</a><li><a href=#显示器配置 class="table-of-contents__link toc-highlight">显示器配置</a><li><a href=#关闭鼠标加速 class="table-of-contents__link toc-highlight">关闭鼠标加速</a><li><a href=#重要程序 class="table-of-contents__link toc-highlight">重要程序</a><li><a href=#修改系统语言为中文 class="table-of-contents__link toc-highlight">修改系统语言为中文</a><li><a href=#安装中文输入法 class="table-of-contents__link toc-highlight">安装中文输入法</a><li><a href=#配置图形化文档管理器 class="table-of-contents__link toc-highlight">配置图形化文档管理器</a><ul><li><a href=#nautilus class="table-of-contents__link toc-highlight">nautilus</a><li><a href=#thunar class="table-of-contents__link toc-highlight">thunar</a></ul><li><a href=#锁屏 class="table-of-contents__link toc-highlight">锁屏</a><li><a href=#自动熄屏锁屏睡眠 class="table-of-contents__link toc-highlight">自动熄屏锁屏睡眠</a><li><a href=#蓝牙 class="table-of-contents__link toc-highlight">蓝牙</a><li><a href=#剪贴板 class="table-of-contents__link toc-highlight">剪贴板</a><li><a href=#截图 class="table-of-contents__link toc-highlight">截图</a><ul><li><a href=#编辑截图 class="table-of-contents__link toc-highlight">编辑截图</a></ul><li><a href=#屏幕分享 class="table-of-contents__link toc-highlight">屏幕分享</a><li><a href=#软件商城 class="table-of-contents__link toc-highlight">软件商城</a><li><a href=#alttab切换窗口 class="table-of-contents__link toc-highlight">alt+tab切换窗口</a><li><a href=#笔记本屏幕亮度调节 class="table-of-contents__link toc-highlight">笔记本屏幕亮度调节</a><li><a href=#壁纸切换 class="table-of-contents__link toc-highlight">壁纸切换</a><li><a href=#面板任务栏 class="table-of-contents__link toc-highlight">面板（任务栏）</a><ul><li><a href=#使用我的配置 class="table-of-contents__link toc-highlight">使用我的配置</a></ul><li><a href=#niri配置文件修改 class="table-of-contents__link toc-highlight">niri配置文件修改</a><li><a href=#设置overview背景壁纸 class="table-of-contents__link toc-highlight">设置overview背景壁纸</a><li><a href=#可选大写锁定显示 class="table-of-contents__link toc-highlight">可选：大写锁定显示</a><li><a href=#可选自动登录 class="table-of-contents__link toc-highlight">可选：自动登录</a><li><a href=#拓展内容带blur的niri class="table-of-contents__link toc-highlight">拓展内容：带blur的niri</a><ul><li><a href=#接下来你可以按照自己的需求决定安装什么软件当然你也可以选择参考我的 class="table-of-contents__link toc-highlight">接下来你可以按照自己的需求决定安装什么软件。当然，你也可以选择参考我的</a></ul><li><a href=#下一节软件安装相关 class="table-of-contents__link toc-highlight">下一节：软件安装相关</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>

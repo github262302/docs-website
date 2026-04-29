@@ -1,0 +1,803 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-安装ArchLinux" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>安装ArchLinux | Geek-guide</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://your-docusaurus-site.example.com/docs/安装ArchLinux /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="安装ArchLinux | Geek-guide"/><meta data-rh=true name=description content="- 重要概念讲解"/><meta data-rh=true property=og:description content="- 重要概念讲解"/><link data-rh=true rel=icon href=/ico.ico /><link data-rh=true rel=canonical href=https://your-docusaurus-site.example.com/docs/安装ArchLinux /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装ArchLinux hreflang=en /><link data-rh=true rel=alternate href=https://your-docusaurus-site.example.com/docs/安装ArchLinux hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://your-docusaurus-site.example.com/docs/安装ArchLinux","name":"安装ArchLinux","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.83642236.css /><script src=/assets/js/runtime~main.e64bb66d.js defer></script><script src=/assets/js/main.37a07b4d.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-9f6")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/download.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_tNiq href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--light_y5kC"/><img src=/img/download.png alt="ArchLinux Guide Logo" class="themedComponent_vPuE themedComponent--dark_RXpR"/></div><b class="navbar__title text--truncate">Geek-guide</b></a><a class="navbar__item navbar__link" href=/docs/Home>ArchLinux教程</a><a class="navbar__item navbar__link" sidebarid=docs2 href=/docs-my/mirror>Mirror</a><a class="navbar__item navbar__link" sidebarid=docs4 href=/docs-my/Archlinux/adduser>ArchLinux速通</a><a class="navbar__item navbar__link" sidebarid=shell href=/docs-my/shell/sshport>Shell</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide/wiki target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Archlinux原WIKI地址<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_Yc2M><use href=#theme-svg-external-link /></svg></a><div class="toggle_VdPD colorModeToggle_LjFY"><button class="clean-btn toggleButton_raZd toggleButtonDisabled_nXOV" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu lightToggleIcon_q3kj"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu darkToggleIcon_RAl8"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_Sqtu systemToggleIcon_VUtl"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_kyJr></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_lHum"><div class=docsWrapper_zRs4><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ziQN" type=button></button><div class=docRoot_PFFo><aside class="theme-doc-sidebar-container docSidebarContainer_QfBy"><div class=sidebarViewport_tKlA><div class=sidebar_xNOs><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_j77G"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Home><span title=Home class=linkLabel_IDvZ>Home</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Arch部署Astrbot><span title=Arch部署Astrbot class=linkLabel_IDvZ>Arch部署Astrbot</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/CachyOS><span title=CachyOS class=linkLabel_IDvZ>CachyOS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/KVM虚拟机><span title=KVM虚拟机 class=linkLabel_IDvZ>KVM虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/Linuxmint入门><span title=Linuxmint入门 class=linkLabel_IDvZ>Linuxmint入门</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/ShorinNiri功能介绍><span title=ShorinNiri功能介绍 class=linkLabel_IDvZ>ShorinNiri功能介绍</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/grub美化><span title=grub美化 class=linkLabel_IDvZ>grub美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/issues><span title=issues class=linkLabel_IDvZ>issues</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/nixos/><span title=nixos class=linkLabel_IDvZ>nixos</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/一键配置桌面环境><span title=一键配置桌面环境 class=linkLabel_IDvZ>一键配置桌面环境</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/中文输入法><span title=中文输入法 class=linkLabel_IDvZ>中文输入法</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/交流群><span title=交流群 class=linkLabel_IDvZ>交流群</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/代理><span title=代理 class=linkLabel_IDvZ>代理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/安装ArchLinux><span title=安装ArchLinux class=linkLabel_IDvZ>安装ArchLinux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装GNOME><span title=安装GNOME class=linkLabel_IDvZ>安装GNOME</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Hyprland><span title=安装Hyprland class=linkLabel_IDvZ>安装Hyprland</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装KDE><span title=安装KDE class=linkLabel_IDvZ>安装KDE</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Labwc><span title=安装Labwc class=linkLabel_IDvZ>安装Labwc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Niri><span title=安装Niri class=linkLabel_IDvZ>安装Niri</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装Wayfire><span title=安装Wayfire class=linkLabel_IDvZ>安装Wayfire</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装mangowc><span title=安装mangowc class=linkLabel_IDvZ>安装mangowc</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装任意Linux系统的前期准备工作><span title=安装任意Linux系统的前期准备工作 class=linkLabel_IDvZ>安装任意Linux系统的前期准备工作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境前的准备><span title=安装桌面环境前的准备 class=linkLabel_IDvZ>安装桌面环境前的准备</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/安装桌面环境或窗口管理器><span title=安装桌面环境或窗口管理器 class=linkLabel_IDvZ>安装桌面环境或窗口管理器</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/小技巧><span title=小技巧 class=linkLabel_IDvZ>小技巧</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/干净删除Linux><span title=干净删除Linux class=linkLabel_IDvZ>干净删除Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/快照和系统维护><span title=快照和系统维护 class=linkLabel_IDvZ>快照和系统维护</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/性能优化><span title=性能优化 class=linkLabel_IDvZ>性能优化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的GNOME自定义设置><span title=我的GNOME自定义设置 class=linkLabel_IDvZ>我的GNOME自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/我的KDE自定义设置><span title=我的KDE自定义设置 class=linkLabel_IDvZ>我的KDE自定义设置</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/手动安装省流版><span title=手动安装省流版 class=linkLabel_IDvZ>手动安装省流版</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡切换><span title=显卡切换 class=linkLabel_IDvZ>显卡切换</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/显卡驱动和硬件编解码><span title=显卡驱动和硬件编解码 class=linkLabel_IDvZ>显卡驱动和硬件编解码</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/热切换显卡直通><span title=热切换显卡直通 class=linkLabel_IDvZ>热切换显卡直通</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/玩游戏><span title=玩游戏 class=linkLabel_IDvZ>玩游戏</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/终端美化><span title=终端美化 class=linkLabel_IDvZ>终端美化</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/维护AUR包><span title=维护AUR包 class=linkLabel_IDvZ>维护AUR包</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/虚拟机><span title=虚拟机 class=linkLabel_IDvZ>虚拟机</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/软件安装相关><span title=软件安装相关 class=linkLabel_IDvZ>软件安装相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/附录><span title=附录 class=linkLabel_IDvZ>附录</span></a></ul></nav></div></div></aside><main class=docMainContainer_K3Of><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_AAYv"><div class=docItemContainer_Jipm><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_iWeZ" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_A9PO><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>安装ArchLinux</span></ul></nav><div class="tocCollapsible_OCXW theme-doc-toc-mobile tocMobile_Gpot"><button type=button class="clean-btn tocCollapsibleButton_b3Ul">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>安装ArchLinux</h1></header><ul>
+<li class="">
+<p><a href=#%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5%E8%AE%B2%E8%A7%A3 class="">重要概念讲解</a></p>
+</li>
+<li class="">
+<p><a href=#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85 class="">手动安装</a></p>
+</li>
+<li class="">
+<p><a href=#%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85 class="">脚本安装</a></p>
+</li>
+<li class="">
+<p><a class="" href=/docs/手动安装省流版>手动安装省流版</a></p>
+</li>
+</ul>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV19DBqB4EY4/?share_source=copy_web&vd_source=1c6a132d86487c8c4a29c7ff5cd8ac50" target=_blank rel="noopener noreferrer" class="">【从「Linuxmint入门」到「ArchLinux安装详解」桌面端Linux入门的最佳路径】</a></p>
+<p>两种安装方式，按需选择。脚本安装可能会出现意想不到的报错。新手建议先手动安装，把脚本安装当作重装系统的便利工具，否则日后出现问题自己不会解决。如果手动安装太难，就先使用开箱即用的Arch，比如CachyOS。</p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=重要概念讲解>重要概念讲解<a href=#重要概念讲解 class=hash-link aria-label="Direct link to 重要概念讲解" title="Direct link to 重要概念讲解" translate=no>​</a></h2>
+<p>太长不看的总结：ESP（启动分区）的挂载点通常是<code>/boot</code>，但是本文为了使用btrfs快照功能将其挂载到了<code>/efi</code>。grub安装路径从默认的<code>/boot/grub</code>移动到了<code>/efi/grub</code>。</p>
+<ul>
+<li class="">
+<p>Linux目录结构</p>
+<p>Linux的目录是由<code>/</code>左斜杠开头的树状结构，所以<code>/</code>被称为根目录（root目录）。例如<code>/home</code>就是根目录下的home目录，<code>/home/shorin</code>就是根目录下的home目录里面的shorin目录。</p>
+</li>
+<li class="">
+<p>挂载</p>
+<p>意思是把硬盘分区对应到某个目录。</p>
+</li>
+<li class="">
+<p>挂载点（mount point）</p>
+<p>假设把<code>/dev/nvme0n1</code>这个设备挂载到<code>/home</code>目录，那就称<code>/dev/nvme0n1</code>的挂载点为<code>/home</code>。</p>
+</li>
+<li class="">
+<p>文件系统</p>
+<p><a href=https://wiki.archlinux.org/title/File_systems target=_blank rel="noopener noreferrer" class="">archwiki file system</a></p>
+<p>文件系统决定了文件的存放和检索方式，不同的文件系统有不同的功能和特性。本文使用btrfs文件系统，最大的特点是快照（相当于存档和回档）。</p>
+</li>
+<li class="">
+<p>Bootloader引导程序</p>
+<p><a href=https://wiki.archlinux.org/title/Arch_boot_process#Boot_loader target=_blank rel="noopener noreferrer" class="">archwiki_arch_boot_process</a></p>
+<p>引导程序，用来引导系统启动。Grub最为常用。</p>
+</li>
+<li class="">
+<p>EFI系统分区（ESP）</p>
+<p><a href=https://wiki.archlinux.org/title/EFI_system_partition target=_blank rel="noopener noreferrer" class="">efi system partition</a></p>
+<p>一个特殊的分区，用于存放.efi文件，这是启动系统的“第一把钥匙”，文件系统必须是FAT。</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=esp挂载点>ESP挂载点<a href=#esp挂载点 class=hash-link aria-label="Direct link to ESP挂载点" title="Direct link to ESP挂载点" translate=no>​</a></h3>
+<p>常用挂载点为<code>/boot</code>、<code>/boot/efi</code>和<code>/efi</code>。具体挂载到哪里要看情况。</p>
+<ul>
+<li class="">
+<p>因素一：硬盘空间</p>
+<p><code>/boot</code>是最典型的挂载点，很多Bootloader程序只有ESP挂载点为<code>/boot</code>时才能正常工作，但是<code>/boot</code>存放着系统启动和初始化相关的文件，在多内核的情况下需要1g甚至2g空间。</p>
+</li>
+<li class="">
+<p>因素二：文件系统</p>
+<p>ESP是FAT文件系统，无法被btrfs快照记录和恢复，所以使用btrfs文件系统时ESP不能挂载到<code>/boot</code>。</p>
+<p>假设创建快照时的内核版本是6.16，然后更新到了6.17，然后用快照回档。此时你的系统文件会被恢复到6.16，但是<code>/boot</code>里的内核文件和initramfs因为存储在FAT文件系统导致没能回档，版本仍然是6.17。两者版本不一致导致系统无法正常启动。为了避免这种情况，使用btrfs时ESP的挂载点应该是<code>/boot/efi</code>或者<code>/efi</code>。因为<code>/efi</code>是扁平布局更加简洁，所以此时的推荐挂载点为<code>/efi</code>。</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=手动安装>手动安装<a href=#手动安装 class=hash-link aria-label="Direct link to 手动安装" title="Direct link to 手动安装" translate=no>​</a></h2>
+<p>参考链接：</p>
+<p><a href=https://arch.icekylin.online/ target=_blank rel="noopener noreferrer" class="">archlinux 简明指南</a></p>
+<p><a href=https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97 target=_blank rel="noopener noreferrer" class="">安装指南 - Arch Linux 中文维基</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=可选调大字体>可选：调大字体<a href=#可选调大字体 class=hash-link aria-label="Direct link to 可选：调大字体" title="Direct link to 可选：调大字体" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">setfont ter-v32n</span><br/></div></code></pre></div></div>
+<p>或者</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">setfont -d</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=确认是uefi固件>确认是UEFI固件<a href=#确认是uefi固件 class=hash-link aria-label="Direct link to 确认是UEFI固件" title="Direct link to 确认是UEFI固件" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cat /sys/firmware/efi/fw_platform_size</span><br/></div></code></pre></div></div>
+<blockquote>
+<p><code>cat</code>命令将文件内容打印在终端</p>
+</blockquote>
+<blockquote>
+<p><code>/sys/firmware/efi/fw_platform_size</code>这是一个文件的绝对路径</p>
+</blockquote>
+<p>如果输出<code>64</code>，说明主板是64位x64 UEFI固件；如果输出<code>32</code>，说明是32位UEFI；如果提示<code>No such file or directory</code>没有文件或目录，说明是BIOS。本文只涉及x64 UEFI情况下安装，如果你不是的话安装引导的步骤会不一样，可以查阅<a href=https://wiki.archlinux.org/title/GRUB#GUID_Partition_Table_(GPT)_specific_instructions target=_blank rel="noopener noreferrer" class="">ArchWiki_Grub</a>。</p>
+<p>如果你是虚拟机，并且是BIOS固件，推荐在虚拟机设置里调整为UEFI。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=连接网络>连接网络<a href=#连接网络 class=hash-link aria-label="Direct link to 连接网络" title="Direct link to 连接网络" translate=no>​</a></h3>
+<p>有线网自动连接，还可以用数据线分享手机的网络。</p>
+<p>确认网络连接使用：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">ip a #查看网络连接信息，如果出现了紫色的ip地址说明成功连接</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">ping bilibili.com #确认网络正常</span><br/></div></code></pre></div></div>
+<p>Ctrl+C可以中止正在运行的命令。</p>
+<ul>
+<li class="">
+<p>使用iwctl命令行工具连接wifi（此工具由<code>iwd</code>提供）</p>
+<ol>
+<li class="">
+<p>启动</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">iwctl</span><br/></div></code></pre></div></div>
+<p>此时会进入iwctl，提示符会产生变化。</p>
+</li>
+<li class="">
+<p>连接</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">device list #列出设备</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">station wlan0 scan #扫描网络</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">station wlan0 get-networks #列出所有扫描的的wifi</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">station wlan0 connect 【此处是你的wifi名字（不能是中文）】</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>退出iwctl</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">exit</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=确认开启了ntp网络时间协议>确认开启了NTP（网络时间协议）<a href=#确认开启了ntp网络时间协议 class=hash-link aria-label="Direct link to 确认开启了NTP（网络时间协议）" title="Direct link to 确认开启了NTP（网络时间协议）" translate=no>​</a></h3>
+<p>运行<code>timedatectl</code>，应该会在输出看到NTP已经开启，否则在安装时可能会出现验证方面的报错：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">NTP service: active</span><br/></div></code></pre></div></div>
+<p>手动开启使用：</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">timedatectl set-ntp true </span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=reflector自动设置镜像源>reflector自动设置镜像源<a href=#reflector自动设置镜像源 class=hash-link aria-label="Direct link to reflector自动设置镜像源" title="Direct link to reflector自动设置镜像源" translate=no>​</a></h3>
+<p>用<code>reflector</code>配置最快最新的镜像源，大幅提高软件下载速度。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reflector -p https -a 12 -c cn --v --sort rate --save /etc/pacman.d/mirrorlist </span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -p（protocol） https 指定https协议的链接</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -a（age） 12 指定最近24小时更新过的源</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -c（country） cn 指定国家为中国（可以增加邻国）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># --v（verbose） 过程可视化</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># --sort rate 按照下载速度排序（经过前面几道筛选，镜像源通常已经足够稳定，所以这里直接按照速度排序即可）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># --save /etc/pacman.d/mirrorlist 将结果保存到/etc/pacman.d/mirrorlist</span><br/></div></code></pre></div></div>
+<p>然后同步软件列表数据</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -Sy</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=可选探索linux文件>可选：探索Linux文件<a href=#可选探索linux文件 class=hash-link aria-label="Direct link to 可选：探索Linux文件" title="Direct link to 可选：探索Linux文件" translate=no>​</a></h3>
+<p>我们从u盘加载的其实也是一个archlinux系统，称为live环境。如果你有兴趣，可以安装一个终端管理器查看当前Live环境的目录。（btw，我把live环境称作icu）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S yazi</span><br/></div></code></pre></div></div>
+<p><a href=https://yazi-rs.github.io/ target=_blank rel="noopener noreferrer" class="">yazi</a>是好用的终端文档管理器，功能方便的同时内存占用也很低。如果<code>yazi</code>出现依赖问题安装失败可以试试同时安装<code>lua</code>和<code>yazi</code>，或者使用<a href=https://github.com/ranger/ranger target=_blank rel="noopener noreferrer" class="">ranger</a>。</p>
+<p>用<code>yazi</code>命令开启鸭子（ranger使用<code>ranger</code>命令开启）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">yazi</span><br/></div></code></pre></div></div>
+<p>此时应该会处在一个空的/root目录，按左方向键切换到上级目录。</p>
+<p>左中右三块区域，左边是上级目录，中间是当前目录，右边是下级目录。上下左右键切换（或者使用vim key，jkhl对应上下左右）。</p>
+<p>我重点提几个。</p>
+<ul>
+<li class="">
+<p><code>/bin</code> 存放二进制可执行文件，可以找到我们之前运行过的<code>pacman</code> <code>timedatectl</code> <code>reflector</code>之类的命令</p>
+</li>
+<li class="">
+<p><code>/dev</code> 存放硬件设备对应的文件。（是的，硬件在linux上也以文件的形式存在）</p>
+</li>
+<li class="">
+<p><code>/etc</code> 系统级配置文件。比如pacman包管理器的配置、grub引导程序的配置等等。</p>
+</li>
+<li class="">
+<p><code>/home</code> 普通用户的家目录，存放用户数据。如果新建了一个名叫shorin的用户，那么他的所有文件都会存放在<code>/home/shorin</code></p>
+</li>
+<li class="">
+<p><code>/boot</code> 存放内核、initramfs（系统初始化相关）等文件。这个目录下的文件和系统的启动息息相关。</p>
+</li>
+<li class="">
+<p><code>/mnt</code> 用来手动临时挂在外部存储设备，比如我们接下来安装系统要使用的系统分区。</p>
+</li>
+<li class="">
+<p><code>/tmp</code> 这里面的数据存储在内存中，重启后会消失。</p>
+</li>
+</ul>
+<p>其他的目录有兴趣的可以自己了解一下。</p>
+<p>q键退出yazi。<code>ctrl+L</code>清屏。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=硬盘分区>硬盘分区<a href=#硬盘分区 class=hash-link aria-label="Direct link to 硬盘分区" title="Direct link to 硬盘分区" translate=no>​</a></h3>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">lsblk -pf  #查看当前分区情况</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">fdisk -l /dev/想要查询详细情况的硬盘  #小写字母l，查看详细分区信息</span><br/></div></code></pre></div></div>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cfdisk /dev/nvme0n1 #选择自己要使用的硬盘进行分区</span><br/></div></code></pre></div></div>
+<ol>
+<li class="">
+<p>如果是新硬盘的话会弹出选项，选GPT。</p>
+</li>
+<li class="">
+<p>efi分区</p>
+<p>上下方向键选中空闲空间，左右方向键选择NEW创建512MB的分区，类型（type）选择efi system。</p>
+<p>PS：如果你的类型里没有efi system说明你的硬盘不是gpt分区表，可以使用<code>cfdisk -z 设备名</code>以空分区表打开硬盘，选择gpt分区表即可。⚠️警告⚠️ 这个操作会清空硬盘上的分区。</p>
+<p>PS：也可以直接使用windows的efi，如果使用win的efi分区的话跳过下面格式化efi分区的步骤（windows更新会搞坏linux的引导，建议给linux单独创建efi分区）。</p>
+</li>
+<li class="">
+<p>根分区</p>
+<p>其余空间全部分到一个分区里，类型linux filesystem不需要更改。</p>
+</li>
+<li class="">
+<p>保存</p>
+<p>选择<code>write</code>，输入<code>yes</code>保存。<code>quit</code>退出。</p>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=格式化分区>格式化分区<a href=#格式化分区 class=hash-link aria-label="Direct link to 格式化分区" title="Direct link to 格式化分区" translate=no>​</a></h4>
+<p>通过格式化创建需要的文件系统</p>
+<ol>
+<li class="">
+<p>再次查看分区情况</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">lsblk -pf #查看分区情况</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">fdisk -l /dev/想要查询详细情况的硬盘  #小写字母l，查看详细分区信息</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>格式化efi分区</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkfs.fat -F 32 /dev/nvme0n1p1（EFI分区名）</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>格式化btrfs根分区</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mkfs.btrfs /dev/nvme0n1p2（根分区名）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">#加上-f参数可以强制格式化</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=创建btrfs子卷>创建btrfs子卷<a href=#创建btrfs子卷 class=hash-link aria-label="Direct link to 创建btrfs子卷" title="Direct link to 创建btrfs子卷" translate=no>​</a></h4>
+<p>子卷是btrfs的一个特性，跟快照有关。通常至少要创建root子卷（存放系统文件）和home子卷（存放用户文件），根据命名规范取名为<code>@</code>和<code>@home</code>。由于这两者是平级关系，所以创建<code>@</code>快照时不会包含<code>@home</code>中的内容。这样就可以只恢复系统文件，不影响用户数据。</p>
+<ul>
+<li class="">
+<p>挂载</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mount -t btrfs /dev/nvme0n1p2（根分区名） /mnt</span><br/></div></code></pre></div></div>
+<p><code>mount</code>挂载命令；</p>
+<p><code>-t</code>指定文件系统；</p>
+<p>这条命令把<code>/dev/nvme0n1p2</code>分区挂载到了<code>/mnt</code>目录，而<code>/dev/nvme0n1p2</code>是我们将要安装的系统的<code>根分区</code>，这意味着<code>/mnt</code>成为了我们将要安装的系统的<code>根</code>。</p>
+</li>
+<li class="">
+<p>创建子卷</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">btrfs subvolume create /mnt/@</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">btrfs subvolume create /mnt/@home</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">btrfs subvolume create /mnt/@swap #不需要休眠到硬盘功能的话跳过这个</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>可选：确认</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">btrfs subvolume list /mnt</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>取消挂载</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">umount /mnt</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=正式挂载>正式挂载<a href=#正式挂载 class=hash-link aria-label="Direct link to 正式挂载" title="Direct link to 正式挂载" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p>挂载root子卷</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme0n1p2 /mnt</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -o 指定额外的挂载参数</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># compress=zstd 指定透明压缩，zstd是压缩算法</span><br/></div></code></pre></div></div>
+<p>和刚刚的挂载是一样的操作，不过这次是把<code>/dev/nvme0n1p2上</code>的<code>@</code>子卷挂载到了<code>/mnt</code>，而不是把<code>/dev/nvme0n1p2</code>挂载到<code>/mnt</code>。</p>
+<p><code>compress</code>是btrfs的另一个特性，透明压缩。在数据写入磁盘前先进行压缩，提升读写性能，节省空间，延长寿命。可以像这样zstd:3指定压缩等级，最高15。默认为3，在意cpu性能可以设置成1。</p>
+</li>
+<li class="">
+<p>挂载home子卷</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mount --mkdir -t btrfs -o subvol=/@home,compress=zstd /dev/nvme0n1p2 /mnt/home</span><br/></div></code></pre></div></div>
+<p>由于<code>/mnt</code>下没有<code>/mnt/home</code>这个目录，所以要加上<code>--mkdir</code>命令创建<code>/mnt/home</code>用来挂载。把<code>@home</code>子卷挂载到了<code>/mnt/home</code>。</p>
+</li>
+<li class="">
+<p>可选：挂载swap子卷（不需要休眠功能的话跳过这一步）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mount --mkdir -t btrfs -o subvol=/@swap,compress=zstd /dev/nvme0n1p2 /mnt/swap</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>挂载efi分区（ESP）</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">mount --mkdir /dev/nvme0n1p1 /mnt/efi</span><br/></div></code></pre></div></div>
+<p>记得把<code>/dev/nvme0n1p1</code>替换为自己对应的efi分区设备名。</p>
+</li>
+<li class="">
+<p>可选：复查挂载情况</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">df -h</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=安装系统>安装系统<a href=#安装系统 class=hash-link aria-label="Direct link to 安装系统" title="Direct link to 安装系统" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacstrap -K /mnt base base-devel linux linux-firmware btrfs-progs networkmanager vim sudo amd-ucode</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -K 初始化密钥</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># base-devel是编译其他软件的时候用的</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># linux是内核，可以更换</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># linux-firmware是固件</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># btrfs-progs是btrfs文件系统的管理工具</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># networkmanager 是联网用的，是各个桌面环境标配的联网工具</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># vim 是文本编辑器，也可以换成别的，比如nano、neovim</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># sudo 和权限管理有关</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># amd-ucode 是微码，用来修复和优化cpu，intel用户安装intel-ucode</span><br/></div></code></pre></div></div>
+<p><code>pacstrap</code>命令是把软件安装到指定的根目录下。</p>
+<p>注意：如果你使用的是marvell的无线网卡，这里要额外安装<code>linux-firmware-marvell</code>，否则进系统找不到网卡。</p>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=️没有联网软件的话一会安装完系统连不了网️>⚠️没有联网软件的话一会安装完系统连不了网⚠️<a href=#️没有联网软件的话一会安装完系统连不了网️ class=hash-link aria-label="Direct link to ⚠️没有联网软件的话一会安装完系统连不了网⚠️" title="Direct link to ⚠️没有联网软件的话一会安装完系统连不了网⚠️" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_AJoT" id=vim文本编辑器基础操作>vim文本编辑器基础操作<a href=#vim文本编辑器基础操作 class=hash-link aria-label="Direct link to vim文本编辑器基础操作" title="Direct link to vim文本编辑器基础操作" translate=no>​</a></h4>
+<p>vim是以键盘操作为核心理念的文本编辑器，很陌生，但是绝对值得一学。</p>
+<p><code>i</code>键进入编辑模式；</p>
+<p><code>esc</code> 回到普通模式；</p>
+<p><code>u</code> 撤销；</p>
+<p><code>/</code>左斜杠进入搜索模式，回车跳转到搜索到的第一个，<code>n</code>n键跳转到搜索到的下一个，<code>Shift+n</code>跳转到搜索到的上一个；</p>
+<p><code>:w</code> 冒号小写w写入；</p>
+<p><code>:q</code> 冒号小写q退出；</p>
+<p><code>:wq</code>冒号小写wq保存并退出；</p>
+<p><code>!</code>命令后加上感叹号代表强制执行。</p>
+<p>知道这些就可以开始使用了。不习惯的话可以安装<code>nano</code>。<code>nano</code>的基础操作只需要记住<code>Ctrl+F</code>搜索、<code>Ctrl+S</code>保存和<code>Ctrl+X</code>退出即可。你也可以选择安装<code>neovim</code>，vim的加强版，更现代更好用。如果安装<code>neovim</code>的话后面所有<code>vim</code>命令都改成<code>nvim</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=可选swap交换空间>可选：swap交换空间<a href=#可选swap交换空间 class=hash-link aria-label="Direct link to 可选：swap交换空间" title="Direct link to 可选：swap交换空间" translate=no>​</a></h3>
+<p>参考链接：</p>
+<p><a href=https://wiki.archlinuxcn.org/wiki/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/%E6%8C%82%E8%B5%B7%E4%B8%8E%E4%BC%91%E7%9C%A0#%E7%A6%81%E7%94%A8_zswap_%E5%86%99%E5%9B%9E%E4%BB%A5%E4%BB%85%E5%B0%86%E4%BA%A4%E6%8D%A2%E7%A9%BA%E9%97%B4%E7%94%A8%E4%BA%8E%E4%BC%91%E7%9C%A0 target=_blank rel="noopener noreferrer" class="">电源管理/挂起与睡眠 - Arch Linux 中文维基</a></p>
+<p><a href=https://wiki.archlinux.org/title/Swap target=_blank rel="noopener noreferrer" class="">Swap - ArchWiki</a></p>
+<p><a href=https://wiki.manjaro.org/index.php/Swap target=_blank rel="noopener noreferrer" class="">Swap - Manjaro</a></p>
+<p>swap用来存放内存中的冷数据，提高电脑的运行速度。还能把硬盘当作虚拟内存使用。设置了硬盘swap还可以使用休眠功能。休眠指的是把系统当前状态写入硬盘，然后电脑完全断电，下一次开机恢复到休眠前的状态。硬盘swap有swap分区或者swap文件两种方式，前者配置更简单，后者配置稍复杂，但是更加灵活。这里采用交换文件的方式。</p>
+<p>内存swap比硬盘swap更合适现代设备，如果你不需要休眠功能的话跳过这一步，后续会有将内存用作swap的设置（zram）。</p>
+<p>swap大小参考：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>内存(GB)<th>不需要休眠(GB)<th>需要休眠（GB）<th>不建议超过（GB）<tbody><tr><td>1<td>1<td>2<td>2<tr><td>2<td>2<td>3<td>4<tr><td>3<td>3<td>5<td>6<tr><td>4<td>4<td>6<td>8<tr><td>5<td>2<td>7<td>10<tr><td>6<td>2<td>8<td>12<tr><td>8<td>3<td>11<td>16<tr><td>12<td>3<td>15<td>24<tr><td>16<td>4<td>20<td>32<tr><td>24<td>5<td>29<td>48<tr><td>32<td>6<td>38<td>64<tr><td>64<td>8<td>72<td>128<tr><td>128<td>11<td>139<td>256<tr><td>256<td>16<td>272<td>512</table>
+<ol>
+<li class="">
+<p>创建swap文件</p>
+<p>此处的<code>64g</code>应该是你实际需求的swap大小</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">btrfs filesystem mkswapfile --size 64g --uuid clear /mnt/swap/swapfile</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>启动swap</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">swapon /mnt/swap/swapfile</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=生成fstab文件>生成fstab文件<a href=#生成fstab文件 class=hash-link aria-label="Direct link to 生成fstab文件" title="Direct link to 生成fstab文件" translate=no>​</a></h3>
+<p>系统会根据fstab中的内容自动进行挂载。</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">genfstab -U /mnt > /mnt/etc/fstab</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># genfstab（生成文件系统表）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -U 用uuid指定分区</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># > 大于号代表输出结果覆盖写入到有右边的文件里</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 如果是>>两个大于号则代表追加写入</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=更换根目录change-root>更换根目录（change root）<a href=#更换根目录change-root class=hash-link aria-label="Direct link to 更换根目录（change root）" title="Direct link to 更换根目录（change root）" translate=no>​</a></h3>
+<p>进入刚刚安装的系统</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">arch-chroot /mnt</span><br/></div></code></pre></div></div>
+<p>此时根目录从live环境变成了/mnt，可以注意到提示符的变化。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=设置时间和时区>设置时间和时区<a href=#设置时间和时区 class=hash-link aria-label="Direct link to 设置时间和时区" title="Direct link to 设置时间和时区" translate=no>​</a></h3>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">timedatectl set-timezone Asia/Shanghai</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">hwclock --systohc </span><br/></div></code></pre></div></div>
+<p><code>hwclock --systohc</code>生成调节时间误差的文件。</p>
+<p>除了<code>timedatectl</code>命令，还可以手动创建链接。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># ln 是link的缩写</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -s代表跨文件系统的软链接</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># -f代表强制执行</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=本地化设置>本地化设置<a href=#本地化设置 class=hash-link aria-label="Direct link to 本地化设置" title="Direct link to 本地化设置" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/locale.gen</span><br/></div></code></pre></div></div>
+<p>左斜杠键进行搜索；<code>x键</code>剪贴掉<code>en_US.UTF-8 UTF-8</code>和<code>zh_CN.UTF-8 UTF-8</code>的前面代表注释的井号；<code>:wq</code>保存并退出。</p>
+</li>
+<li class="">
+<p>生成本地化配置</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">locale-gen</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>设置系统语言</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/locale.conf</span><br/></div></code></pre></div></div>
+<p><code>i</code>键进入编辑模式；写入<code>LANG=en_US.UTF-8</code>设置系统语言为英文；</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">LANG=en_US.UTF-8</span><br/></div></code></pre></div></div>
+<p><code>esc</code>退出编辑模式；<code>:wq</code>保存并退出。</p>
+<p><code>/etc/locale.conf</code>这个文件是系统级的语言设置，<code>zh_CN.UTF-8</code>是中文，但是会导致tty的中文字符全部变成豆腐块，所以不建议这么做。后续安装完桌面环境后在用户空间修改系统语言。</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=设置主机名>设置主机名<a href=#设置主机名 class=hash-link aria-label="Direct link to 设置主机名" title="Direct link to 设置主机名" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/hostname</span><br/></div></code></pre></div></div>
+<p><code>i</code>键进入编辑模式；取一个自己喜欢的主机名，比如<code>archlinux</code>；<code>esc</code>退出编辑模式；<code>:wq</code>保存并退出。</p>
+<p>PS：此时你应该已经相当熟悉vim编辑器最基本的操作了，所以后面我会省略vim的操作讲解。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=设置root密码>设置root密码<a href=#设置root密码 class=hash-link aria-label="Direct link to 设置root密码" title="Direct link to 设置root密码" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">passwd </span><br/></div></code></pre></div></div>
+<p>输入过程不显示，直接输入回车即可。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=安装引导程序>安装引导程序<a href=#安装引导程序 class=hash-link aria-label="Direct link to 安装引导程序" title="Direct link to 安装引导程序" translate=no>​</a></h3>
+<p>这是uefi引导的安装方式，如果你是bios设备请看archwiki的grub页面。</p>
+<p>就像前面<a href=#%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5%E8%AE%B2%E8%A7%A3 class="">重要概念讲解</a>部分说的那样，根据ESP挂载点和个人需求的不同，bootloader的选择也会不同。这里安装最常用的<code>grub</code>，采用的是ESP挂载点为<code>/efi</code>且<code>grub</code>装进ESP的方案。</p>
+<ol>
+<li class="">
+<p>安装必要的软件包</p>
+<div class="language-shell codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-shell codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S grub efibootmgr os-prober exfat-utils</span><br/></div></code></pre></div></div>
+<p><code>efibootmgr</code> 管理uefi启动项；</p>
+<p><code>os-prober</code>和<code>exfat-utils</code> 用来搜索win11（不配置双系统的话可以不装）。</p>
+</li>
+<li class="">
+<p>安装grub</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grub-install --target=x86_64-efi --efi-directory=/efi --boot-directory=/efi --bootloader-id=ARCH </span><br/></div></code></pre></div></div>
+<p><code>grub-install</code>安装grub；</p>
+<p><code>--target</code> 指定架构；</p>
+<p><code>--efi-directory</code> 指定ESP位置；</p>
+<p><code>--boot-directory</code> 指定grub的安装目录；</p>
+<p><code>--bootloader-id</code> 任意取一个启动项名字；</p>
+<p>PS：如果是移动设备或者主板只支持默认的efi路径要加上<code>--removable</code>选项。</p>
+</li>
+<li class="">
+<p>编辑grub的源文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/default/grub</span><br/></div></code></pre></div></div>
+<p>这是生成grub的配置文件时需要用到的东西。</p>
+<ul>
+<li class="">
+<p>启动项记忆功能</p>
+<p><code>GRUB_DEFAULT=0</code>改成<code>=saved</code>，再取消<code>GRUB_SAVEDEFAULT=true</code>的注释。</p>
+</li>
+<li class="">
+<p>显示开机日志</p>
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT</code>里面去掉<code>quiet</code>以显示开机日志。再设置<code>loglevel=5</code>把日志等级为5。<code>loglevel</code>共7级，5级是一个信息量的平衡点。</p>
+</li>
+<li class="">
+<p>禁用watchdog</p>
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT</code>里添加<code>nowatchdog</code>以及<code>modprobe.blacklist=sp5100_tco</code>。intelcpu用户把<code>sp5100_tco</code>换成<code>iTCO_wdt</code></p>
+<p>watchdog的目的简单来说是在系统死机的时候自动重启系统。对个人用户来说没有意义，禁用以节省系统资源、提高开机和关机速度。</p>
+</li>
+<li class="">
+<p>允许使用os-prober搜索其他系统</p>
+<p>取消最后一行<code>GRUB_DISABLE_OS_PROBER=false</code>的注释。</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>在grub的默认安装位置创建链接</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">ln -sf /efi/grub /boot/grub</span><br/></div></code></pre></div></div>
+<p>大多数程序会默认检测<code>/boot/grub</code>作为grub的安装位置，所以创建一个链接方便使用。</p>
+</li>
+<li class="">
+<p>生成grub的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grub-mkconfig -o /boot/grub/grub.cfg</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<p>以上的grub配置方法已经足够使用，但存储在FAT文件系统上的<code>grub.cfg</code>无法被btrfs快照回档，极端情况下仍会出现问题，例如在快照启动项里生成了<code>grub.cfg</code>导致永远启动进快照启动项。如果你想要绝对稳定的回档，看进阶内容：<a class="" href=/docs/附录#grub%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9C%80%E4%BD%B3%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95>可选：grub在btrfs文件系统下的最佳配置方法</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=zram>zram<a href=#zram class=hash-link aria-label="Direct link to zram" title="Direct link to zram" translate=no>​</a></h3>
+<p><a href=https://wiki.archlinux.org/title/Zswap target=_blank rel="noopener noreferrer" class="">zswap - ArchWiki</a></p>
+<p><a href=https://wiki.archlinux.org/title/Zram target=_blank rel="noopener noreferrer" class="">zram - ArchWiki</a></p>
+<p>zram将内存的一部分空间用作交换空间，如果你没有配置swap，请一定配置zram。</p>
+<ol>
+<li class="">
+<p>安装zram-generator</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S zram-generator</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim  /etc/systemd/zram-generator.conf</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[zram0]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">zram-size = ram</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">compression-algorithm = zstd </span><br/></div></code></pre></div></div>
+<p><code>zram-size</code>设置最多存储多少数据，注意这里设置的是压缩之前的大小。</p>
+<p><code>compression-algorithm</code>这一行设置使用zstd算法。</p>
+</li>
+<li class="">
+<p>禁用zswap</p>
+<p>zswap是swap的缓存。需要交换的数据在存入交换空间之前会先被zswap压缩后暂时放进内存里。和zram功能重复且引入了复杂性，故禁用。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/default/grub</span><br/></div></code></pre></div></div>
+<p>在GRUB_CMDLINE_LINUX_DEFAULT=""里写入<code>zswap.enabled=0</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">GRUB_CMDLINE_LINUX_DEFAULT="... zswap.enabled=0 ... "</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>重新生成grub的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grub-mkconfig -o /efi/grub/grub.cfg</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=启用网络服务>启用网络服务<a href=#启用网络服务 class=hash-link aria-label="Direct link to 启用网络服务" title="Direct link to 启用网络服务" translate=no>​</a></h3>
+<p>开启新系统的NetworkManager服务，注意大小写</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">systemctl enable NetworkManager </span><br/></div></code></pre></div></div>
+<p><code>systemctl</code>调用systemd进行操作</p>
+<p><code>enbale</code>代表从下一次开机开始自动启动</p>
+<ul>
+<li class="">
+<p>可选：替换网络后端为<code>iwd</code></p>
+<p>NetworkManager的无线网默认后端是<code>wpa_supplicant</code>，可以更换为更现代的<code>iwd</code>。注意：部分设备更换<code>iwd</code>后端可能无法正常联网。</p>
+<ol>
+<li class="">
+<p>安装<code>iwd</code></p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S iwd impala</span><br/></div></code></pre></div></div>
+<p><code>impala</code>是<code>iwd</code>的tui</p>
+</li>
+<li class="">
+<p>编辑配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain"># 创建配置文件目录，-p代表如果已经存在就跳过</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">mkdir -p /etc/NetworkManager/conf.d</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 新建配置文件并用vim进行编辑</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">vim /etc/NetworkManager/conf.d/iwd.conf</span><br/></div></code></pre></div></div>
+<p>写入：</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">[device]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">wifi.backend=iwd</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=退出chroot>退出chroot<a href=#退出chroot class=hash-link aria-label="Direct link to 退出chroot" title="Direct link to 退出chroot" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">exit</span><br/></div></code></pre></div></div>
+<p>此时就回到了live环境，可以注意到提示符的变化。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=重启电脑>重启电脑<a href=#重启电脑 class=hash-link aria-label="Direct link to 重启电脑" title="Direct link to 重启电脑" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+<p>此时会自动取消所有的挂载。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=拔掉系统u盘>拔掉系统u盘<a href=#拔掉系统u盘 class=hash-link aria-label="Direct link to 拔掉系统u盘" title="Direct link to 拔掉系统u盘" translate=no>​</a></h3>
+<p>如果u盘没拔掉的话记得拔掉</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=选择bios启动项>选择BIOS启动项<a href=#选择bios启动项 class=hash-link aria-label="Direct link to 选择BIOS启动项" title="Direct link to 选择BIOS启动项" translate=no>​</a></h3>
+<p>通常默认就是刚刚安装的arch，如果不是的话选择一下启动项。有的电脑的启动项可能埋在子菜单里，仔细找一下。</p>
+<p>如果没有出现archlinux的启动项，看这个页面：<a href=https://wiki.archlinux.org/title/GRUB target=_blank rel="noopener noreferrer" class="">https://wiki.archlinux.org/title/GRUB</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=登录root账户>登录root账户<a href=#登录root账户 class=hash-link aria-label="Direct link to 登录root账户" title="Direct link to 登录root账户" translate=no>​</a></h3>
+<p>用户名为root，密码刚刚设置过了。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=连接网络-1>连接网络<a href=#连接网络-1 class=hash-link aria-label="Direct link to 连接网络" title="Direct link to 连接网络" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p>验证是否有网</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">ip a</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">ping bilibili.com</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>连接wifi</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">nmtui</span><br/></div></code></pre></div></div>
+<p><code>nmtui</code>是networkmanager提供的TUI（终端用户交互程序）。如果你使用的是<code>iwd</code>后端还可以用<code>impala</code>连接wifi。</p>
+<ul>
+<li class="">选择activate a connection</li>
+<li class="">选择自己的wifi进行连接</li>
+<li class="">esc退出</li>
+<li class="">Ctrl+L或者<code>clear</code>清屏</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=放松一下吧>放松一下吧<a href=#放松一下吧 class=hash-link aria-label="Direct link to 放松一下吧" title="Direct link to 放松一下吧" translate=no>​</a></h3>
+<p>恭喜你成功手动安装了archlinux，现在小小地奖励一下自己吧。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S fastfetch lolcat cmatrix</span><br/></div></code></pre></div></div>
+<p>不做讲解，自己运行命令试试吧。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">fastfetch</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">fastfetch | lolcat </span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cmatrix</span><br/></div></code></pre></div></div>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">cmatrix | lolcat</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">cmatrix -r</span><br/></div></code></pre></div></div>
+<p><code>|</code>竖线叫作pipeline管道符，作用是把左边程序的输出结果输入到右边的程序里。</p>
+<p>下一节：<a class="" href=/docs/安装桌面环境前的准备>安装桌面环境前的准备</a></p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=脚本安装>脚本安装<a href=#脚本安装 class=hash-link aria-label="Direct link to 脚本安装" title="Direct link to 脚本安装" translate=no>​</a></h2>
+<p>这部分是arch自带的archinstall脚本使用教程。这部分只介绍必要的选项，没提到的选项保持默认。想研究的话可以自己看看。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=开启archinstall>开启archinstall<a href=#开启archinstall class=hash-link aria-label="Direct link to 开启archinstall" title="Direct link to 开启archinstall" translate=no>​</a></h3>
+<p>新版本archinstall脚本提供了连接网络的功能，可以进iso之后直接运行<code>archinstall</code>命令，失败的话重试一下。</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">archinstall</span><br/></div></code></pre></div></div>
+<p>第一项是脚本语言，第二项是系统本地化，保持英文就行，改了会乱码，等进桌面之后再改中文。直接看第三项。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=mirrors-and-repositories-设置镜像源>Mirrors and repositories 设置镜像源<a href=#mirrors-and-repositories-设置镜像源 class=hash-link aria-label="Direct link to Mirrors and repositories 设置镜像源" title="Direct link to Mirrors and repositories 设置镜像源" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p>选择第一项<code>Select regions</code>设置自己的所在地。加载会比较慢，耐心等一等。左斜杠可以搜索。</p>
+</li>
+<li class="">
+<p>选择第三项<code>optional repositories</code>回车激活<code>multilib</code>。这是32位程序的源。</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=disk-configuration-磁盘分区>Disk configuration 磁盘分区<a href=#disk-configuration-磁盘分区 class=hash-link aria-label="Direct link to Disk configuration 磁盘分区" title="Direct link to Disk configuration 磁盘分区" translate=no>​</a></h3>
+<p>选择<code>partitioning</code>进入磁盘分区</p>
+<p>第一项是自动分区，默认格式化整块硬盘，ESP挂载到<code>/boot</code>。</p>
+<p>我要把ESP挂载到<code>/efi</code>，所以使用手动分区，具体原因看<a href=#%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5%E8%AE%B2%E8%A7%A3 class="">重要概念讲解</a>。</p>
+<p>选择第二项手动分区 > 要使用的硬盘</p>
+<ol>
+<li class="">
+<p>创建启动分区</p>
+<p>选中要使用的空闲空间 > Size（分区大小）<code>512MB</code> > Filesystem（文件系统）<code>fat32</code> > Mountpoint（挂载点）<code>/efi</code></p>
+<p>选中刚刚创建的分区，回车设置<code>bootable</code>和<code>ESP</code>。</p>
+</li>
+<li class="">
+<p>可选：创建swap分区</p>
+<p><strong>如果你不需要休眠功能的话跳过这一步</strong>。休眠指的是把系统当前状态写入硬盘，然后电脑完全断电，下一次开机恢复到休眠前的状态。</p>
+<p>swap交换空间与虚拟内存和休眠有关。有swap分区或者swap文件两种方式，前者配置更简单，后者配置稍复杂，但是更加灵活。这里采用交换分区的方式。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>内存(GB)<th>不需要休眠(GB)<th>需要休眠（GB）<th>不建议超过（GB）<tbody><tr><td>1<td>1<td>2<td>2<tr><td>2<td>2<td>3<td>4<tr><td>3<td>3<td>5<td>6<tr><td>4<td>4<td>6<td>8<tr><td>5<td>2<td>7<td>10<tr><td>6<td>2<td>8<td>12<tr><td>8<td>3<td>11<td>16<tr><td>12<td>3<td>15<td>24<tr><td>16<td>4<td>20<td>32<tr><td>24<td>5<td>29<td>48<tr><td>32<td>6<td>38<td>64<tr><td>64<td>8<td>72<td>128<tr><td>128<td>11<td>139<td>256<tr><td>256<td>16<td>272<td>512</table>
+<p>Size参考上面的表 > Filesystem选<code>linux-swap</code></p>
+</li>
+<li class="">
+<p>创建root分区</p>
+<p>Size部分直接回车分配全部空间 > Filesystem选<code>btrfs</code></p>
+<p>选中刚刚创建的btrfs，回车。选择<code>Mark/Unmark as compressed</code>设置透明压缩；再选择<code>Set subvolumes</code>（创建子卷）> 选<code>Add subvolume</code>添加子卷</p>
+<p>第一个子卷Subvolume name输入<code>@</code>，回车设置Subvolume mountpoint是<code>/</code> ；</p>
+<p>第二个子卷name是<code>@home</code>，mountpoint是<code>/home</code></p>
+<p><code>confirm and exit</code> > <code>confirm and exit</code> > <code>back</code> 完成硬盘分区</p>
+<p>关于子卷是什么，可以看<a href=#%E5%88%9B%E5%BB%BAbtrfs%E5%AD%90%E5%8D%B7 class="">创建btrfs子卷</a></p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=bootloader引导系统>Bootloader引导系统<a href=#bootloader引导系统 class=hash-link aria-label="Direct link to Bootloader引导系统" title="Direct link to Bootloader引导系统" translate=no>​</a></h3>
+<p>如果你不知道选什么的话选<code>Grub</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=kernels>Kernels<a href=#kernels class=hash-link aria-label="Direct link to Kernels" title="Direct link to Kernels" translate=no>​</a></h3>
+<p>tab键勾选需要的内核，通常使用<code>linux</code>即可。台式机可以选<code>linux-zen</code>以些许功耗为代价提高性能，</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=hostname主机名>Hostname主机名<a href=#hostname主机名 class=hash-link aria-label="Direct link to Hostname主机名" title="Direct link to Hostname主机名" translate=no>​</a></h3>
+<p>设置一个自己想要的主机名</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=authentication身份认证>Authentication身份认证<a href=#authentication身份认证 class=hash-link aria-label="Direct link to Authentication身份认证" title="Direct link to Authentication身份认证" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><code>Root password</code>设置管理员密码</p>
+</li>
+<li class="">
+<p><code>User account</code> > <code>Add a user</code> 创建普通用户</p>
+<p><code>Should "你的用户名" be a superuser(sudo)</code>是问你要不要给这个用户管理员权限，选yes就行。</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=profile>Profile<a href=#profile class=hash-link aria-label="Direct link to Profile" title="Direct link to Profile" translate=no>​</a></h3>
+<p><code>Type</code> > <code>Minimal</code> 是最小化安装。</p>
+<p><code>Desktop</code>可以自动安装桌面，如果不知道装什么桌面就装KDE Plasma。选择自动安装桌面的话还会出现<code>Graphics driver</code>选项，可以自动安装显卡驱动。</p>
+<ul>
+<li class="">
+<p>关于N卡驱动</p>
+<p>去<a href=https://nouveau.freedesktop.org/CodeNames.html target=_blank rel="noopener noreferrer" class="">CodeNames · freedesktop.org</a>这个页面搜索你的显卡型号，确认对应的NV family；NV160以后的显卡选<code>Nvidia (open kernel module ...)</code>；NV110~NV140的选<code>Nvidia (proprietary)</code>；其他的看<a href=https://wiki.archlinux.org/title/NVIDIA target=_blank rel="noopener noreferrer" class="">ArchWiki_NVIDIA</a></p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=applications蓝牙和音视频>Applications（蓝牙和音视频）<a href=#applications蓝牙和音视频 class=hash-link aria-label="Direct link to Applications（蓝牙和音视频）" title="Direct link to Applications（蓝牙和音视频）" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><code>Audio</code> > <code>pipewire</code> 自动安装音视频服务</p>
+</li>
+<li class="">
+<p><code>Bluetooth</code> > <code>Yes</code> 自动安装蓝牙</p>
+</li>
+<li class="">
+<p><code>Print service</code> >  <code>yes</code> 安装打印机驱动</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=network-configuration-网络配置>Network configuration （网络配置）<a href=#network-configuration-网络配置 class=hash-link aria-label="Direct link to Network configuration （网络配置）" title="Direct link to Network configuration （网络配置）" translate=no>​</a></h3>
+<p>不知道选什么就选第四项 <code>NetworkManager（iwd backend）</code>。</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=additional-packages自定义安装其他软件包>Additional packages（自定义安装其他软件包）<a href=#additional-packages自定义安装其他软件包 class=hash-link aria-label="Direct link to Additional packages（自定义安装其他软件包）" title="Direct link to Additional packages（自定义安装其他软件包）" translate=no>​</a></h3>
+<p>左斜杠键搜索，tab键选择。</p>
+<ul>
+<li class="">
+<p>必须安装</p>
+<p><code>vim</code>（任意终端文本编辑器）</p>
+<p>如果你使用的是marvell的无线网卡，这里要额外安装<code>linux-firmware-marvell</code>，否则进系统找不到网卡。</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=timezone时区>Timezone（时区）<a href=#timezone时区 class=hash-link aria-label="Direct link to Timezone（时区）" title="Direct link to Timezone（时区）" translate=no>​</a></h3>
+<p>左斜杠键搜索<code>Shanghai</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=install>Install<a href=#install class=hash-link aria-label="Direct link to Install" title="Direct link to Install" translate=no>​</a></h3>
+<p>选择install安装</p>
+<h3 class="anchor anchorTargetStickyNavbar_AJoT" id=双系统>双系统<a href=#双系统 class=hash-link aria-label="Direct link to 双系统" title="Direct link to 双系统" translate=no>​</a></h3>
+<p>安装完成后配置windows和linux的双系统。</p>
+<ol>
+<li class="">
+<p>archinstall安装完成后选择<code>chroot</code></p>
+</li>
+<li class="">
+<p>安装需要的组件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">pacman -S os-prober exfat-utils</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>编辑grub的源文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">vim /etc/default/grub</span><br/></div></code></pre></div></div>
+<p>方向键移动光标；<code>i</code>键进入编辑模式；取消最后一行<code>GRUB_DISABLE_OS_PROBER=false</code>的注释；<code>esc</code>退出编辑模式；<code>:wq</code>保存并退出。</p>
+<p>还有一些其他的设置：</p>
+<ul>
+<li class="">
+<p>启动项记忆功能</p>
+<p><code>GRUB_DEFAULT=0</code>改成<code>=saved</code>，再取消<code>GRUB_SAVEDEFAULT=true</code>的注释。</p>
+</li>
+<li class="">
+<p>显示开机日志</p>
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT</code>里面去掉<code>quiet</code>以显示开机日志。再设置<code>loglevel=5</code>把日志等级为5。<code>loglevel</code>共7级，5级是一个信息量的平衡点。</p>
+</li>
+<li class="">
+<p>禁用watchdog</p>
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT</code>里添加<code>nowatchdog</code>以及<code>modprobe.blacklist=sp5100_tco</code>。intelcpu用户把<code>sp5100_tco</code>换成<code>iTCO_wdt</code></p>
+<p>watchdog的目的简单来说是在系统死机的时候自动重启系统。对个人用户来说没有意义，禁用以节省系统资源、提高开机和关机速度。</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>生成grub的配置文件</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">grub-mkconfig -o /efi/grub/grub.cfg</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>在grub的默认安装位置创建链接</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">ln -sf /efi/grub /boot/grub</span><br/></div></code></pre></div></div>
+<p>我们的grub在<code>/efi/grub</code>，大多数程序会默认检测<code>/boot/grub</code>作为grub的安装位置，所以创建一个链接方便使用。</p>
+</li>
+<li class="">
+<p>退出chroot</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">exit</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>重启</p>
+<div class="language-text codeBlockContainer_RTPy theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_Aor8><pre tabindex=0 class="prism-code language-text codeBlock_HdHX thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_ntnQ><div class=token-line style=color:#393A34><span class="token plain">reboot</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>选择bios启动项</p>
+</li>
+</ol>
+<p>如果没有出现archlinux的启动项，看这个页面：<a href=https://wiki.archlinux.org/title/GRUB target=_blank rel="noopener noreferrer" class="">https://wiki.archlinux.org/title/GRUB</a></p>
+<p>以上的grub配置方法已经足够使用，但存储在FAT文件系统上的<code>grub.cfg</code>无法被btrfs快照回档，极端情况下仍会出现问题，例如在快照启动项里生成了<code>grub.cfg</code>导致永远启动进快照启动项。如果你想要绝对稳定的回档，看进阶内容：<a class="" href=/docs/附录#grub%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9C%80%E4%BD%B3%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95>可选：grub在btrfs文件系统下的最佳配置方法</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_AJoT" id=下一节安装桌面环境前的准备>下一节：<a class="" href=/docs/安装桌面环境前的准备>安装桌面环境前的准备</a><a href=#下一节安装桌面环境前的准备 class=hash-link aria-label="Direct link to 下一节安装桌面环境前的准备" title="Direct link to 下一节安装桌面环境前的准备" translate=no>​</a></h2></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/代理><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>代理</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/安装GNOME><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>安装GNOME</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_G5R7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#重要概念讲解 class="table-of-contents__link toc-highlight">重要概念讲解</a><ul><li><a href=#esp挂载点 class="table-of-contents__link toc-highlight">ESP挂载点</a></ul><li><a href=#手动安装 class="table-of-contents__link toc-highlight">手动安装</a><ul><li><a href=#可选调大字体 class="table-of-contents__link toc-highlight">可选：调大字体</a><li><a href=#确认是uefi固件 class="table-of-contents__link toc-highlight">确认是UEFI固件</a><li><a href=#连接网络 class="table-of-contents__link toc-highlight">连接网络</a><li><a href=#确认开启了ntp网络时间协议 class="table-of-contents__link toc-highlight">确认开启了NTP（网络时间协议）</a><li><a href=#reflector自动设置镜像源 class="table-of-contents__link toc-highlight">reflector自动设置镜像源</a><li><a href=#可选探索linux文件 class="table-of-contents__link toc-highlight">可选：探索Linux文件</a><li><a href=#硬盘分区 class="table-of-contents__link toc-highlight">硬盘分区</a><li><a href=#正式挂载 class="table-of-contents__link toc-highlight">正式挂载</a><li><a href=#安装系统 class="table-of-contents__link toc-highlight">安装系统</a><li><a href=#可选swap交换空间 class="table-of-contents__link toc-highlight">可选：swap交换空间</a><li><a href=#生成fstab文件 class="table-of-contents__link toc-highlight">生成fstab文件</a><li><a href=#更换根目录change-root class="table-of-contents__link toc-highlight">更换根目录（change root）</a><li><a href=#设置时间和时区 class="table-of-contents__link toc-highlight">设置时间和时区</a><li><a href=#本地化设置 class="table-of-contents__link toc-highlight">本地化设置</a><li><a href=#设置主机名 class="table-of-contents__link toc-highlight">设置主机名</a><li><a href=#设置root密码 class="table-of-contents__link toc-highlight">设置root密码</a><li><a href=#安装引导程序 class="table-of-contents__link toc-highlight">安装引导程序</a><li><a href=#zram class="table-of-contents__link toc-highlight">zram</a><li><a href=#启用网络服务 class="table-of-contents__link toc-highlight">启用网络服务</a><li><a href=#退出chroot class="table-of-contents__link toc-highlight">退出chroot</a><li><a href=#重启电脑 class="table-of-contents__link toc-highlight">重启电脑</a><li><a href=#拔掉系统u盘 class="table-of-contents__link toc-highlight">拔掉系统u盘</a><li><a href=#选择bios启动项 class="table-of-contents__link toc-highlight">选择BIOS启动项</a><li><a href=#登录root账户 class="table-of-contents__link toc-highlight">登录root账户</a><li><a href=#连接网络-1 class="table-of-contents__link toc-highlight">连接网络</a><li><a href=#放松一下吧 class="table-of-contents__link toc-highlight">放松一下吧</a></ul><li><a href=#脚本安装 class="table-of-contents__link toc-highlight">脚本安装</a><ul><li><a href=#开启archinstall class="table-of-contents__link toc-highlight">开启archinstall</a><li><a href=#mirrors-and-repositories-设置镜像源 class="table-of-contents__link toc-highlight">Mirrors and repositories 设置镜像源</a><li><a href=#disk-configuration-磁盘分区 class="table-of-contents__link toc-highlight">Disk configuration 磁盘分区</a><li><a href=#bootloader引导系统 class="table-of-contents__link toc-highlight">Bootloader引导系统</a><li><a href=#kernels class="table-of-contents__link toc-highlight">Kernels</a><li><a href=#hostname主机名 class="table-of-contents__link toc-highlight">Hostname主机名</a><li><a href=#authentication身份认证 class="table-of-contents__link toc-highlight">Authentication身份认证</a><li><a href=#profile class="table-of-contents__link toc-highlight">Profile</a><li><a href=#applications蓝牙和音视频 class="table-of-contents__link toc-highlight">Applications（蓝牙和音视频）</a><li><a href=#network-configuration-网络配置 class="table-of-contents__link toc-highlight">Network configuration （网络配置）</a><li><a href=#additional-packages自定义安装其他软件包 class="table-of-contents__link toc-highlight">Additional packages（自定义安装其他软件包）</a><li><a href=#timezone时区 class="table-of-contents__link toc-highlight">Timezone（时区）</a><li><a href=#install class="table-of-contents__link toc-highlight">Install</a><li><a href=#双系统 class="table-of-contents__link toc-highlight">双系统</a></ul><li><a href=#下一节安装桌面环境前的准备 class="table-of-contents__link toc-highlight">下一节：安装桌面环境前的准备</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026</div></div></div></footer></div></body>
