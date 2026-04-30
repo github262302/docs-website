@@ -1,3 +1,10 @@
+---
+title: Ubuntu如何在当前目录再开一个zsh终端窗口
+category: devops
+date: 2025-04-01
+tags: []
+---
+
 ## Ubuntu如何在当前目录再开一个zsh终端窗口
 
 如果想在 Ubuntu 的“当前目录”再打开一个新的 `zsh` 终端窗口，可以执行：

@@ -1,3 +1,10 @@
+---
+title: cleanPath
+category: wsl
+date: 2025-04-01
+tags: []
+---
+
 Linux 从WSL移除Win10的PATH
 
 

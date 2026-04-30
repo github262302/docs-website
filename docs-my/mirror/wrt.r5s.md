@@ -1,3 +1,10 @@
+---
+title: wrt.r5s
+category: mirror
+date: 2025-04-01
+tags: []
+---
+
 # wrt R5S 
 
 4+16 hdmi 2.5G

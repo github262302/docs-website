@@ -1,3 +1,10 @@
+---
+title: Jest-在Nodejs中测试浏览器环境
+category: tutorial
+date: 2025-04-01
+tags: []
+---
+
 # Jest 在 Node.js 中测试浏览器环境完全指南
 
 > 💡 本文介绍如何使用 Jest 在 Node.js 环境中模拟浏览器环境进行测试

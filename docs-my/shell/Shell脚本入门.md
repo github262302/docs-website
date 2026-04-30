@@ -1,3 +1,10 @@
+---
+title: Shell脚本入门
+category: tutorial
+date: 2025-04-01
+tags: []
+---
+
 
 # Shell脚本入门：让电脑自动干活
 

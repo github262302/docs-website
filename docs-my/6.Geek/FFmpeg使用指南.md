@@ -1,3 +1,10 @@
+---
+title: FFmpeg使用指南
+category: tutorial
+date: 2025-04-01
+tags: []
+---
+
 # FFmpeg 使用指南
 
 ## 导出音频

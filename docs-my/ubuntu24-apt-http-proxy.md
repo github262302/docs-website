@@ -1,3 +1,10 @@
+---
+title: ubuntu24-apt-http-proxy
+category: tech
+date: 2025-04-01
+tags: []
+---
+
 # Ubuntu 24 配置 APT HTTP 代理教程
 
 ## 概述

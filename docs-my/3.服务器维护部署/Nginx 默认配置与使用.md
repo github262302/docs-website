@@ -1,3 +1,10 @@
+---
+title: Nginx 默认配置与使用
+category: devops
+date: 2025-04-01
+tags: []
+---
+
 # Nginx 默认配置与使用
 
 这份笔记整理 Nginx 在 Ubuntu 上的默认目录结构、常见配置方式，以及一个常见的反向代理模板。

@@ -1,3 +1,10 @@
+---
+title: sshport
+category: shell
+date: 2025-04-01
+tags: []
+---
+
 ## SSH 端口转发
 
 ### 正向代理（本地→远程）

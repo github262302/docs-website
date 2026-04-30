@@ -1,3 +1,10 @@
+---
+title: Ubuntu 服务器使用
+category: devops
+date: 2025-04-01
+tags: []
+---
+
 # Ubuntu 服务器使用 🐧🛠️
 
 这份笔记聚焦 Ubuntu 服务器的常见维护操作，包括开机环境变量、开机自启、自动化、磁盘管理和内存管理。

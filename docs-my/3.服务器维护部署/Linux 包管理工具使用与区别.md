@@ -1,3 +1,10 @@
+---
+title: Linux 包管理工具使用与区别
+category: devops
+date: 2025-04-01
+tags: []
+---
+
 # Linux 包管理工具使用与区别 📦🐧
 
 这份笔记用于快速看懂常见 Linux 包管理工具的用途、区别和基本命令。

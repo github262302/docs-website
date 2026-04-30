@@ -7,6 +7,7 @@ tags:
 hide:
   - toc
   - tags
+category: n8n
 ---
 
 # 安全环境变量

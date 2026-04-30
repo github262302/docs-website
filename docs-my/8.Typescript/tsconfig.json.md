@@ -1,3 +1,10 @@
+---
+title: tsconfig.json
+category: typescript
+date: 2025-04-01
+tags: []
+---
+
 
 ## 给我总结精简一下，我要存入markdown笔记
 

@@ -1,3 +1,10 @@
+---
+title: pnpm如何把cli.js注册成全局命令
+category: tutorial
+date: 2025-04-01
+tags: []
+---
+
 ## pnpm如何把cli.js注册成全局命令
 
 想把项目里的 `cli.js` 变成全局可用的命令，分两步。

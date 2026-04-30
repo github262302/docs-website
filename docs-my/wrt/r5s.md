@@ -1,3 +1,10 @@
+---
+title: r5s
+category: router
+date: 2025-04-01
+tags: []
+---
+
 
 cat /etc/opkg/distfeeds.conf
 

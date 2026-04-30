@@ -1,3 +1,10 @@
+---
+title: mongodb-速通
+category: tech
+date: 2025-04-01
+tags: []
+---
+
 # Mongodb Ubuntu 24 速通
 
 ## install

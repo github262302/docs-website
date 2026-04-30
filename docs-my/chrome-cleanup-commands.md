@@ -1,3 +1,10 @@
+---
+title: chrome-cleanup-commands
+category: tech
+date: 2025-04-01
+tags: []
+---
+
 # Chrome 浏览器清理命令
 
 > 关闭 Chrome 后执行以下命令清理浏览器数据

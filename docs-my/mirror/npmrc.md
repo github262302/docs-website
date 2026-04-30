@@ -1,3 +1,10 @@
+---
+title: npmrc
+category: mirror
+date: 2025-04-01
+tags: []
+---
+
 
 ## 有n8n 用腾讯的
 

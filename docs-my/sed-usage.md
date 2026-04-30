@@ -1,3 +1,10 @@
+---
+title: sed-usage
+category: tech
+date: 2025-04-01
+tags: []
+---
+
 # sed 命令使用指南
 
 `sed` (Stream Editor) 是 Linux/Unix 下强大的流式文本编辑器，常用于文本替换、删除、插入等操作。

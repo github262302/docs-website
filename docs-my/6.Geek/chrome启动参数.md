@@ -1,3 +1,10 @@
+---
+title: chrome启动参数
+category: geek
+date: 2025-04-01
+tags: []
+---
+
 # Chrome 浏览器启动参数
 
 常用启动参数配置指南。
